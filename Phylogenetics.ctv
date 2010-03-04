@@ -1,8 +1,8 @@
 <CRANTaskView>
-<name>Phylogenetics</name>
-<topic>Phylogenetics, Especially Comparative methods</topic>
-<maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-<version>2010-03-04</version>
+  <name>Phylogenetics</name>
+  <topic>Phylogenetics, Especially Comparative Methods</topic>
+  <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
+  <version>2010-03-04</version>
 
 <info>
       <p>
@@ -26,7 +26,7 @@
         and
 <pkg>laser</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification).
 
-<pkg>Laser</pkg>
+<pkg>laser</pkg>
         implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
 <pkg>laser</pkg>. Colless and Sackin's topological methods for analyzing diversification are available in
 <pkg>apTreeshape</pkg>
@@ -48,7 +48,7 @@
         Maximum likelihood, UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package
 
 <pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
-<a href="Genetics.html">Genetics</a>
+<view>Genetics</view>
         task view.
       </p>
       <p>
@@ -188,33 +188,35 @@
 </info>
     
 <packagelist>
-	<pkg>ade4</pkg>
-	<pkg>adephylo</pkg>
-	<pkg priority="core">ape</pkg>
-	<pkg>apTreeshape</pkg>
-	<pkg>geiger</pkg>
-	<pkg>laser</pkg>
-	<pkg>maticce</pkg>
-	<pkg>MCMCglmm</pkg>
-	<pkg>ouch</pkg>
-	<rforge>paleoPhylo</rforge>
-	<pkg>PaleoTS</pkg>
-	<pkg>phybase</pkg>
-	<pkg>phyclust</pkg>
-	<pkg>phylobase</pkg>
-	<pkg>phyloclim</pkg>
-	<pkg>PHYLOGR</pkg>
-	<pkg>PhySim</pkg>
-	<pkg>picante</pkg>
-	<rforge>rmesquite</rforge>
-	<pkg>scaleboot</pkg>
-	<pkg>TreeSim</pkg>
-	<pkg>vegan</pkg>
+  <pkg>ade4</pkg>
+  <pkg>adephylo</pkg>
+  <pkg priority="core">ape</pkg>
+  <pkg>apTreeshape</pkg>
+  <pkg>geiger</pkg>
+  <pkg>laser</pkg>
+  <pkg>maticce</pkg>
+  <pkg>MCMCglmm</pkg>
+  <pkg>ouch</pkg>
+  <pkg>PaleoTS</pkg>
+  <pkg>phybase</pkg>
+  <pkg>phyclust</pkg>
+  <pkg>phylobase</pkg>
+  <pkg>phyloclim</pkg>
+  <pkg>PHYLOGR</pkg>
+  <pkg>PhySim</pkg>
+  <pkg>picante</pkg>
+  <pkg>scaleboot</pkg>
+  <pkg>TreeSim</pkg>
+  <pkg>vegan</pkg>
 </packagelist>
 
 
 <links>
-<a href="https://www.nescent.org/wg_phyloinformatics/R_Hackathon1/HelpWiki">Comparative Phylogenetics in R Help Wiki</a>
+  <view>Genetics</view>
+  <view>Environmetrics</view>
+  <rforge>paleoPhylo</rforge>
+  <rforge>rmesquite</rforge>
+  <a href="https://www.nescent.org/wg_phyloinformatics/R_Hackathon1/HelpWiki">Comparative Phylogenetics in R Help Wiki</a>
 </links>
 
 </CRANTaskView>
