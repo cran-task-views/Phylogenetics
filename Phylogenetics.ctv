@@ -28,9 +28,8 @@
 
 <pkg>laser</pkg>
         implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
-<pkg>laser</pkg>. Colless and Sackin's topological methods for analyzing diversification are available in
-<pkg>apTreeshape</pkg>
-        as is the test for significant shifts in diversification (sensu Moore, Chan and Donoghue 2004). Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
+<pkg>laser</pkg>.
+	 Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
 <pkg>geiger</pkg>. <a href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
       </p>
       <p>
@@ -63,8 +62,7 @@
         <i>
           Tree Simulations:
         </i>
-        Trees can be simulated using a Yule, PDA, biased or speciation specified model in
-<pkg>apTreeshape</pkg>, constant-rate birth-death with various constraints in <pkg>TreeSim</pkg>, a birth-death process in
+        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg>, a birth-death process in
 <pkg>geiger</pkg>, and
 <pkg>PhySim</pkg>. Random trees can be generated in
 <pkg>ape</pkg>
@@ -112,9 +110,7 @@
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
 
 <pkg>geiger</pkg>. Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using
-<pkg>ape</pkg>. Trees can be pruned from specified nodes using
-<pkg>apTreeshape</pkg>
-        and extinct taxa can be pruned using
+<pkg>ape</pkg>. Extinct taxa can be pruned using
 <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>.
       </p>
       
@@ -191,13 +187,12 @@
   <pkg>ade4</pkg>
   <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
-  <pkg>apTreeshape</pkg>
   <pkg>geiger</pkg>
   <pkg>laser</pkg>
   <pkg>maticce</pkg>
   <pkg>MCMCglmm</pkg>
   <pkg>ouch</pkg>
-  <pkg>PaleoTS</pkg>
+  <pkg>paleoTS</pkg>
   <pkg>phybase</pkg>
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
