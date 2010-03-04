@@ -1,0 +1,220 @@
+<CRANTaskView>
+<name>Phylogenetics</name>
+<topic>Phylogenetics, Especially Comparative methods</topic>
+<maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
+<version>2010-04-04</version>
+
+<info>
+      <p>
+        The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees.  This task view describes R packages that implement a variety of different comparative phylogenetic methods.  This is an active research area and much of the information is subject to change.
+      </p>
+      <p>
+        <i>
+          Ancestral state reconstruction
+        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in
+<pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in
+<pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using
+
+<pkg>ape</pkg>.
+      </p>
+      <p>
+        <i>
+          Diversification Analysis:
+        </i>
+        Lineage through time plots can be done in
+<pkg>ape</pkg>
+        and
+<pkg>laser</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification).
+
+<pkg>Laser</pkg>
+        implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
+<pkg>laser</pkg>. Colless and Sackin's topological methods for analyzing diversification are available in
+<pkg>apTreeshape</pkg>
+        as is the test for significant shifts in diversification (sensu Moore, Chan and Donoghue 2004). Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
+<pkg>geiger</pkg>. <a href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
+      </p>
+      <p>
+        <i>
+
+          Divergence Times:
+        </i>
+        Non-parametric rate smoothing (NPRS) and penalized likelihood can be implemented in
+<pkg>ape</pkg>.
+      </p>
+      <p>
+        <i>
+          Phylogenetic Inference:
+        </i>
+        Maximum likelihood, UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package
+
+<pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
+<a href="Genetics.html">Genetics</a>
+        task view.
+      </p>
+      <p>
+        <i>
+          Time series:
+        </i>
+        Paleontological time series data can be analyzed using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model) using
+<pkg>paleoTS</pkg>.
+      </p>
+
+      <p>
+        <i>
+          Tree Simulations:
+        </i>
+        Trees can be simulated using a Yule, PDA, biased or speciation specified model in
+<pkg>apTreeshape</pkg>, constant-rate birth-death with various constraints in <pkg>TreeSim</pkg>, a birth-death process in
+<pkg>geiger</pkg>, and
+<pkg>PhySim</pkg>. Random trees can be generated in
+<pkg>ape</pkg>
+
+        by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>phybase</pkg> can simulate coalescent trees as well.
+      </p>
+      <p>
+        <i>
+          Trait evolution:
+        </i>
+        Independent contrasts for continuous characters can be calculated using
+<pkg>ape</pkg> or <pkg>picante</pkg>. Pagel's continuous and discrete analyzes can be calculated in
+<pkg>geiger</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in
+<pkg>geiger</pkg>,
+
+<pkg>ape</pkg>
+        and
+<pkg>ouch</pkg>. <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation,
+<pkg>geiger</pkg>
+        fits only single-optimum models. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
+<pkg>geiger</pkg>. A GLS linear model (sensu Garland and Ives 2000) can be fitted using
+<pkg>PHYLOGR</pkg>; the more traditional GLS methods (senu Grafen or Martins) can be implemented in
+<pkg>ape</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
+<pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
+<pkg>ade4</pkg> or <pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>.
+
+       
+      </p>
+      <p>
+        <i>
+          Trait Simulations
+        </i>: Continuous traits can be simulated using brownian motion in
+<pkg>ouch</pkg>, 
+<pkg>geiger</pkg>, and <pkg>picante</pkg>, the Hansen model in
+
+<pkg>ouch</pkg>
+        and a speciational model in
+<pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in
+<pkg>geiger</pkg>.  Both discrete and continuous traits can be simulated under models where rates change through time in
+<pkg>geiger</pkg>.
+      </p>
+      <p>
+        <i>
+          Tree Manipulation
+        </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
+
+<pkg>geiger</pkg>. Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using
+<pkg>ape</pkg>. Trees can be pruned from specified nodes using
+<pkg>apTreeshape</pkg>
+        and extinct taxa can be pruned using
+<pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>.
+      </p>
+      
+      <p>
+      <i>Community Ecology</i>: <pkg>picante</pkg> and <pkg>vegan</pkg> integrate several tools for using phylogenetics with community ecology.
+      </p>
+ 
+       <p>
+      <i>Phyloclimatic Modeling</i>: <pkg>phyloclim</pkg> integrates several new tools in this area.
+      </p>
+
+ 
+      <p>
+        <i>
+          Tree Plotting and Visualization:
+        </i>
+
+        User inputted trees can be plotted using
+<pkg>ape</pkg>,
+<pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>
+        and
+<pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using
+<pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using
+<pkg>ape</pkg>.
+      </p>
+      
+      <p><i>Miscellaneous:</i> <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
+      </p>
+ 
+      <p>
+
+        <b>
+          References
+        </b>
+        <ul>
+        <li>
+          Butler MA, King AA 2004 Phylogenetic comparative analysis: A modeling approach for adaptive evolution. American Naturalist 164, 683-695.
+        </li>
+        <li>
+          Cheverud JM, Dow MM, Leutenegger W 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351.
+        </li>
+        <li>FitzJohn RG, Maddison WP, and Otto SP 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611. </li>
+        <li>
+
+          Garland T, Harvey PH, Ives AR 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32.
+        </li>
+        <li>
+          Hansen TF 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351.
+        </li>
+        <li>Maddison WP, Midford PE, and Otto SP 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701–710. 
+        </li>
+        <li>
+          Magallon S, Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780.
+        </li>
+        <li>
+          Moore, BR, Chan, KMA, Donoghue, MJ (2004) Detecting diversification rate variation in supertrees. In Bininda-Emonds ORP (ed) Phylogenetic Supertrees: Combining Information to Reveal the Tree of Life, Kluwer Academic pgs 487-533.
+        </li>
+
+        <li>
+          Nee S, May RM, Harvey PH 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311.
+        </li>
+        <li>
+          Pagel M 1999 Inferring the historical patterns of biological evolution. Nature 401, 877-884
+        </li>
+        <li>
+          Pybus OG, Harvey PH 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272.
+        </li>
+        </ul>
+      </p>
+
+</info>
+    
+<packagelist>
+	<pkg>ade4</pkg>
+	<pkg>adephylo</pkg>
+	<pkg priority="core">ape</pkg>
+	<pkg>apTreeshape</pkg>
+	<pkg>geiger</pkg>
+	<pkg>laser</pkg>
+	<pkg>maticce</pkg>
+	<pkg>MCMCglmm</pkg>
+	<pkg>ouch</pkg>
+	<rforge>paleoPhylo</rforge>
+	<pkg>PaleoTS</pkg>
+	<pkg>phybase</pkg>
+	<pkg>phyclust</pkg>
+	<pkg>phylobase</pkg>
+	<pkg>phyloclim</pkg>
+	<pkg>PHYLOGR</pkg>
+	<pkg>PhySim</pkg>
+	<pkg>picante</pkg>
+	<rforge>rmesquite</rforge>
+	<pkg>scaleboot</pkg>
+	<pkg>TreeSim</pkg>
+	<pkg>vegan</pkg>
+</packagelist>
+
+
+<links>
+<a href="https://www.nescent.org/wg_phyloinformatics/R_Hackathon1/HelpWiki">Comparative Phylogenetics in R Help Wiki</a>
+</links>
+
+</CRANTaskView>
