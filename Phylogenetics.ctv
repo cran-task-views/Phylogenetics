@@ -30,7 +30,7 @@
         implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
 <pkg>laser</pkg>.
 	 Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
-<pkg>geiger</pkg>. <a href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). Note that <a href="http://cran.r-project.org/web/packages/apTreeshape/index.html">apTreeshape</a>, which also had tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>), is no longer available on CRAN.
+<pkg>geiger</pkg>. <a href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
       </p>
       <p>
         <i>
@@ -187,6 +187,7 @@
   <pkg>ade4</pkg>
   <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
+  <pkg>apTreeshape</pkg>
   <pkg>geiger</pkg>
   <pkg>laser</pkg>
   <pkg>maticce</pkg>
