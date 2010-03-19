@@ -101,9 +101,9 @@
 <pkg>ouch</pkg>
         and a speciational model in
 <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in
-<pkg>geiger</pkg>.  Both discrete and continuous traits can be simulated under models where rates change through time in
-<pkg>geiger</pkg>.
-      </p>
+<pkg>geiger</pkg>.  <pkg>phangorn</pkg> can also simulate discrete traits, especially DNA or AA. Both discrete and continuous traits can be simulated under models where rates change through time in
+<pkg>geiger</pkg>. 
+</p>
       <p>
         <i>
           Tree Manipulation
@@ -111,7 +111,7 @@
 
 <pkg>geiger</pkg>. Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using
 <pkg>ape</pkg>. Extinct taxa can be pruned using
-<pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>.
+<pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>. Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>.
       </p>
       
       <p>
@@ -194,6 +194,7 @@
   <pkg>MCMCglmm</pkg>
   <pkg>ouch</pkg>
   <pkg>paleoTS</pkg>
+  <pkg>phangorn</pkg>
   <pkg>phybase</pkg>
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
