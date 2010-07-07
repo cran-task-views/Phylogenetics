@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2010-03-19</version>
+  <version>2010-07-07</version>
 
 <info>
       <p>
@@ -213,7 +213,7 @@
   <view>Environmetrics</view>
   <rforge>paleoPhylo</rforge>
   <rforge>rmesquite</rforge>
-  <a href="https://www.nescent.org/wg_phyloinformatics/R_Hackathon1/HelpWiki">Comparative Phylogenetics in R Help Wiki</a>
+  <a href="http://www.r-phylo.org/wiki/Main_Page">Comparative Phylogenetics in R Help Wiki</a>
   <a href="http://www.zoology.ubc.ca/prog/diversitree/">R package diversitree</a>
 </links>
 
