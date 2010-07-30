@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2010-07-07</version>
+  <version>2010-07-30</version>
 
 <info>
       <p>
@@ -62,9 +62,8 @@
         <i>
           Tree Simulations:
         </i>
-        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg>, a birth-death process in
-<pkg>geiger</pkg>, and
-<pkg>PhySim</pkg>. Random trees can be generated in
+        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg> and a birth-death process in
+<pkg>geiger</pkg>. Random trees can be generated in
 <pkg>ape</pkg>
 
         by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>phybase</pkg> can simulate coalescent trees as well.
@@ -83,8 +82,7 @@
 <pkg>ouch</pkg>. <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation,
 <pkg>geiger</pkg>
         fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
-<pkg>geiger</pkg>. A GLS linear model (sensu Garland and Ives 2000) can be fitted using
-<pkg>PHYLOGR</pkg>; the more traditional GLS methods (senu Grafen or Martins) can be implemented in
+<pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in
 <pkg>ape</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
 <pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>.
@@ -199,8 +197,6 @@
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
-  <pkg>PHYLOGR</pkg>
-  <pkg>PhySim</pkg>
   <pkg>picante</pkg>
   <pkg>scaleboot</pkg>
   <pkg>TreeSim</pkg>
