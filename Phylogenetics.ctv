@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2010-07-30</version>
+  <version>2011-01-27</version>
 
 <info>
       <p>
@@ -30,7 +30,7 @@
         implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
 <pkg>laser</pkg>.
 	 Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
-<pkg>geiger</pkg>. <a href="http://www.zoology.ubc.ca/prog/diversitree/">diversitree</a> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
+<pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
       </p>
       <p>
         <i>
@@ -85,7 +85,7 @@
 <pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in
 <pkg>ape</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>.
+<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>RBrownie</pkg> performs several kinds of analyses of trait evolution for continuous and discrete traits.
 
        
       </p>
@@ -132,7 +132,7 @@
         and
 <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using
 <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using
-<pkg>ape</pkg>.
+<pkg>ape</pkg>.<pkg>RBrownie</pkg> can show mappings of evolutionary regimes on trees.
       </p>
       
       <p><i>Miscellaneous:</i> <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
@@ -186,6 +186,7 @@
   <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
   <pkg>apTreeshape</pkg>
+  <pkg>diversitree</pkg>
   <pkg>geiger</pkg>
   <pkg>laser</pkg>
   <pkg>maticce</pkg>
@@ -198,6 +199,7 @@
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
   <pkg>picante</pkg>
+  <pkg>RBrownie</pkg>
   <pkg>scaleboot</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
@@ -210,7 +212,6 @@
   <rforge>paleoPhylo</rforge>
   <rforge>rmesquite</rforge>
   <a href="http://www.r-phylo.org/wiki/Main_Page">Comparative Phylogenetics in R Help Wiki</a>
-  <a href="http://www.zoology.ubc.ca/prog/diversitree/">R package diversitree</a>
 </links>
 
 </CRANTaskView>
