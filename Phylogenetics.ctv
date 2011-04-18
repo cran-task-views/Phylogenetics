@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-02-12</version>
+  <version>2011-04-18</version>
 
 <info>
       <p>
@@ -30,7 +30,7 @@
         implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
 <pkg>laser</pkg>.
 	 Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
-<pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
+<pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
       </p>
       <p>
         <i>
@@ -202,6 +202,7 @@
   <pkg>picante</pkg>
   <pkg>RBrownie</pkg>
   <pkg>scaleboot</pkg>
+  <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
 </packagelist>
