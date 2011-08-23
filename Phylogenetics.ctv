@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-04-18</version>
+  <version>2011-08-23</version>
 
 <info>
       <p>
@@ -11,62 +11,40 @@
       <p>
         <i>
           Ancestral state reconstruction
-        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in
-<pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in
-<pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using
-
-<pkg>ape</pkg>.
+        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees.
       </p>
       <p>
         <i>
           Diversification Analysis:
         </i>
-        Lineage through time plots can be done in
-<pkg>ape</pkg>
-        and
-<pkg>laser</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification).
-
-<pkg>laser</pkg>
-        implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in
-<pkg>laser</pkg>.
-	 Net rates of diversification (sensu Magellon and Sanderson) can be calculated in
-<pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
+        Lineage through time plots can be done in <pkg>ape</pkg> and <pkg>laser</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>laser</pkg> implements likelihood methods using a model testing approach for inferring temporal shifts in diversification rates based on a birth-death or pure-birth process. The gamma statistic (Pybus and Harvey 2000) is also available in <pkg>laser</pkg>. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>).
       </p>
       <p>
         <i>
 
           Divergence Times:
         </i>
-        Non-parametric rate smoothing (NPRS) and penalized likelihood can be implemented in
-<pkg>ape</pkg>.
+        Non-parametric rate smoothing (NPRS) and penalized likelihood can be implemented in <pkg>ape</pkg>.
       </p>
       <p>
         <i>
           Phylogenetic Inference:
         </i>
-        Maximum likelihood, UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package
-
-<pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
-<view>Genetics</view>
-        task view.
+        Maximum likelihood, UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
+<view>Genetics</view> task view.
       </p>
       <p>
         <i>
           Time series:
         </i>
-        Paleontological time series data can be analyzed using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model) using
-<pkg>paleoTS</pkg>.
+        Paleontological time series data can be analyzed using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model) using <pkg>paleoTS</pkg>.
       </p>
 
       <p>
         <i>
           Tree Simulations:
         </i>
-        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg> and a birth-death process in
-<pkg>geiger</pkg>. Random trees can be generated in
-<pkg>ape</pkg>
-
-        by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>phybase</pkg> can simulate coalescent trees as well.
+        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg> and a birth-death process in <pkg>geiger</pkg>. Random trees can be generated in <pkg>ape</pkg> by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>phybase</pkg> can simulate coalescent trees as well.
       </p>
       <p>
         <i>
@@ -74,42 +52,22 @@
         </i>
         Independent contrasts for continuous characters can be calculated using
 <pkg>ape</pkg> or <pkg>picante</pkg>. Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>Geiger</pkg>.
-<pkg>geiger</pkg>. Brownian motion models can be fit in <pkg>geiger</pkg> and <pkg>ape</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in
-<pkg>geiger</pkg>,
-
-<pkg>ape</pkg>
-        and
-<pkg>ouch</pkg>. <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation,
-<pkg>geiger</pkg>
-        fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
-<pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in
-<pkg>ape</pkg> or <pkg>PHYLOGR</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
+<pkg>geiger</pkg>. Brownian motion models can be fit in <pkg>geiger</pkg> and <pkg>ape</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>, and
+<pkg>ouch</pkg>. <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation, <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
+<pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in <pkg>ape</pkg> or <pkg>PHYLOGR</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>RBrownie</pkg> performs several kinds of analyses of trait evolution for continuous and discrete traits.
-
-       
+<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>RBrownie</pkg> performs several kinds of analyses of trait evolution for continuous and discrete traits. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  
       </p>
       <p>
         <i>
           Trait Simulations
-        </i>: Continuous traits can be simulated using brownian motion in
-<pkg>ouch</pkg>, 
-<pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>picante</pkg>, the Hansen model (a form of the OU) in
-
-<pkg>ouch</pkg>
-        and a speciational model in
-<pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in
-<pkg>geiger</pkg>.  <pkg>phangorn</pkg> can also simulate discrete traits, especially DNA or AA. Both discrete and continuous traits can be simulated under models where rates change through time in
-<pkg>geiger</pkg>. 
+        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>picante</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can also simulate discrete traits, especially DNA or AA. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping.
 </p>
       <p>
         <i>
           Tree Manipulation
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
-
-<pkg>geiger</pkg>. Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using
-<pkg>ape</pkg>. Extinct taxa can be pruned using
-<pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>. Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>.
+<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>. Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>.
       </p>
       
       <p>
@@ -126,13 +84,7 @@
           Tree Plotting and Visualization:
         </i>
 
-        User inputted trees can be plotted using
-<pkg>ape</pkg>,
-<pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>
-        and
-<pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using
-<pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using
-<pkg>ape</pkg>.<pkg>RBrownie</pkg> can show mappings of evolutionary regimes on trees.
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>.<pkg>RBrownie</pkg> can show mappings of evolutionary regimes on trees. <pkg>phytools</pkg> can project a tree into a morphospace. 
       </p>
       
       <p><i>Miscellaneous:</i> <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
@@ -199,6 +151,7 @@
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
   <pkg>PHYLOGR</pkg>
+  <pkg>phytools</pkg>
   <pkg>picante</pkg>
   <pkg>RBrownie</pkg>
   <pkg>scaleboot</pkg>
