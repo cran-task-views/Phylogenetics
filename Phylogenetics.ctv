@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-10-10</version>
+  <version>2011-10-18</version>
 
 <info>
       <p>
@@ -87,6 +87,14 @@
         User trees can be plotted using <pkg>ape</pkg>, <pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>.<pkg>RBrownie</pkg> can show mappings of evolutionary regimes on trees. <pkg>phytools</pkg> can project a tree into a morphospace. 
       </p>
       
+      <p>
+      	<i>
+      		Tree Comparison:
+      	</i>
+      	
+      	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips. <pkg>phybase</pkg> can also calculate tree-tree distances.
+      </p>
+      
       <p><i>Miscellaneous:</i> <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
       </p>
  
@@ -138,6 +146,7 @@
   <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
   <pkg>apTreeshape</pkg>
+  <pkg>distory</pkg>
   <pkg>diversitree</pkg>
   <pkg>caper</pkg>
   <pkg>geiger</pkg>
