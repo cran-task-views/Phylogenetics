@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-10-18</version>
+  <version>2011-11-03</version>
 
 <info>
       <p>
@@ -56,7 +56,7 @@
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation, <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>RBrownie</pkg> performs several kinds of analyses of trait evolution for continuous and discrete traits. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  
+<pkg>ade4</pkg> or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  
       </p>
       <p>
         <i>
@@ -84,7 +84,7 @@
           Tree Plotting and Visualization:
         </i>
 
-        User trees can be plotted using <pkg>ape</pkg>, <pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>.<pkg>RBrownie</pkg> can show mappings of evolutionary regimes on trees. <pkg>phytools</pkg> can project a tree into a morphospace. 
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>ade4</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. 
       </p>
       
       <p>
@@ -151,7 +151,6 @@
   <pkg>caper</pkg>
   <pkg>geiger</pkg>
   <pkg>laser</pkg>
-  <pkg>maticce</pkg>
   <pkg>MCMCglmm</pkg>
   <pkg>ouch</pkg>
   <pkg>OUwie</pkg>
@@ -165,7 +164,6 @@
   <pkg>phylosim</pkg>
   <pkg>phytools</pkg>
   <pkg>picante</pkg>
-  <pkg>RBrownie</pkg>
   <pkg>scaleboot</pkg>
   <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
