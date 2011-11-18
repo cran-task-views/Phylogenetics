@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-11-04</version>
+  <version>2011-11-18</version>
 
 <info>
       <p>
@@ -30,7 +30,7 @@
         <i>
           Phylogenetic Inference:
         </i>
-        Maximum likelihood, UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
+        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees.For more information on importing sequence data, see the
 <view>Genetics</view> task view.
       </p>
       <p>
@@ -51,14 +51,12 @@
           Trait evolution:
         </i>
         Independent contrasts for continuous characters can be calculated using
-<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>Geiger</pkg>.
-<pkg>geiger</pkg>. Brownian motion models can be fit in <pkg>geiger</pkg> and <pkg>ape</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
-<pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>matticce</pkg> uses ouch to search for where a regime transition occurs. In its current implementation, <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
+<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>.
+<pkg>geiger</pkg>. Brownian motion models can be fit in <pkg>geiger</pkg> and <pkg>ape</pkg>. Multiple-rate Brownian motion can be fit in <pkg>motmot</pkg> and RBrownie (currently temporarily removed from CRAN due to compilation issues, though older versions can be downloaded <a href="http://cran.r-project.org/src/contrib/Archive/RBrownie/">here</a>). Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
+<pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>mattice</pkg> uses ouch to search for where a regime transition occurs. In its current implementation, <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (senu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>ade4</pkg>.
-<!-- or <pkg>adephylo</pkg> (<pkg>ade4</pkg> has been deprecated in favor of <pkg>adephylo</pkg>). -->
-Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  
       </p>
       <p>
         <i>
@@ -86,7 +84,7 @@ Correlation between traits using a GLMM can also be investigated using <pkg>MCMC
           Tree Plotting and Visualization:
         </i>
 
-        User trees can be plotted using <pkg>ape</pkg>, <pkg>ade4</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. 
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg> <pkg>pytools</pkg>, <pkg>motmot</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> is specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. 
       </p>
       
       <p>
@@ -97,7 +95,7 @@ Correlation between traits using a GLMM can also be investigated using <pkg>MCMC
       	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips. <pkg>phybase</pkg> can also calculate tree-tree distances.
       </p>
       
-      <p><i>Miscellaneous:</i> <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
+      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
       </p>
  
       <p>
@@ -144,7 +142,7 @@ Correlation between traits using a GLMM can also be investigated using <pkg>MCMC
 </info>
     
 <packagelist>
-  <pkg>ade4</pkg>
+  <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
   <pkg>apTreeshape</pkg>
   <pkg>distory</pkg>
@@ -152,7 +150,9 @@ Correlation between traits using a GLMM can also be investigated using <pkg>MCMC
   <pkg>caper</pkg>
   <pkg>geiger</pkg>
   <pkg>laser</pkg>
+  <pkg>mattice</pkg>
   <pkg>MCMCglmm</pkg>
+  <pkg>motmot</pkg>
   <pkg>ouch</pkg>
   <pkg>OUwie</pkg>
   <pkg>paleoTS</pkg>
@@ -166,6 +166,7 @@ Correlation between traits using a GLMM can also be investigated using <pkg>MCMC
   <pkg>phytools</pkg>
   <pkg>picante</pkg>
   <pkg>scaleboot</pkg>
+  <pkg>treebase</pkg>
   <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
