@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2011-11-18</version>
+  <version>2011-12-20</version>
 
 <info>
       <p>
@@ -71,7 +71,7 @@
       </p>
       
       <p>
-      <i>Community Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, and <pkg>caper</pkg> integrate several tools for using phylogenetics with community ecology.
+      <i>Community Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, and <pkg>caper</pkg> integrate several tools for using phylogenetics with community ecology.
       </p>
  
        <p>
@@ -168,6 +168,7 @@
   <pkg>treebase</pkg>
   <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
+  <pkg>SYNCSA</pkg>
   <pkg>vegan</pkg>
 </packagelist>
 
