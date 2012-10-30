@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2012-02-02</version>
+  <version>2012-10-30</version>
 
 <info>
       <p>
@@ -44,7 +44,7 @@
         <i>
           Tree Simulations:
         </i>
-        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg> and a birth-death process in <pkg>geiger</pkg>. Random trees can be generated in <pkg>ape</pkg> by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>phybase</pkg> can simulate coalescent trees as well. <pkg>paleotree</pkg> can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
+        Trees can be simulated using constant-rate birth-death with various constraints in <pkg>TreeSim</pkg> and a birth-death process in <pkg>geiger</pkg>. Random trees can be generated in <pkg>ape</pkg> by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees). <pkg>paleotree</pkg> can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
       </p>
       <p>
         <i>
@@ -61,13 +61,13 @@
       <p>
         <i>
           Trait Simulations
-        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phybase</pkg> can simulate DNA, <pkg>phangorn</pkg> can simulate DNA or amino acids, and <pkg>phylosim</pkg> can do all these with also insertions and deletions. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. <pkg>pmc</pkg> simulates characters as a way to evaluate model adequacy.
+        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can simulate DNA or amino acids, and <pkg>phylosim</pkg> can do all these with also insertions and deletions. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. <pkg>pmc</pkg> simulates characters as a way to evaluate model adequacy.
 </p>
       <p>
         <i>
           Tree Manipulation
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
-<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4), as does <pkg>phybase</pkg>. Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
+<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
       </p>
       
       <p>
@@ -92,7 +92,7 @@
       		Tree Comparison:
       	</i>
       	
-      	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips. <pkg>phybase</pkg> can also calculate tree-tree distances.
+      	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
       </p>
       
       <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
@@ -158,7 +158,6 @@
   <pkg>paleotree</pkg>
   <pkg>paleoTS</pkg>
   <pkg>phangorn</pkg>
-  <pkg>phybase</pkg>
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
