@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2013-03-20</version>
+  <version>2013-04-12</version>
 
 <info>
       <p>
@@ -56,7 +56,7 @@
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a> uses ouch to search for where a regime transition occurs (it was recently removed from CRAN and will not install from R-forge). <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>auteur</pkg> performs reversible-jump Markov chain Monte Carlo sampling to identify phylogenetically localized shifts in the process of continuous trait evolution. <pkg>pmc</pkg> evaluates the model adequacy of several trait models (from <pkg>geiger</pkg> and <pkg>ouch</pkg>) using Monte Carlo approaches.  <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  <pkg>pmc</pkg> evaluates the model adequacy of several trait models (from <pkg>geiger</pkg> and <pkg>ouch</pkg>) using Monte Carlo approaches.  <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
       </p>
       <p>
         <i>
@@ -148,7 +148,6 @@
   <pkg>adephylo</pkg>
   <pkg priority="core">ape</pkg>
   <pkg>apTreeshape</pkg>
-  <pkg>auteur</pkg>
   <pkg>distory</pkg>
   <pkg>diversitree</pkg>
   <pkg>caper</pkg>
