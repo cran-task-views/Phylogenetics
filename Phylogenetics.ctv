@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2013-04-12</version>
+  <version>2013-04-17</version>
 
 <info>
       <p>
@@ -54,7 +54,7 @@
 <pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>.
 <pkg>geiger</pkg>. Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. Multiple-rate Brownian motion can be fit in <pkg>motmot</pkg> and RBrownie (currently not on CRAN, but older versions can be downloaded <a href="http://cran.r-project.org/src/contrib/Archive/RBrownie/">here</a>). Deviations from Brownian motion can be investigated in <pkg>geiger</pkg>, <pkg>OUwie</pkg>, and <pkg>PVR</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a> uses ouch to search for where a regime transition occurs (it was recently removed from CRAN and will not install from R-forge). <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
-<pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
+<pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg> or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
 <pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.  <pkg>pmc</pkg> evaluates the model adequacy of several trait models (from <pkg>geiger</pkg> and <pkg>ouch</pkg>) using Monte Carlo approaches.  <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
       </p>
@@ -167,7 +167,6 @@
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
-  <pkg>PHYLOGR</pkg>
   <pkg>phylosim</pkg>
   <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
