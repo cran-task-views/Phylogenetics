@@ -2,11 +2,15 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2013-05-21</version>
+  <version>2013-10-12</version>
 
 <info>
       <p>
-        The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees.  This task view describes R packages that implement a variety of different comparative phylogenetic methods.  This is an active research area and much of the information is subject to change.
+        The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees.  This task view describes R packages that implement a variety of different comparative phylogenetic methods.  This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on github, R-forge, or authors' websites.
+      </p>
+      <p>
+      <i>Getting trees into R
+      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
       </p>
       <p>
         <i>
@@ -57,12 +61,12 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a> uses ouch to search for where a regime transition occurs (it was recently removed from CRAN and will not install from R-forge). <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg> or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping.   <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure. <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
       </p>
       <p>
         <i>
           Trait Simulations
-        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can simulate DNA or amino acids, and <pkg>phylosim</pkg> can do all these with also insertions and deletions. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. 
+        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can simulate DNA or amino acids, and <pkg>phylosim</pkg> can do all these with also insertions and deletions. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. <pkg>phylolm</pkg> can simulate continuous or binary traits along a tree.
 </p>
       <p>
         <i>
@@ -158,6 +162,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>HMPTrees</pkg>
   <pkg>iteRates</pkg>
   <pkg>MCMCglmm</pkg>
+  <pkg>metafor</pkg>
   <pkg>ouch</pkg>
   <pkg>OUwie</pkg>
   <pkg>paleotree</pkg>
@@ -166,6 +171,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>phyclust</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
+  <pkg>phylolm</pkg>
   <pkg>phylosim</pkg>
   <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
@@ -187,6 +193,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a>
   <rforge>paleoPhylo</rforge>
   <rforge>rmesquite</rforge>
+  <a href="http://www.christophheibl.de/Rpackages.html">PHYLOCH, LAGOPUS, and PHYLOCLIM packages</a>
   <a href="http://www.r-phylo.org/wiki/Main_Page">Comparative Phylogenetics in R Help Wiki</a>
 </links>
 
