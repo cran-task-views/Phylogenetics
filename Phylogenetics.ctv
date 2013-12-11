@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2013-10-22</version>
+  <version>2013-12-11</version>
 
 <info>
       <p>
@@ -28,7 +28,7 @@
         <i>
           Diversification Analysis:
         </i>
-        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence.
+        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence.
       </p>
       <p>
         <i>
@@ -192,6 +192,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>SYNCSA</pkg>
   <pkg>TESS</pkg>
   <pkg>treebase</pkg>
+  <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
 </packagelist>
