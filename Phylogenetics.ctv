@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2013-12-11</version>
+  <version>2014-02-28</version>
 
 <info>
       <p>
@@ -67,7 +67,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a> uses ouch to search for where a regime transition occurs (it was recently removed from CRAN and will not install from R-forge). <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg> or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure. <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context. <pkg>convevol</pkg> looks for convergent evolution in trait space.
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure. <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
       </p>
       <p>
         <i>
@@ -162,7 +162,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>distory</pkg>
   <pkg>diversitree</pkg>
   <pkg>caper</pkg>
-  <pkg>convevol</pkg>
   <pkg>corHMM</pkg>
   <pkg>DDD</pkg>
   <pkg>evobiR</pkg>
