@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2014-02-28</version>
+  <version>2014-07-10</version>
 
 <info>
       <p>
@@ -10,25 +10,25 @@
       </p>
       <p>
       <i>Getting trees into R
-      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
+      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available, with further extensions in <pkg>phyext</pkg>. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE, <pkg>rdryad</pkg> can pull data from the online data repository Dryad. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
       </p>
  <p>
         <i>
           Utility functions:
         </i>
-        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences).
+        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>BoSSA</pkg> can load sequences from GenBank and BLAST sequences. <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
 
       <p>
         <i>
           Ancestral state reconstruction
-        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees.
+        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees. 
       </p>
       <p>
         <i>
           Diversification Analysis:
         </i>
-        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence.
+        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence. <pkg>BAMMtools</pkg> is an interface to the BAMM program to allow visualization of rate shifts, comparison of diversification models, and other functions. <pkg>DDD</pkg> implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process. <pkg>expoTree</pkg> can calculate the likelihood of a tree under a density dependent model. <pkg>PBD</pkg> can calculate the likelihood of a tree under a protracted speciation model. <pkg>phyloTop</pkg> has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
       </p>
       <p>
         <i>
@@ -41,14 +41,14 @@
         <i>
           Phylogenetic Inference:
         </i>
-        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>.  <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. For more information on importing sequence data, see the
-<view>Genetics</view> task view.
+        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>. <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a>, a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches. <pkg>RADami</pkg> can import RADseq data for use with <a href="http://dereneaton.com/software/pyrad/">pyRAD</a>. <pkg>expands</pkg> can reconstruct phylogenies of tumors and cluster them into populations. <pkg>outbreaker</pkg> can infer transmission trees for diseases, as well as other parameters of disease spread; <pkg>OutbreakTools</pkg> has similar functionality. For more information on importing sequence data, see the
+<view>Genetics</view> task view; <pkg>pegas</pkg> may also be of use.
       </p>
       <p>
         <i>
-          Time series:
+          Time series/Paleontology:
         </i>
-        Paleontological time series data can be analyzed using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model) using <pkg>paleoTS</pkg>.
+        Paleontological time series data can be analyzed using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model) using <pkg>paleoTS</pkg>. <pkg>strap</pkg> can do stratigraphic analysis of phylogenetic trees.
       </p>
 
       <p>
@@ -62,12 +62,12 @@
           Trait evolution:
         </i>
         Independent contrasts for continuous characters can be calculated using
-<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>. <pkg>corHMM</pkg> can look for hidden rates in discrete traits as well as fit correlational models for two or three binary traits (similar to Pagel's old Discrete program) and complex models for multistate traits (similar to Pagel's old Multistate program). Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. Multiple-rate Brownian motion can be fit
-in motmot and RBrownie (both currently not on CRAN, but older versions can be downloaded obtained from the <a href="http://cran.r-project.org/src/contrib/Archive/">archive</a>). Deviations from Brownian motion can be investigated in <pkg>geiger</pkg>, <pkg>OUwie</pkg>, and <pkg>PVR</pkg>. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
-<pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a> uses ouch to search for where a regime transition occurs (it was recently removed from CRAN and will not install from R-forge). <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
+<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>. <pkg>DiscML</pkg> implements a flexible array of models for discrete traits, including approaches to deal with unobservable data, a gamma rate distribution, and custom transition matrices. <pkg>corHMM</pkg> can look for hidden rates in discrete traits as well as fit correlational models for two or three binary traits (similar to Pagel's old Discrete program) and complex models for multistate traits (similar to Pagel's old Multistate program). Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. Multiple-rate Brownian motion can be fit
+in motmot and RBrownie (both currently not on CRAN, but older versions can be downloaded obtained from the <a href="http://cran.r-project.org/src/contrib/Archive/">archive</a>). Deviations from Brownian motion can be investigated in <pkg>geiger</pkg>, <pkg>OUwie</pkg>, and <pkg>PVR</pkg>. <pkg>mvMORPH</pkg> can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
+<pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>maticce</pkg> uses ouch to search for where a regime transition occurs. <pkg>surface</pkg> wraps <pkg>ouch</pkg> to infer shifts in the OU optimum. <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg> or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure. <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context.
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure. <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context. <pkg>MPSEM</pkg> can predict features of one species based on information from related species using phylogenetic eigenvector maps. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a> which can do independent contrasts, the threshold model, and more.
       </p>
       <p>
         <i>
@@ -78,19 +78,24 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
         <i>
           Tree Manipulation
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
-<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
+<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
       
       <p>
-      <i>Community/Microbial Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, <pkg>phylotools</pkg> and <pkg>caper</pkg> integrate several tools for using phylogenetics with community ecology. <pkg>HMPTrees</pkg> and <pkg>GUniFrac</pkg> provide tools for comparing microbial communities.
+      <i>Community/Microbial Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, <pkg>phylotools</pkg>, <pkg>PCPS</pkg>, and <pkg>caper</pkg> integrate several tools for using phylogenetics with community ecology. <pkg>HMPTrees</pkg> and <pkg>GUniFrac</pkg> provide tools for comparing microbial communities. <pkg>betapart</pkg> allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity.
       </p>
  
        <p>
       <i>Phyloclimatic Modeling</i>: <pkg>phyloclim</pkg> integrates several new tools in this area.
       </p>
 
+       <p>
+      <i>Phylogeography</i>: <pkg>phyloland</pkg> implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework. <pkg>jaatha</pkg> can infer demographic parameters for two species with multiple individuals per species.
+      </p>
+
+
  		<p>
- 		<i>Species/Population Delimitation</i>: <pkg>spider</pkg> can use DNA barcoding data to investigate species delimitation and related studies.
+ 		<i>Species/Population Delimitation</i>: <pkg>spider</pkg> can use DNA barcoding data to investigate species delimitation and related studies. <pkg>adhoc</pkg> can estimate an ad hoc distance threshold for a reference library of DNA barcodes.
  		</p>
  
       <p>
@@ -98,7 +103,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
           Tree Plotting and Visualization:
         </i>
 
-        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, and <pkg>ouch</pkg>. <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. 
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree.
       </p>
       
       <p>
@@ -106,10 +111,30 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       		Tree Comparison:
       	</i>
       	
-      	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
+      	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg> and <pkg>Rphylip</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips. <pkg>kdetrees</pkg> implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer. <pkg>dendextend</pkg> can evaluate multiple measures comparing dendrograms.
+      </p>
+
+      <p>
+      	<i>
+      		Taxonomy:
+      	</i>
+      	
+      	<pkg>taxize</pkg> can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling. <pkg>evobiR</pkg> contains functions for making a tree at higher taxonomic levels, downloading a taxonomy tree from NCBI or ITIS, and various other miscellaneous functions (simulations of character evolution, calculating D-statistics, etc.). <pkg>Reol</pkg> can also create taxonomy trees from taxonomies used by EOL. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches.
+      </p>
+
+      <p>
+      	<i>
+      		Gene tree - species tree:
+      	</i>
+      	
+      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <a href="https://code.google.com/p/phybase/">phybase</a> has numerous functions for simulating and analyzing gene trees and species trees, but is no longer on CRAN.
+      </p>
+
+
+      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
       </p>
       
-      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
+      <p><i>Notes:</i> At least ten packages start as phy* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). This can easily lead to confusion, and future package authors are encouraged to consider such overlaps when naming packages. For clarification, <pkg>phytools</pkg> provides a wide array of functions, especially for comparative methods, and is maintained by Liam Revell; <pkg>phylotools</pkg> has functions for building supermatrices and is maintained by Jinlong Zhang. <pkg>phylobase</pkg> implements S4 classes for phylogenetic trees and associated data and is maintained by Francois Michonneau; <a href="https://code.google.com/p/phybase/">phybase</a> has tree utility functions and many functions for  gene tree - species tree questions and is authored by Liang Liu, but no longer appears on CRAN.
       </p>
  
       <p>
@@ -157,38 +182,71 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
     
 <packagelist>
   <pkg>adephylo</pkg>
+  <pkg>adhoc</pkg>
   <pkg priority="core">ape</pkg>
   <pkg>apTreeshape</pkg>
+  <pkg>BAMMtools</pkg>
+  <pkg>betapart</pkg>
+  <pkg>BoSSA</pkg>
+  <pkg>DDD</pkg>
+  <pkg>dendextend</pkg>
+  <pkg>DiscML</pkg>
   <pkg>distory</pkg>
   <pkg>diversitree</pkg>
   <pkg>caper</pkg>
   <pkg>corHMM</pkg>
   <pkg>DDD</pkg>
   <pkg>evobiR</pkg>
+  <pkg>expands</pkg>
+  <pkg>expoTree</pkg>
   <pkg>geiger</pkg>
   <pkg>geomorph</pkg>
   <pkg>GUniFrac</pkg>
   <pkg>HMPTrees</pkg>
+  <pkg>HyPhy</pkg>
   <pkg>iteRates</pkg>
+  <pkg>jaatha</pkg>
+  <pkg>kdetrees</pkg>
+  <pkg>maticce</pkg>
   <pkg>MCMCglmm</pkg>
   <pkg>metafor</pkg>
+  <pkg>MPSEM</pkg>
+  <pkg>mvMORPH</pkg>
   <pkg>ouch</pkg>
+  <pkg>outbreaker</pkg>
+  <pkg>OutbreakTools</pkg>
   <pkg>OUwie</pkg>
   <pkg>paleotree</pkg>
   <pkg>paleoTS</pkg>
+  <pkg>pastis</pkg>
+  <pkg>PBD</pkg>
+  <pkg>PCPS</pkg>
+  <pkg>pegas</pkg>
   <pkg>phangorn</pkg>
   <pkg>phyclust</pkg>
+  <pkg>phyext</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
+  <pkg>phyloland</pkg>
   <pkg>phylolm</pkg>
   <pkg>phylosim</pkg>
   <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
+  <pkg>phyloTop</pkg>
   <pkg>picante</pkg>
   <pkg>PVR</pkg>
+  <pkg>RADami</pkg>
+  <pkg>rdryad</pkg>
+  <pkg>rphast</pkg>
+  <pkg>Rphylip</pkg>
+  <pkg>Reol</pkg>
   <pkg>scaleboot</pkg>
+  <pkg>SigTree</pkg>
   <pkg>spider</pkg>
+  <pkg>strap</pkg>
+  <pkg>surface</pkg>
   <pkg>SYNCSA</pkg>
+  <pkg>taxize</pkg>
   <pkg>TESS</pkg>
   <pkg>treebase</pkg>
   <pkg>TreePar</pkg>
@@ -200,8 +258,8 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 <links>
   <view>Genetics</view>
   <view>Environmetrics</view>
-  <a href="http://bioinformatics.oxfordjournals.org/content/26/1/132.short">maticce</a>
   <rforge>paleoPhylo</rforge>
+  <a href="https://code.google.com/p/phybase/">phybase</a>
   <rforge>rmesquite</rforge>
   <a href="http://www.christophheibl.de/Rpackages.html">PHYLOCH, LAGOPUS, and PHYLOCLIM packages</a>
   <a href="http://www.r-phylo.org/wiki/Main_Page">Comparative Phylogenetics in R Help Wiki</a>
