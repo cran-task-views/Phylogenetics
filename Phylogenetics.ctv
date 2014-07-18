@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2014-07-10</version>
+  <version>2014-07-17</version>
 
 <info>
       <p>
@@ -10,7 +10,7 @@
       </p>
       <p>
       <i>Getting trees into R
-      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available, with further extensions in <pkg>phyext</pkg>. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE, <pkg>rdryad</pkg> can pull data from the online data repository Dryad. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
+      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available, with further extensions in <pkg>phyext</pkg>. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE, <pkg>rdryad</pkg> can pull data from the online data repository Dryad. <pkg>RNeXML</pkg> can read, write, and process metadata for the <a href="http://www.nexml.org">NeXML</a> format. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
       </p>
  <p>
         <i>
@@ -237,6 +237,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>PVR</pkg>
   <pkg>RADami</pkg>
   <pkg>rdryad</pkg>
+  <pkg>RNeXML</pkg>
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
