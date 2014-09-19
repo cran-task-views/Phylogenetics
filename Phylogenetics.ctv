@@ -41,7 +41,7 @@
         <i>
           Phylogenetic Inference:
         </i>
-        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>. <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>scaleboot</pkg> can perform the Shimodaira-Hasegawa test for comparing trees. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a>, a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches. <pkg>RADami</pkg> can import RADseq data for use with <a href="http://dereneaton.com/software/pyrad/">pyRAD</a>. <pkg>expands</pkg> can reconstruct phylogenies of tumors and cluster them into populations. <pkg>outbreaker</pkg> can infer transmission trees for diseases, as well as other parameters of disease spread; <pkg>OutbreakTools</pkg> has similar functionality. For more information on importing sequence data, see the
+        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>. <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a>, a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches. <pkg>RADami</pkg> can import RADseq data for use with <a href="http://dereneaton.com/software/pyrad/">pyRAD</a>. <pkg>expands</pkg> can reconstruct phylogenies of tumors and cluster them into populations. <pkg>outbreaker</pkg> can infer transmission trees for diseases, as well as other parameters of disease spread; <pkg>OutbreakTools</pkg> has similar functionality. For more information on importing sequence data, see the
 <view>Genetics</view> task view; <pkg>pegas</pkg> may also be of use.
       </p>
       <p>
@@ -240,7 +240,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
-  <pkg>scaleboot</pkg>
   <pkg>SigTree</pkg>
   <pkg>spider</pkg>
   <pkg>strap</pkg>
