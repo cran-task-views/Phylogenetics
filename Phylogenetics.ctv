@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2014-12-22</version>
+  <version>2014-12-26</version>
 
 <info>
       <p>
@@ -78,7 +78,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
         <i>
           Tree Manipulation
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
-<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
+<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
       
       <p>
@@ -240,7 +240,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
-  <pkg>SigTree</pkg>
   <pkg>spider</pkg>
   <pkg>strap</pkg>
   <pkg>surface</pkg>
