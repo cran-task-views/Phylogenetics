@@ -207,7 +207,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>expoTree</pkg>
   <pkg>geiger</pkg>
   <pkg>geomorph</pkg>
-  <pkg>ggplot</pkg>
+  <pkg>ggplot2</pkg>
   <pkg>GUniFrac</pkg>
   <pkg>HMPTrees</pkg>
   <pkg>HyPhy</pkg>
