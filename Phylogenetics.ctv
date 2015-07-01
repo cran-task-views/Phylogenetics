@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2015-06-18</version>
+  <version>2015-07-01</version>
 
 <info>
       <p>
@@ -72,7 +72,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       <p>
         <i>
           Trait Simulations
-        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can simulate DNA or amino acids, and <pkg>phylosim</pkg> can do all these with also insertions and deletions. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. <pkg>phylolm</pkg> can simulate continuous or binary traits along a tree.
+        </i>: Continuous traits can be simulated using brownian motion in <pkg>ouch</pkg>, <pkg>geiger</pkg>, <pkg>ape</pkg>, <pkg>picante</pkg>, <pkg>OUwie</pkg>, and <pkg>caper</pkg>, the Hansen model (a form of the OU) in <pkg>ouch</pkg> and <pkg>OUwie</pkg> and a speciational model in <pkg>geiger</pkg>.  Discrete traits can be simulated using a continuous time Markov model in <pkg>geiger</pkg>.  <pkg>phangorn</pkg> can simulate DNA or amino acids. Both discrete and continuous traits can be simulated under models where rates change through time in <pkg>geiger</pkg>. <pkg>phytools</pkg> can simulate discrete characters using stochastic character mapping. <pkg>phylolm</pkg> can simulate continuous or binary traits along a tree.
 </p>
       <p>
         <i>
@@ -236,7 +236,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>PHYLOGR</pkg>
   <pkg>phyloland</pkg>
   <pkg>phylolm</pkg>
-  <pkg>phylosim</pkg>
   <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
   <pkg>phyloTop</pkg>
