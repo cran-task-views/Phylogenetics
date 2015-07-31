@@ -16,7 +16,7 @@
         <i>
           Utility functions:
         </i>
-        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>BoSSA</pkg> can load sequences from GenBank and BLAST sequences. <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
+        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>BoSSA</pkg> can load sequences from GenBank and BLAST sequences. <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
 
       <p>
@@ -251,6 +251,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
+  <pkg>SigTree</pkg>
   <pkg>spider</pkg>
   <pkg>strap</pkg>
   <pkg>surface</pkg>
