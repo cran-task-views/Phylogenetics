@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2015-09-01</version>
+  <version>2015-10-29</version>
 
 <info>
       <p>
@@ -28,7 +28,7 @@
         <i>
           Diversification Analysis:
         </i>
-        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence. <pkg>BAMMtools</pkg> is an interface to the BAMM program to allow visualization of rate shifts, comparison of diversification models, and other functions. <pkg>DDD</pkg> implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process. <pkg>expoTree</pkg> can calculate the likelihood of a tree under a density dependent model. <pkg>PBD</pkg> can calculate the likelihood of a tree under a protracted speciation model. <pkg>phyloTop</pkg> has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
+        Lineage through time plots can be done in <pkg>ape</pkg>.  A simple birth-death model for when you have extant species only (sensu Nee et al. 1994) can be fitted in ape as can survival models and goodness-of-fit tests (as applied to testing of models of diversification). <pkg>TESS</pkg> can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions. Net rates of diversification (sensu Magellon and Sanderson) can be calculated in <pkg>geiger</pkg>. <pkg>diversitree</pkg> implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009). <pkg>TreePar</pkg> estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species. <pkg>caper</pkg> can do the macrocaic test to evaluate the effect of a a trait on diversity. <pkg>apTreeshape</pkg> also has tests for differential diversification (see <a href="http://bioinformatics.oxfordjournals.org/cgi/content/full/22/3/363">description</a>). <pkg>iteRates</pkg> can identify and visualize areas on a tree undergoing differential diversification. <pkg>DDD</pkg> can fit density dependent models as well as models with occasional escape from density-dependence. <pkg>BAMMtools</pkg> is an interface to the BAMM program to allow visualization of rate shifts, comparison of diversification models, and other functions. <pkg>DDD</pkg> implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process. <pkg>expoTree</pkg> can calculate the likelihood of a tree under a density dependent model. <pkg>PBD</pkg> can calculate the likelihood of a tree under a protracted speciation model.
       </p>
       <p>
         <i>
@@ -239,7 +239,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>phylolm</pkg>
   <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
-  <pkg>phyloTop</pkg>
   <pkg>picante</pkg>
   <pkg>pmc</pkg>
   <pkg>PVR</pkg>
