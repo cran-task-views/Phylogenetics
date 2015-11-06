@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2015-10-29</version>
+  <version>2015-11-06</version>
 
 <info>
       <p>
@@ -22,7 +22,7 @@
       <p>
         <i>
           Ancestral state reconstruction
-        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees. 
+        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>markophylo</pkg> can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees. 
       </p>
       <p>
         <i>
@@ -217,6 +217,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>iteRates</pkg>
   <pkg>jaatha</pkg>
   <pkg>kdetrees</pkg>
+  <pkg>markophylo</pkg>
   <pkg>MCMCglmm</pkg>
   <pkg>metafor</pkg>
   <pkg>MPSEM</pkg>
