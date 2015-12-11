@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2015-11-06</version>
+  <version>2015-12-11</version>
 
 <info>
       <p>
@@ -195,15 +195,13 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>caper</pkg>
   <pkg>cati</pkg>
   <pkg>convevol</pkg>
+  <pkg>corHMM</pkg>
   <pkg>DAMOCLES</pkg>
   <pkg>DDD</pkg>
   <pkg>dendextend</pkg>
   <pkg>DiscML</pkg>
   <pkg>distory</pkg>
   <pkg>diversitree</pkg>
-  <pkg>caper</pkg>
-  <pkg>corHMM</pkg>
-  <pkg>DDD</pkg>
   <pkg>evobiR</pkg>
   <pkg>expands</pkg>
   <pkg>expoTree</pkg>
