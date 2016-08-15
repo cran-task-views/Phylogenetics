@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2015-12-11</version>
+  <version>2016-08-16</version>
 
 <info>
       <p>
@@ -63,7 +63,7 @@
         </i>
         Independent contrasts for continuous characters can be calculated using
 <pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>. <pkg>DiscML</pkg> implements a flexible array of models for discrete traits, including approaches to deal with unobservable data, a gamma rate distribution, and custom transition matrices. <pkg>corHMM</pkg> can look for hidden rates in discrete traits as well as fit correlational models for two or three binary traits (similar to Pagel's old Discrete program) and complex models for multistate traits (similar to Pagel's old Multistate program). Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. Multiple-rate Brownian motion can be fit
-in motmot and RBrownie (both currently not on CRAN, but older versions can be downloaded obtained from the <a href="http://cran.r-project.org/src/contrib/Archive/">archive</a>). Deviations from Brownian motion can be investigated in <pkg>geiger</pkg>, <pkg>OUwie</pkg>, and <pkg>PVR</pkg>. <pkg>mvMORPH</pkg> can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
+in motmot and RBrownie (both currently not on CRAN, but older versions can be downloaded obtained from the <a href="http://cran.r-project.org/src/contrib/Archive/">archive</a>). Deviations from Brownian motion can be investigated in <pkg>geiger</pkg> and <pkg>OUwie</pkg>. <pkg>mvMORPH</pkg> can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>surface</pkg> wraps <pkg>ouch</pkg> to infer shifts in the OU optimum; <pkg>bayou</pkg> also allows data-driven selection between different OU models. <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
@@ -240,7 +240,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>phylotools</pkg>
   <pkg>picante</pkg>
   <pkg>pmc</pkg>
-  <pkg>PVR</pkg>
   <pkg>RADami</pkg>
   <pkg>rdryad</pkg>
   <pkg>rncl</pkg>
