@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2016-08-18</version>
+  <version>2016-12-26</version>
 
 <info>
       <p>
@@ -10,7 +10,7 @@
       </p>
       <p>
       <i>Getting trees into R
-      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>phylobase</pkg> and its lighter weight sibling <pkg>rncl</pkg> can use the <a href="http://ncl.sourceforge.net/">Nexus Class Library</a> to read NEXUS, Newick, and other tree formats. <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE, <pkg>rdryad</pkg> can pull data from the online data repository Dryad. <pkg>RNeXML</pkg> can read, write, and process metadata for the <a href="http://www.nexml.org">NeXML</a> format. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>).
+      </i>: Trees in R are usually stored in the S3 phylo class (implemented in <pkg>ape</pkg>), though the S4 phylo4 class (implemented in <pkg>phylobase</pkg>) is also available. <pkg>ape</pkg> can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (i.e., "(human,(chimp,bonobo));"). <pkg>phylobase</pkg> and its lighter weight sibling <pkg>rncl</pkg> can use the <a href="http://ncl.sourceforge.net/">Nexus Class Library</a> to read NEXUS, Newick, and other tree formats. <pkg>treebase</pkg> can search for and load trees from the online tree repository TreeBASE, <pkg>rdryad</pkg> can pull data from the online data repository Dryad. <pkg>RNeXML</pkg> can read, write, and process metadata for the <a href="http://www.nexml.org">NeXML</a> format. PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's <a href="http://www.christophheibl.de/Rpackages.html">website</a>). <pkg>phyext2</pkg> can read and write various tree formats, including simmap formats. <pkg>rotl</pkg> can pull in a synthetic tree and individual study trees from the Open Tree of Life project.
       </p>
  <p>
         <i>
@@ -22,7 +22,7 @@
       <p>
         <i>
           Ancestral state reconstruction
-        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>markophylo</pkg> can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees. 
+        </i>: Continuous characters can be reconstructed using maximum likelihood, generalised least squares or independent contrasts in <pkg>ape</pkg>. Root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models can be reconstructed in <pkg>ouch</pkg>, though ancestral states at the internal nodes are not. Discrete characters can be reconstructed using a variety of Markovian models that parameterize the transition rates among states using <pkg>ape</pkg>. <pkg>markophylo</pkg> can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities. <pkg>phytools</pkg> can do stochastic character mapping of traits on trees.
       </p>
       <p>
         <i>
@@ -82,11 +82,11 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
 <pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
-      
+
       <p>
       <i>Community/Microbial Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, <pkg>phylotools</pkg>, <pkg>PCPS</pkg>, <pkg>caper</pkg>, <pkg>DAMOCLES</pkg>, and <pkg>cati</pkg> integrate several tools for using phylogenetics with community ecology. <pkg>HMPTrees</pkg> and <pkg>GUniFrac</pkg> provide tools for comparing microbial communities. <pkg>betapart</pkg> allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity.
       </p>
- 
+
        <p>
       <i>Phyloclimatic Modeling</i>: <pkg>phyloclim</pkg> integrates several new tools in this area.
       </p>
@@ -99,7 +99,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
  		<p>
  		<i>Species/Population Delimitation</i>: <pkg>spider</pkg> can use DNA barcoding data to investigate species delimitation and related studies. <pkg>adhoc</pkg> can estimate an ad hoc distance threshold for a reference library of DNA barcodes.
  		</p>
- 
+
       <p>
         <i>
           Tree Plotting and Visualization:
@@ -107,12 +107,12 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 
         User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a> to visualize phylogenies.
       </p>
-      
+
       <p>
       	<i>
       		Tree Comparison:
       	</i>
-      	
+
       	Tree-tree distances can be evaluated, and used in additional analyses, in <pkg>distory</pkg> and <pkg>Rphylip</pkg>. <pkg>ape</pkg> can compute tree-tree distances and also create a plot showing two trees with links between associated tips. <pkg>kdetrees</pkg> implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer. <pkg>dendextend</pkg> can evaluate multiple measures comparing dendrograms.
       </p>
 
@@ -120,7 +120,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       	<i>
       		Taxonomy:
       	</i>
-      	
+
       	<pkg>taxize</pkg> can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling. <pkg>evobiR</pkg> contains functions for making a tree at higher taxonomic levels, downloading a taxonomy tree from NCBI or ITIS, and various other miscellaneous functions (simulations of character evolution, calculating D-statistics, etc.). <pkg>Reol</pkg> can also create taxonomy trees from taxonomies used by EOL. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches.
       </p>
 
@@ -128,17 +128,17 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       	<i>
       		Gene tree - species tree:
       	</i>
-      	
-      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <a href="https://code.google.com/p/phybase/">phybase</a> has numerous functions for simulating and analyzing gene trees and species trees, but is no longer on CRAN.
+
+      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <a href="https://code.google.com/p/phybase/">phybase</a> has numerous functions for simulating and analyzing gene trees and species trees, but is no longer on CRAN. <pkg>rmetasim</pkg> can simulate loci and individuals across landscapes using the metasim simulation engine.
       </p>
 
 
       <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
       </p>
-      
+
       <p><i>Notes:</i> At least ten packages start as phy* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). This can easily lead to confusion, and future package authors are encouraged to consider such overlaps when naming packages. For clarification, <pkg>phytools</pkg> provides a wide array of functions, especially for comparative methods, and is maintained by Liam Revell; <pkg>phylotools</pkg> has functions for building supermatrices and is maintained by Jinlong Zhang. <pkg>phylobase</pkg> implements S4 classes for phylogenetic trees and associated data and is maintained by Francois Michonneau; <a href="https://code.google.com/p/phybase/">phybase</a> has tree utility functions and many functions for  gene tree - species tree questions and is authored by Liang Liu, but no longer appears on CRAN.
       </p>
- 
+
       <p>
 
         <b>
@@ -160,7 +160,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
         <li>
           Hansen TF 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351.
         </li>
-        <li>Maddison WP, Midford PE, and Otto SP 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701–710. 
+        <li>Maddison WP, Midford PE, and Otto SP 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701–710.
         </li>
         <li>
           Magallon S, Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780.
@@ -181,7 +181,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
         </ul>
 
 </info>
-    
+
 <packagelist>
   <pkg>adephylo</pkg>
   <pkg>adhoc</pkg>
@@ -232,6 +232,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>pegas</pkg>
   <pkg>phangorn</pkg>
   <pkg>phyclust</pkg>
+  <pkg>phyext2</pkg>
   <pkg>phylobase</pkg>
   <pkg>phyloclim</pkg>
   <pkg>PHYLOGR</pkg>
@@ -244,8 +245,10 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>pmc</pkg>
   <pkg>RADami</pkg>
   <pkg>rdryad</pkg>
+  <pkg>rmetasim</pkg>
   <pkg>rncl</pkg>
   <pkg>RNeXML</pkg>
+  <pkg>rotl</pkg>
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
