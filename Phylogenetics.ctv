@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2016-12-26</version>
+  <version>2017-03-20</version>
 
 <info>
       <p>
@@ -97,7 +97,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 
 
  		<p>
- 		<i>Species/Population Delimitation</i>: <pkg>spider</pkg> can use DNA barcoding data to investigate species delimitation and related studies. <pkg>adhoc</pkg> can estimate an ad hoc distance threshold for a reference library of DNA barcodes.
+ 		<i>Species/Population Delimitation</i>: <pkg>adhoc</pkg> can estimate an ad hoc distance threshold for a reference library of DNA barcodes.
  		</p>
 
       <p>
@@ -253,7 +253,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>Rphylip</pkg>
   <pkg>Reol</pkg>
   <pkg>SigTree</pkg>
-  <pkg>spider</pkg>
   <pkg>strap</pkg>
   <pkg>surface</pkg>
   <pkg>SYNCSA</pkg>
