@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2017-03-20</version>
+  <version>2017-04-09</version>
 
 <info>
       <p>
@@ -105,7 +105,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
           Tree Plotting and Visualization:
         </i>
 
-        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library. 
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library.
       </p>
 
       <p>
@@ -129,11 +129,11 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       		Gene tree - species tree:
       	</i>
 
-      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <a href="https://code.google.com/p/phybase/">phybase</a> has numerous functions for simulating and analyzing gene trees and species trees, but is no longer on CRAN. <pkg>rmetasim</pkg> can simulate loci and individuals across landscapes using the metasim simulation engine.
+      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <pkg>rmetasim</pkg> can simulate loci and individuals across landscapes using the metasim simulation engine.
       </p>
 
 
-      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data. <rforge>rmesquite</rforge> offers a way to call headless <a href="http://mesquiteproject.org/">Mesquite</a> from R, useful for many kinds of analyses. To do the reverse, use <a href="http://mesquiteproject.org/packages/Mesquite.R/MesquiteCallsR/MesquiteR.html">R.Mesquite</a>.
+      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data.
       </p>
 
       <p><i>Notes:</i> At least ten packages start as phy* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). This can easily lead to confusion, and future package authors are encouraged to consider such overlaps when naming packages. For clarification, <pkg>phytools</pkg> provides a wide array of functions, especially for comparative methods, and is maintained by Liam Revell; <pkg>phylotools</pkg> has functions for building supermatrices and is maintained by Jinlong Zhang. <pkg>phylobase</pkg> implements S4 classes for phylogenetic trees and associated data and is maintained by Francois Michonneau; <a href="https://code.google.com/p/phybase/">phybase</a> has tree utility functions and many functions for  gene tree - species tree questions and is authored by Liang Liu, but no longer appears on CRAN.
@@ -241,10 +241,9 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>PHYLOGR</pkg>
   <pkg>phyloland</pkg>
   <pkg>phylolm</pkg>
-  <pkg>phytools</pkg>
   <pkg>phylotools</pkg>
   <pkg>phyloTop</pkg>
-  <pkg>picante</pkg>
+  <pkg>phytools</pkg>
   <pkg>pmc</pkg>
   <pkg>RADami</pkg>
   <pkg>rdryad</pkg>
@@ -273,10 +272,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a>
   <view>Environmetrics</view>
   <rforge>paleoPhylo</rforge>
-  <a href="https://code.google.com/p/phybase/">phybase</a>
-  <rforge>rmesquite</rforge>
   <a href="http://www.christophheibl.de/Rpackages.html">PHYLOCH, LAGOPUS, and PHYLOCLIM packages</a>
-  <a href="http://www.r-phylo.org/wiki/Main_Page">Comparative Phylogenetics in R Help Wiki</a>
 </links>
 
 </CRANTaskView>
