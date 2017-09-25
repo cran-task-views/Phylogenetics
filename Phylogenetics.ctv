@@ -67,7 +67,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>surface</pkg> wraps <pkg>ouch</pkg> to infer shifts in the OU optimum; <pkg>bayou</pkg> also allows data-driven selection between different OU models. <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
 <pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
-<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regresssion models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure.
+<pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regression models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure.
 <pkg>pmc</pkg> evaluates the model adequacy of several trait models (from <pkg>geiger</pkg> and <pkg>ouch</pkg>) using Monte Carlo approaches.
 <pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context. <pkg>MPSEM</pkg> can predict features of one species based on information from related species using phylogenetic eigenvector maps. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a> which can do independent contrasts, the threshold model, and more. <pkg>convevol</pkg> can test for convergent evolution on a phylogeny.
       </p>
@@ -129,7 +129,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       		Gene tree - species tree:
       	</i>
 
-      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also samply histories of gene trees from within family trees. <pkg>rmetasim</pkg> can simulate loci and individuals across landscapes using the metasim simulation engine.
+      	<pkg>HyPhy</pkg> can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also sample histories of gene trees from within family trees. <pkg>rmetasim</pkg> can simulate loci and individuals across landscapes using the metasim simulation engine.
       </p>
 
 
