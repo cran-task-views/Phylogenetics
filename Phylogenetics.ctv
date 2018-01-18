@@ -6,7 +6,7 @@
 
 <info>
       <p>
-        The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees.  This task view describes R packages that implement a variety of different comparative phylogenetic methods.  This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on github, R-forge, or authors' websites.
+        The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees.  This task view describes R packages that implement a variety of different comparative phylogenetic methods.  This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on GitHub, R-Forge, or authors' websites.
       </p>
       <p>
       <i>Getting trees into R
@@ -105,7 +105,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
           Tree Plotting and Visualization:
         </i>
 
-        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library.
+        User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <github>GuangchuangYu/ggtree</github> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library.
       </p>
 
       <p>
@@ -269,7 +269,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
 
 <links>
   <view>Genetics</view>
-  <a href="https://github.com/GuangchuangYu/ggtree">ggtree</a>
+  <github>GuangchuangYu/ggtree</github>
   <view>Environmetrics</view>
   <rforge>paleoPhylo</rforge>
   <a href="http://www.christophheibl.de/Rpackages.html">PHYLOCH, LAGOPUS, and PHYLOCLIM packages</a>
