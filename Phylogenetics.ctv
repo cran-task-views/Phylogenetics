@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2017-12-21</version>
+  <version>2018-01-29</version>
 
 <info>
       <p>
@@ -121,7 +121,7 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
       		Taxonomy:
       	</i>
 
-      	<pkg>taxize</pkg> can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling. <pkg>evobiR</pkg> contains functions for making a tree at higher taxonomic levels, downloading a taxonomy tree from NCBI or ITIS, and various other miscellaneous functions (simulations of character evolution, calculating D-statistics, etc.). <pkg>Reol</pkg> can also create taxonomy trees from taxonomies used by EOL. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches.
+      	<pkg>taxize</pkg> can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling. <pkg>evobiR</pkg> contains functions for making a tree at higher taxonomic levels, downloading a taxonomy tree from NCBI or ITIS, and various other miscellaneous functions (simulations of character evolution, calculating D-statistics, etc.). <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches.
       </p>
 
       <p>
@@ -252,7 +252,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>rotl</pkg>
   <pkg>rphast</pkg>
   <pkg>Rphylip</pkg>
-  <pkg>Reol</pkg>
   <pkg>SigTree</pkg>
   <pkg>strap</pkg>
   <pkg>surface</pkg>
