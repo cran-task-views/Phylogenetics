@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2018-01-29</version>
+  <version>2018-02-21</version>
 
 <info>
       <p>
@@ -16,7 +16,7 @@
         <i>
           Utility functions:
         </i>
-        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>treeplyr</pkg> can use dplyr-style functions (filter, mutate, reorder, etc.) on objects consisting of trees plus associated data. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>BoSSA</pkg> can load sequences from GenBank and BLAST sequences. <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
+        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>treeplyr</pkg> can use dplyr-style functions (filter, mutate, reorder, etc.) on objects consisting of trees plus associated data. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more.
       </p>
 
       <p>
@@ -191,7 +191,6 @@ in motmot and RBrownie (both currently not on CRAN, but older versions can be do
   <pkg>bayou</pkg>
   <pkg>betapart</pkg>
   <pkg>BioGeoBEARS</pkg>
-  <pkg>BoSSA</pkg>
   <pkg>caper</pkg>
   <pkg>cati</pkg>
   <pkg>convevol</pkg>
