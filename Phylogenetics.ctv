@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2018-06-02</version>
+  <version>2018-06-11</version>
 
 <info>
       <p>
@@ -62,15 +62,15 @@
           Trait evolution:
         </i>
         Independent contrasts for continuous characters can be calculated using
-<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>. <pkg>corHMM</pkg> can look for hidden rates in discrete traits as well as fit correlational models for two or three binary traits (similar to Pagel's old Discrete program) and complex models for multistate traits (similar to Pagel's old Multistate program). Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. Multiple-rate Brownian motion can be fit
-in <github>cran/RBrownie</github>. Deviations from Brownian motion can be investigated in <pkg>geiger</pkg> and <pkg>OUwie</pkg>. <pkg>mvMORPH</pkg> can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
+<pkg>ape</pkg>, <pkg>picante</pkg>, or <pkg>caper</pkg> (which also implements the brunch and crunch algorithms). Analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations, can be performed in <pkg>geiger</pkg>. <pkg>corHMM</pkg> can look for hidden rates in discrete traits as well as fit correlational models for two or three binary traits (similar to Pagel's old Discrete program) and complex models for multistate traits (similar to Pagel's old Multistate program). Brownian motion models can be fit in <pkg>geiger</pkg>, <pkg>ape</pkg>, and <pkg>paleotree</pkg>. <pkg>ratematrix</pkg> can fit univariate or multivariate Brownian motion models with one or more rate regimes. Deviations from Brownian motion can be investigated in <pkg>geiger</pkg> and <pkg>OUwie</pkg>. <pkg>mvMORPH</pkg> can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data. Ornstein-Uhlenbeck (OU) models can be fitted in <pkg>geiger</pkg>, <pkg>ape</pkg>,
 <pkg>ouch</pkg> (with multiple means), and <pkg>OUwie</pkg> (with multiple means, rates, and attraction values). <pkg>surface</pkg> wraps <pkg>ouch</pkg> to infer shifts in the OU optimum; <pkg>bayou</pkg> also allows data-driven selection between different OU models. <pkg>geiger</pkg> fits only single-optimum models. Other continuous models, including Pagel's transforms and models with trends, can be fit with <pkg>geiger</pkg>. ANOVA's and MANOVA's in a phylogenetic context can also be implemented in
-<pkg>geiger</pkg>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
+<pkg>geiger</pkg>. Multiple-rate Brownian motion can be fit
+in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Martins) can be implemented in <pkg>ape</pkg>, <pkg>PHYLOGR</pkg>, or <pkg>caper</pkg>. Phylogenetic autoregression (sensu Cheverud et al) and Phylogenetic autocorrelation (Moran's I) can be implemented in
 <pkg>ape</pkg> or--if you wish the significance test of Moran's I to be calculated via a randomization procedure--in
 <pkg>adephylo</pkg>. Correlation between traits using a GLMM can also be investigated using <pkg>MCMCglmm</pkg>. <pkg>phylolm</pkg> can fit phylogenetic linear regression and phylogenetic logistic regression models using a fast algorithm, making it suitable for large trees. <pkg>phytools</pkg> can also investigate rates of trait evolution and do stochastic character mapping. <pkg>metafor</pkg> can perform meta-analyses accounting for phylogenetic structure.
 <pkg>pmc</pkg> evaluates the model adequacy of several trait models (from <pkg>geiger</pkg> and <pkg>ouch</pkg>) using Monte Carlo approaches.
 <pkg>phyreg</pkg> implements the Grafen (1989) phyglogenetic regression.
-<pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context. Disparity through time, and other disparity-related analyses, can be performed with <pkg>dispRity</pkg>.  <pkg>MPSEM</pkg> can predict features of one species based on information from related species using phylogenetic eigenvector maps. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a> which can do independent contrasts, the threshold model, and more. <pkg>convevol</pkg> can test for convergent evolution on a phylogeny.
+<pkg>geomorph</pkg> can do geometric morphometric analysis in a phylogenetic context. Disparity through time, and other disparity-related analyses, can be performed with <pkg>dispRity</pkg>.  <pkg>MPSEM</pkg> can predict features of one species based on information from related species using phylogenetic eigenvector maps. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a> which can do independent contrasts, the threshold model, and more. <pkg>convevol</pkg> and <pkg>windex</pkg> can both test for convergent evolution on a phylogeny.
       </p>
       <p>
         <i>
@@ -133,9 +133,6 @@ in <github>cran/RBrownie</github>. Deviations from Brownian motion can be invest
 
       <p><i>Interactions with other programs:</i>
       <pkg>geiger</pkg> can call PATHd8 through its congruify function. <pkg>ips</pkg> wraps several tree inference and other programs, including MrBayes, Beast, and RAxML, allowing their easy use from within R. <pkg>Rphylip</pkg> wraps <a href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a>, a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more. <pkg>BoSSA</pkg> can use information from various tools to place a query sequence into a reference tree. <pkg>pastis</pkg> can use taxonomic information to make constraints for MrBayes tree searches.
-      </p>
-
-      <p><i>Miscellaneous:</i> <pkg>treebase</pkg> offers ways to download trees from TreeBase, an online repository of phylogenies and phylogenetic data.
       </p>
 
       <p><i>Notes:</i> At least ten packages start as phy* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). This can easily lead to confusion, and future package authors are encouraged to consider such overlaps when naming packages. For clarification, <pkg>phytools</pkg> provides a wide array of functions, especially for comparative methods, and is maintained by Liam Revell; <pkg>phylotools</pkg> has functions for building supermatrices and is maintained by Jinlong Zhang. <pkg>phylobase</pkg> implements S4 classes for phylogenetic trees and associated data and is maintained by Francois Michonneau; <a href="https://code.google.com/p/phybase/">phybase</a> has tree utility functions and many functions for  gene tree - species tree questions and is authored by Liang Liu, but no longer appears on CRAN.
@@ -250,6 +247,7 @@ in <github>cran/RBrownie</github>. Deviations from Brownian motion can be invest
   <pkg>phyreg</pkg>
   <pkg>phytools</pkg>
   <pkg>pmc</pkg>
+  <pkg>ratematrix</pkg>
   <pkg>rdryad</pkg>
   <pkg>rmetasim</pkg>
   <pkg>rncl</pkg>
@@ -270,6 +268,7 @@ in <github>cran/RBrownie</github>. Deviations from Brownian motion can be invest
   <pkg>treeplyr</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
+  <pkg>windex</pkg>
 </packagelist>
 
 
