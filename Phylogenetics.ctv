@@ -81,7 +81,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
         <i>
           Tree Manipulation
         </i>: Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only) are available in
-<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more. <pkg>enveomics</pkg> can prune a tree to keep clade representatives.
+<pkg>geiger</pkg>. <pkg>phytools</pkg> also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees). Rooting, resolving polytomies, dropping of tips, setting of branch lengths including Grafen's method can all be done using <pkg>ape</pkg>. Extinct taxa can be pruned using <pkg>geiger</pkg>. <pkg>phylobase</pkg> offers numerous functions for querying and using trees (S4). Tree rearrangements (NNI and SPR) can be performed with <pkg>phangorn</pkg>. <pkg>paleotree</pkg> has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more. <pkg>enveomics.R</pkg> can prune a tree to keep clade representatives.
       </p>
 
       <p>
@@ -211,7 +211,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>diversitree</pkg>
   <pkg>ecospat</pkg>
   <pkg>entropart</pkg>
-  <pkg>enveomics</pkg>
+  <pkg>enveomics.R</pkg>
   <pkg>evobiR</pkg>
   <pkg>expoTree</pkg>
   <pkg>geiger</pkg>
