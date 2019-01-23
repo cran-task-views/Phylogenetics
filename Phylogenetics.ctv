@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2018-12-05</version>
+  <version>2019-01-23</version>
 
 <info>
       <p>
@@ -41,7 +41,7 @@
         <i>
           Phylogenetic Inference:
         </i>
-        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>. <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches. <pkg>outbreaker</pkg> can infer transmission trees for diseases, as well as other parameters of disease spread; <pkg>OutbreakTools</pkg> can infer parameters of disease spread. For more information on importing sequence data, see the
+        UPGMA, neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction are all implemented in the package <pkg>ape</pkg>. <pkg>phangorn</pkg> can estimate trees using distance, parsimony, and likelihood. <pkg>phyclust</pkg> can cluster sequences. <pkg>phytools</pkg> can build trees using MRP supertree estimation and least squares. <pkg>phylotools</pkg> can build supermatrices for analyses in other software. <pkg>pastis</pkg> can use taxonomic information to make constraints for Bayesian tree searches. <pkg>outbreaker</pkg> can infer transmission trees for diseases, as well as other parameters of disease spread. For more information on importing sequence data, see the
 <view>Genetics</view> task view; <pkg>pegas</pkg> may also be of use.
       </p>
       <p>
@@ -237,7 +237,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>nodiv</pkg>
   <pkg>ouch</pkg>
   <pkg>outbreaker</pkg>
-  <pkg>OutbreakTools</pkg>
   <pkg>OUwie</pkg>
   <pkg>paleotree</pkg>
   <pkg>paleoTS</pkg>
