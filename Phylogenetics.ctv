@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2019-01-29</version>
+  <version>2019-02-14</version>
 
 <info>
       <p>
@@ -85,7 +85,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
       </p>
 
       <p>
-      <i>Community/Microbial Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, <pkg>phylotools</pkg>, <pkg>PCPS</pkg>, <pkg>caper</pkg>, <pkg>DAMOCLES</pkg>, and <pkg>cati</pkg> integrate several tools for using phylogenetics with community ecology. <pkg>HMPTrees</pkg> and <pkg>GUniFrac</pkg> provide tools for comparing microbial communities. <pkg>betapart</pkg> allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity. <pkg>adiv</pkg> can calculate various indices of biodiversity including species, functional and phylogenetic diversity, as well as alpha, beta, and gamma diversities. <pkg>entropart</pkg> can measure and partition diversity based on Tsallis entropy as well as calculate alpha, beta, and gamma diversities. <pkg>ecospat</pkg> can also examine phylogenetic diversity. <pkg>metacoder</pkg> is an R package for handling large taxonomic data sets, like those generated from modern high-throughput sequencing, like metabarcoding.
+      <i>Community/Microbial Ecology</i>: <pkg>picante</pkg>, <pkg>vegan</pkg>, <pkg>SYNCSA</pkg>, <pkg>phylotools</pkg>, <pkg>PCPS</pkg>, <pkg>caper</pkg>, <pkg>DAMOCLES</pkg> integrate several tools for using phylogenetics with community ecology. <pkg>HMPTrees</pkg> and <pkg>GUniFrac</pkg> provide tools for comparing microbial communities. <pkg>betapart</pkg> allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity. <pkg>adiv</pkg> can calculate various indices of biodiversity including species, functional and phylogenetic diversity, as well as alpha, beta, and gamma diversities. <pkg>entropart</pkg> can measure and partition diversity based on Tsallis entropy as well as calculate alpha, beta, and gamma diversities. <pkg>ecospat</pkg> can also examine phylogenetic diversity. <pkg>metacoder</pkg> is an R package for handling large taxonomic data sets, like those generated from modern high-throughput sequencing, like metabarcoding.
       </p>
 
        <p>
@@ -199,7 +199,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>brranching</pkg>
   <pkg>brms</pkg>
   <pkg>caper</pkg>
-  <pkg>cati</pkg>
   <pkg>convevol</pkg>
   <pkg>corHMM</pkg>
   <pkg>DAMOCLES</pkg>
