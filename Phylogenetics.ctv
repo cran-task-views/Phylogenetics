@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2019-02-14</version>
+  <version>2019-03-02</version>
 
 <info>
       <p>
@@ -16,7 +16,7 @@
         <i>
           Utility functions:
         </i>
-        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>treeplyr</pkg> can use dplyr-style functions (filter, mutate, reorder, etc.) on objects consisting of trees plus associated data. <pkg>tidytree</pkg> can convert a tree object in to a tidy data frame and has other tidy approaches to manipulate tree data. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more. <pkg>apex</pkg> can handle multiple gene DNA alignments making their use and analysis for tree inference easier in <pkg>ape</pkg> and <pkg>phangorn</pkg>. <pkg>aphid</pkg> can weight sequences based on a phylogeny and can use hidden Markov models (HMMs) for a variety of purposes including multiple sequence alignment.
+        These packages include functions for manipulating trees or associated data. <pkg>ape</pkg> has functions for randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more. <pkg>phylobase</pkg> has functions for traversing a tree (i.e., getting all descendants from a particular node specified by just two of its descendants). <pkg>geiger</pkg> can prune trees and data to an overlapping set of taxa. <pkg>tidytree</pkg> can convert a tree object in to a tidy data frame and has other tidy approaches to manipulate tree data. <pkg>evobiR</pkg> can do fuzzy matching of names (to allow some differences). <pkg>rphast</pkg> implements an R interface to the PHAST, which can be used for many types of analysis in comparative and evolutionary genomics, such as estimating models of evolution from sequence data, scoring alignments for conservation or acceleration, and predicting elements based on conservation or custom phylogenetic hidden Markov models. <pkg>SigTree</pkg> finds branches that are responsive to some treatment, while allowing correction for multiple comparisons. <pkg>dendextend</pkg> can manipulate dendrograms, including subdividing trees, adding leaves, and more. <pkg>apex</pkg> can handle multiple gene DNA alignments making their use and analysis for tree inference easier in <pkg>ape</pkg> and <pkg>phangorn</pkg>. <pkg>aphid</pkg> can weight sequences based on a phylogeny and can use hidden Markov models (HMMs) for a variety of purposes including multiple sequence alignment.
       </p>
 
       <p>
@@ -274,7 +274,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>treebase</pkg>
   <pkg>treedater</pkg>
   <pkg>TreePar</pkg>
-  <pkg>treeplyr</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
   <pkg>warbleR</pkg>
