@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2019-04-23</version>
+  <version>2019-08-13</version>
 
 <info>
       <p>
@@ -104,7 +104,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
       <p>
         <i>
           Tree Plotting and Visualization:
-        </i> User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <github>GuangchuangYu/ggtree</github> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library. <pkg>ggmuller</pkg> allows plotting a phylogeny along with frequency dynamics. <pkg>warbleR</pkg> can plot spectrograms (of audio recordings) on tips of phylogenies.
+        </i> User trees can be plotted using <pkg>ape</pkg>, <pkg>adephylo</pkg>, <pkg>phylobase</pkg>, <pkg>phytools</pkg>, <pkg>ouch</pkg>, and <pkg>dendextend</pkg>; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). <rforge>paleoPhylo</rforge> and <pkg>paleotree</pkg> are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using <pkg>ape</pkg>. Ancestral state reconstructions can be visualized along branches using <pkg>ape</pkg> and <pkg>paleotree</pkg>. <pkg>phytools</pkg> can project a tree into a morphospace. <pkg>BAMMtools</pkg> can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package <pkg>ggplot2</pkg> can be extended by <github>GuangchuangYu/ggtree</github> to visualize phylogenies. Trees can also be to interactively explored (as dendrograms) using <pkg>idendr0</pkg>. <pkg>phylocanvas</pkg> is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library. <pkg>ggmuller</pkg> allows plotting a phylogeny along with frequency dynamics.
       </p>
 
       <p>
@@ -275,7 +275,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>TreePar</pkg>
   <pkg>TreeSim</pkg>
   <pkg>vegan</pkg>
-  <pkg>warbleR</pkg>
   <pkg>windex</pkg>
 </packagelist>
 
