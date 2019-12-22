@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2019-08-13</version>
+  <version>2019-12-22</version>
 
 <info>
       <p>
@@ -93,7 +93,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
       </p>
 
        <p>
-      <i>Phylogeography / Biogeography</i>: <pkg>phyloland</pkg> implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework. <pkg>jaatha</pkg> can infer demographic parameters for two species with multiple individuals per species. <pkg>diversitree</pkg> implements the GeoSSE method for diversification analyses based on two areas. <pkg>nodiv</pkg> can compare sister species distributions at each node to detect major differences in distribution (Borregaard et al., 2014).
+      <i>Phylogeography / Biogeography</i>: <pkg>phyloland</pkg> implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework. <pkg>jaatha</pkg> can infer demographic parameters for two species with multiple individuals per species. <pkg>diversitree</pkg> implements the GeoSSE method for diversification analyses based on two areas.
       </p>
 
 
@@ -229,7 +229,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>metafor</pkg>
   <pkg>MPSEM</pkg>
   <pkg>mvMORPH</pkg>
-  <pkg>nodiv</pkg>
   <pkg>ouch</pkg>
   <pkg>outbreaker</pkg>
   <pkg>OUwie</pkg>
