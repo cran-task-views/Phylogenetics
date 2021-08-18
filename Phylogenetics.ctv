@@ -2,7 +2,7 @@
   <name>Phylogenetics</name>
   <topic>Phylogenetics, Especially Comparative Methods</topic>
   <maintainer email="omeara.brian@gmail.com">Brian O'Meara</maintainer>
-  <version>2021-02-25</version>
+  <version>2021-08-18</version>
 
 <info>
       <p>
@@ -92,7 +92,7 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
       </p>
 
        <p>
-      <i>Phylogeography / Biogeography</i>: <pkg>phyloland</pkg> implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework. <pkg>jaatha</pkg> can infer demographic parameters for two species with multiple individuals per species. <pkg>diversitree</pkg> implements the GeoSSE method for diversification analyses based on two areas.
+      <i>Phylogeography / Biogeography</i>: <pkg>phyloland</pkg> implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework. <pkg>diversitree</pkg> implements the GeoSSE method for diversification analyses based on two areas.
       </p>
 
 
@@ -217,7 +217,6 @@ in <github>cran/RBrownie</github>. Traditional GLS methods (sensu Grafen or Mart
   <pkg>idendr0</pkg>
   <pkg>ips</pkg>
   <pkg>iteRates</pkg>
-  <pkg>jaatha</pkg>
   <pkg>kdetrees</pkg>
   <pkg>markophylo</pkg>
   <pkg>MCMCglmm</pkg>
