@@ -1,8 +1,8 @@
 ---
 name: Phylogenetics
 topic: Phylogenetics, Especially Comparative Methods
-maintainer: Brian O'Meara
-email: omeara.brian@gmail.com
+maintainer: Orphaned
+email: CRAN-task-views@R-project.org
 version: 2021-12-30
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
