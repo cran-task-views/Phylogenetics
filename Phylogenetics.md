@@ -1,10 +1,10 @@
 ---
 name: Phylogenetics
 topic: Phylogenetics packages in R
-maintainer: Brian O'Meara, William Gearty
-email: omeara.brian@gmail.com, willgearty@gmail.com
+maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo Ballen Chaparro, Hilmar Lapp, Lars Schmitz, Martin R. Smith
+email: willgearty@gmail.com
 version: 2022-07-11
-source: https://github.com/cran-task-views/Spatial/
+source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
 ## Overview
