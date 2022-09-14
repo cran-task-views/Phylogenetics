@@ -3,15 +3,21 @@ name: Phylogenetics
 topic: Phylogenetics packages in R
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo Ballen Chaparro, Hilmar Lapp, Lars Schmitz, Martin R. Smith
 email: willgearty@gmail.com
-version: 2022-07-11
+version: 2022-09-14
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
-## Overview
+# Overview
 
 The history of life unfolds within a phylogenetic context. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees. This task view describes R packages that 1) are useful for the handling and manipulation of phylogenetic trees in R and/or 2) implement a variety of different comparative phylogenetic methods. This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on GitHub, R-Forge, or authors' websites.
 
-Packages are grouped into the following categories:
+If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
+
+# Core packages
+
+# Other packages
+
+Non-core packages are grouped into the following categories below:
 
 1.  **Working with trees in R:** packages dedicated to the handling, manipulation, and visualization of phylogenetic data
 2.  **Building trees in R:** packages for phylogenetic inference and tree simulation
@@ -35,7 +41,7 @@ Branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa paramet
 
 ### Tree visualization
 
-User trees can be plotted using `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")`; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using `r pkg("ape")`. Ancestral state reconstructions can be visualized along branches using `r pkg("ape")` and `r pkg("paleotree")`. `r pkg("phytools")` can project a tree into a morphospace. `r pkg("BAMMtools")` can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package `r pkg("ggplot2")` can be extended by `r github("GuangchuangYu/ggtree")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`. `r pkg("strap")` can also be used to add a geological timescale to a phylogeny, along with stratigraphic ranges. Trees can also be interactively explored (as dendrograms) using `r pkg("idendr0")`. `r pkg("phylocanvas")` is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library. `r pkg("ggmuller")` allows plotting a phylogeny along with frequency dynamics. `r pkg("RPANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
+User trees can be plotted using `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")`; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies. Trees can also be examined (zoomed) and viewed as correlograms using `r pkg("ape")`. Ancestral state reconstructions can be visualized along branches using `r pkg("ape")` and `r pkg("paleotree")`. `r pkg("phytools")` can project a tree into a morphospace. `r pkg("BAMMtools")` can visualize rate shifts calculated by BAMM on a tree. The popular R visualization package `r pkg("ggplot2")` can be extended by `r bioc("ggtree")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`. `r pkg("strap")` can also be used to add a geological timescale to a phylogeny, along with stratigraphic ranges. Trees can also be interactively explored (as dendrograms) using `r pkg("idendr0")`. `r pkg("phylocanvas")` is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library. `r pkg("ggmuller")` allows plotting a phylogeny along with frequency dynamics. `r pkg("RPANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
 
 ### Tree comparison
 
@@ -95,13 +101,7 @@ Paleontological time series data can be analyzed using a likelihood-based framew
 
 See the `r view("Epidemiology")` task view for details about packages useful for epidemiology, including phylogenetic epidemiology.
 
-### Genetics
-
-#### Species and population delimitation
-
-`r pkg("adhoc")` can estimate an ad hoc distance threshold for a reference library of DNA barcodes.
-
-#### Gene tree - species tree
+### Gene tree - species tree
 
 `r pkg("HyPhy")` can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also sample histories of gene trees from within family trees.
 
