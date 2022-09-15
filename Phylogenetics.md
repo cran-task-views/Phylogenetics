@@ -39,6 +39,7 @@ Non-core packages are grouped into the following categories:
 - `r pkg("treebase")` can search for and load trees from the online tree repository TreeBASE.
 - `r pkg("rdryad")` can pull data from the online data repository Dryad.
 - `r pkg("RNeXML")` can read, write, and process metadata for the [NeXML](http://www.nexml.org) format.
+- `r pkg("TreeTools")` can read trees from external files in TNT format and NEXUS format, including extensions to the Nexus format not supported by ape, and metadata from MorphoBank.
 - PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's [website](http://www.christophheibl.de/Rpackages.html) ).
 - `r pkg("phyext2")` can read and write various tree formats, including simmap formats.
 - `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the Open Tree of Life project.
@@ -51,6 +52,7 @@ Non-core packages are grouped into the following categories:
 - `r pkg("ape")` has functions for rooting trees, dropping tips, randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more.
 - `r pkg("phylobase")` has functions for traversing a tree (e.g., getting all descendants from a particular node specified by just two of its descendants).
 - `r pkg("geiger")` can prune trees and data to an overlapping set of taxa. It can be also used to perform branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only). It can also be used to prune extinct taxa.
+- `r pkg("TreeTools")` has functions to quantify and manipulate tree shape and balance, including the application of constraints; and to measure the phylogenetic information content of trees. Rogue identifies wildcard taxa, generating more informative summary trees.
 - `r pkg("tidytree")` can convert a tree object to a tidy data frame and has other tidy approaches to manipulate tree data.
 - `r pkg("evobiR")` can do fuzzy matching of names (to allow some differences).
 - `r pkg("SigTree")` finds branches that are responsive to some treatment, while allowing correction for multiple comparisons.
@@ -58,7 +60,7 @@ Non-core packages are grouped into the following categories:
 - `r pkg("apex")` can handle multiple gene DNA alignments making their use and analysis for tree inference easier in `r pkg("ape")` and `r pkg("phangorn")`.
 - `r pkg("aphid")` can weight sequences based on a phylogeny and can use hidden Markov models (HMMs) for a variety of purposes including multiple sequence alignment.
 - `r pkg("phytools")` also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees).
-- `r pkg("phangorn")` can perform tree rearrangements (NNI and SPR).
+- `r pkg("phangorn")` and `r pkg("TreeSearch")` can perform tree rearrangements (NNI, SPR, and TBR).
 - `r pkg("paleotree")` has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
 
@@ -76,7 +78,7 @@ Non-core packages are grouped into the following categories:
 
 ### Tree comparison
 
-- `r pkg("distory")` and `r pkg("Rphylip")` can be used to evaluate Tree-tree distances can be evaluated.
+- `r pkg("distory")`, `r pkg("Quartet")`, `r pkg("TBRDist")` and `r pkg("TreeDist")` can be used to evaluate tree-tree distances.
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("kdetrees")` implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
@@ -87,7 +89,7 @@ Non-core packages are grouped into the following categories:
 
 - `r pkg("ape")` can be used to perform neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction.
 - `r pkg("phangorn")` can estimate trees using distance (e.g. UPGMA), parsimony, and likelihood.
-- `r pkg("TreeSearch")` can be used to reconstruct phylogenetic trees, interactively search tree space, identify rogue taxa, and map tree space  based on discrete (morphological) data. It can handle inapplicable character states and various optimality criteria and search approaches are implemented.
+- `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, including with inapplicable data, and includes a graphical user interface for detailed analysis of results.
 - `r pkg("phyclust")` can cluster sequences.
 - `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
 - `r pkg("phylotools")` can build supermatrices for analyses in other software.
@@ -121,7 +123,8 @@ Non-core packages are grouped into the following categories:
 - `r pkg("ape")` can reconstruct discrete characters using a variety of Markovian models that parameterize the transition rates among states.
 - `r pkg("markophylo")` can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities.
 - `r pkg("phytools")` can do stochastic character mapping of traits on trees.
-- Ancestral state reconstruction for datasets with multiple observations per species and/or missing data can be performed using `r pkg("Rphylopars")`.
+- `r pkg("Rphylopars")` can perform ancestral state reconstruction for datasets with multiple observations per species and/or missing data.
+- `r pkg("TreeSearch")` can perform mapping of characters under parsimony, with an allowance for inapplicable data.
 
 ### Trait evolution
 
@@ -180,6 +183,10 @@ Non-core packages are grouped into the following categories:
 - `r pkg("RPANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
 
 ## Phylogenetics in specific fields
+
+### Morphometrics
+
+- `r pkg("geomorph")` and `r pkg("RRPP") may be used to evaluate evolutionary trends in multivariate phenotypes. Available methods include phylogenetic linear models (phylogenetic anova/regression, etc.), phylogenetic partial least squares, comparing rates of phenotypic evolution, phylogenetic integration, and phylogenetic modularity. Additionally, ordination approaches include both phylogenetic PCA, and phylogenetically-aligned components analysis (PACA).
 
 ### Time series and paleontology
 
