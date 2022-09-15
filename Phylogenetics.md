@@ -9,16 +9,16 @@ source: https://github.com/cran-task-views/Phylogenetics/
 
 # Overview
 
-The history of life unfolds within a phylogenetic context, and phylogenetic trees are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along phylogenetic trees. This task view describes R packages that 1) are useful for the handling and manipulation of phylogenetic trees and/or 2) implement a variety of different comparative phylogenetic methods. This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on GitHub, R-Forge, or authors' websites. Another important note is that at least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). Users are encouraged to read and distinguish carefully between the packages that are listed below.
+The history of life unfolds within a phylogenetic context, and phylogenetic trees are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes the plethora of R packages that 1) are useful for the handling and manipulation of phylogenetic trees and/or 2) implement a variety of different comparative phylogenetic methods. This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on GitHub, R-Forge, or authors' websites. Another important note is that at least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). Users are encouraged to read and distinguish carefully between the names of the packages that are listed below.
 
 If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
 
 # Core packages
 
-- `r pkg("ape", priority = "core")`
-- `r pkg("phylobase", priority = "core")`
-- `r pkg("geiger", priority = "core")`
-- `r pkg("phytools", priority = "core")`
+- `r pkg("ape", priority = "core")` implements the S3 phylo class which is commonly used to store phylogenetic trees in R. It has numerous methods for reading, writing, and plotting trees; manipulating and building trees in R; and performing phylogenetic comparative analyses. These methods are used as a framework for many other phylogenetics R packages.
+- `r pkg("phylobase", priority = "core")` implements the S4 phylo4 class which combines phylogenetic trees and comparative data. While not used as commonly as the S3 phylo class, this new class is gaining traction among newer packages that implement phylogenetic comparative methods (e.g., `r pkg("adephylo")` and `r pkg("phylosignal")`).
+- `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It also has several auxiliary functions that are often used by other packages.
+- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative methods and visualizing, manipulating, reading or writing, and even inferring phylogenetic trees.
 
 # Other packages
 
