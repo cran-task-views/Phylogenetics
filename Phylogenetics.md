@@ -40,7 +40,8 @@ Non-core packages are grouped into the following categories:
 - `r pkg("rdryad")` can pull data from the online data repository Dryad.
 - `r pkg("RNeXML")` can read, write, and process metadata for the [NeXML](http://www.nexml.org) format.
 - `r pkg("TreeTools")` can read trees from external files in TNT format and NEXUS format, including extensions to the Nexus format not supported by ape, and metadata from MorphoBank.
-- PHYLOCH can load trees from BEAST, MrBayes, and other phylogenetics programs (PHYLOCH is only available from the author's [website](http://www.christophheibl.de/Rpackages.html) ).
+- `r pkg("ips")` can load trees from BEAST, MrBayes, and other phylogenetics programs. This package can be used to parse the node support and other values from BEAST or MrBayes output.
+- `r pkg("phylotate")` can read and write APE-compatible phylogenetic trees in NEXUS and Newick formats, while preserving annotations.
 - `r pkg("phyext2")` can read and write various tree formats, including simmap formats.
 - `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the Open Tree of Life project.
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
@@ -63,18 +64,21 @@ Non-core packages are grouped into the following categories:
 - `r pkg("phangorn")` and `r pkg("TreeSearch")` can perform tree rearrangements (NNI, SPR, and TBR).
 - `r pkg("paleotree")` has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
+- `r pkg("castor")` can be used to manipulate extremely large trees (up to millions of tips).
 
 ### Tree visualization
 
 - `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). Trees can be examined (zoomed) and viewed as correlograms using `r pkg("ape")`.
 - `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
 - `r pkg("phytools")` can project a tree into a morphospace.
+- `r github("heibl/viper")` can be used to annotate phylogenies with branch support, HPD intervals, and more.
 - The popular R visualization package `r pkg("ggplot2")` can be extended by `r bioc("ggtree")` and `r bioc("ggtreeExtra")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`.
 - `r pkg("strap")` can be used to add a geological timescale to a phylogeny, along with stratigraphic ranges.
 - `r pkg("idendr0")` can be used to interactively explore trees (as dendrograms).
 - `r pkg("phylocanvas")` is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library.
 - `r pkg("ggmuller")` allows plotting a phylogeny along with frequency dynamics.
 - `r pkg("RPANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
+- `r pkg("diversitree")` has an unexported function called "plot2.phylo()" which allows for the production of very lightweight PDF outputs of speciose trees (can be called via `diversitree:::plot2.phylo()`).
 
 ### Tree comparison
 
@@ -125,6 +129,7 @@ Non-core packages are grouped into the following categories:
 - `r pkg("phytools")` can do stochastic character mapping of traits on trees.
 - `r pkg("Rphylopars")` can perform ancestral state reconstruction for datasets with multiple observations per species and/or missing data.
 - `r pkg("TreeSearch")` can perform mapping of characters under parsimony, with an allowance for inapplicable data.
+- `r pkg("castor")` can be used reconstruct continuous or discrete characters on extremely large trees.
 
 ### Trait evolution
 
@@ -181,6 +186,8 @@ Non-core packages are grouped into the following categories:
 - `r pkg("PBD")` can calculate the likelihood of a tree under a protracted speciation model.
 - `r pkg("phyloTop")` has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
 - `r pkg("RPANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
+- `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the “equal splits” (ES) measure.
+- `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
 
 ## Phylogenetics in specific fields
 
@@ -236,7 +243,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 - `r pkg("ape")` can call [PhyML](http://www.atgc-montpellier.fr/phyml/), [Clustal](http://www.clustal.org/), [T-Coffee](https://tcoffee.crg.eu/), and [Muscle](https://www.drive5.com/muscle/) through various functions.
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
-- `r pkg("ips")` wraps several tree inference and other programs, including MrBayes, Beast, and RAxML, allowing their easy use from within R.
+- `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, RAxML, PartitionFinder, and MAFFT, allowing their easy use from within R.
 - `r pkg("Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
 - `r pkg("BoSSA")` can use information from various tools to place a query sequence into a reference tree.
 - `r pkg("pastis")` can use taxonomic information to make constraints for MrBayes tree searches.
@@ -260,6 +267,3 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Nee S, May RM, Harvey PH 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311.
 -   Pagel M 1999 Inferring the historical patterns of biological evolution. Nature 401, 877-884
 -   Pybus OG, Harvey PH 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272.
-
-### Links
--   [PHYLOCH, LAGOPUS, and PHYLOCLIM packages](http://www.christophheibl.de/Rpackages.html)
