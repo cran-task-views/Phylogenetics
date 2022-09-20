@@ -9,7 +9,7 @@ source: https://github.com/cran-task-views/Phylogenetics/
 
 # Overview
 
-The history of life unfolds within a phylogenetic context, and phylogenetic trees (often shortened to "trees") are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes the plethora of R packages that 1) are useful for the handling and manipulation of phylogenetic trees and/or 2) implement a variety of different comparative phylogenetic methods. This is an active research area and much of the information is subject to change. One thing to note is that many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and have not been put on CRAN yet. Such packages may be found on GitHub, R-Forge, [Bioconductor](https://bioconductor.org/packages/release/BiocViews.html#___Phylogenetics), or authors' websites. Another important note is that at least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase). Users are encouraged to read and distinguish carefully between the names of the packages that are listed below.
+The history of life unfolds within a phylogenetic context, and phylogenetic trees (often shortened to "trees") are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes R packages that (i) facilitate the handling, manipulation and analysis of phylogenetic trees; (ii) implement comparative phylogenetic methods; (iii) apply phylogenetic methods to specific disciplines. This is an active research area and much of the information is subject to change. Many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and are not yet available on CRAN. Such packages may be found on GitHub, R-Forge, [Bioconductor](https://bioconductor.org/packages/release/BiocViews.html#___Phylogenetics), or authors' websites. At least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase); users are encouraged to read and distinguish carefully between package names.
 
 If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
 
@@ -36,24 +36,25 @@ Non-core packages are grouped into the following categories:
 
 - `r pkg("ape")` can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (e.g., "(human,(chimp,bonobo));").
 - `r pkg("phylobase")` and its lighter weight sibling `r pkg("rncl")` can use the [Nexus Class Library](http://ncl.sourceforge.net/) to read NEXUS, Newick, and other tree formats.
-- `r pkg("treebase")` can search for and load trees from the online tree repository TreeBASE.
-- `r pkg("rdryad")` can pull data from the online data repository Dryad.
+- `r pkg("treebase")` can search for and load trees from the online tree repository [TreeBASE](https://www.treebase.org/treebase-web/home.html).
+- `r pkg("rdryad")` can pull data from the online data repository [Dryad](https://datadryad.org/stash).
 - `r pkg("RNeXML")` can read, write, and process metadata for the [NeXML](http://www.nexml.org) format.
-- `r pkg("TreeTools")` can read trees from external files in TNT format and NEXUS format, including extensions to the Nexus format not supported by ape, and metadata from MorphoBank.
-- `r pkg("ips")` can load trees from BEAST, MrBayes, and other phylogenetics programs. This package can be used to parse the node support and other values from BEAST or MrBayes output.
-- `r pkg("phylotate")` can read and write APE-compatible phylogenetic trees in NEXUS and Newick formats, while preserving annotations.
+- `r pkg("TreeTools")` can read trees from external files in [TNT](https://cladistics.org/tnt/) format and NEXUS format, including extensions to the Nexus format not supported by `r pkg("ape")`, and metadata from [MorphoBank](https://morphobank.org/).
+- `r pkg("ips")` can load trees from [BEAST](https://beast.community/), [MrBayes](http://nbisweden.github.io/MrBayes/), and other phylogenetics programs. This package can be used to parse the node support and other values from BEAST or MrBayes output.
+- `r pkg("phylotate")` can read and write `r pkg("ape")`-compatible phylogenetic trees in NEXUS and Newick formats, while preserving annotations.
 - `r pkg("phyext2")` can read and write various tree formats, including simmap formats.
-- `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the Open Tree of Life project.
+- `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the [Open Tree of Life](https://tree.opentreeoflife.org/) project.
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
 - `r pkg("phylogram")` can convert Newick files into dendrogram objects (see `r pkg("dendrogram")` for the manipulation of such objects).
 - `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
 
 ### Tree manipulation
 
-- `r pkg("ape")` has functions for rooting trees, dropping tips, randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from GenBank, and many more.
+- `r pkg("ape")` has functions for rooting trees, dropping tips, randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and many more.
 - `r pkg("phylobase")` has functions for traversing a tree (e.g., getting all descendants from a particular node specified by just two of its descendants).
 - `r pkg("geiger")` can prune trees and data to an overlapping set of taxa. It can be also used to perform branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only). It can also be used to prune extinct taxa.
-- `r pkg("TreeTools")` has functions to quantify and manipulate tree shape and balance, including the application of constraints; and to measure the phylogenetic information content of trees. Rogue identifies wildcard taxa, generating more informative summary trees.
+- `r pkg("TreeTools")` has functions to quantify and manipulate tree shape and balance, including the application of constraints; and to measure the phylogenetic information content of trees.
+- `r pkg("Rogue")` identifies wildcard taxa, generating more informative summary trees.
 - `r pkg("tidytree")` can convert a tree object to a tidy data frame and has other tidy approaches to manipulate tree data.
 - `r pkg("evobiR")` can do fuzzy matching of names (to allow some differences).
 - `r pkg("SigTree")` finds branches that are responsive to some treatment, while allowing correction for multiple comparisons.
@@ -82,7 +83,8 @@ Non-core packages are grouped into the following categories:
 
 ### Tree comparison
 
-- `r pkg("distory")`, `r pkg("Quartet")`, `r pkg("TBRDist")` and `r pkg("TreeDist")` can be used to evaluate tree-tree distances.
+- `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")` and `r pkg("TBRDist")` can compute distances between trees.
+- `r pkg("TreeDist")` and `r pkg("treespace")` can plot and evaluate low-dimensional mappings of tree sets ("tree spaces").
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("kdetrees")` implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
@@ -122,9 +124,8 @@ Non-core packages are grouped into the following categories:
 
 ### Ancestral state reconstruction
 
-- `r pkg("ape")` can reconstructe continuous characters using maximum likelihood, generalised least squares, or independent contrasts.
+- `r pkg("ape")` can reconstructe continuous characters using maximum likelihood, generalised least squares, or independent contrasts; and can reconstruct discrete characters using a variety of Markovian models that parameterize the transition rates among states.
 - `r pkg("ouch")` can be used to reconstruct root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models, though ancestral states at the internal nodes are not.
-- `r pkg("ape")` can reconstruct discrete characters using a variety of Markovian models that parameterize the transition rates among states.
 - `r pkg("markophylo")` can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities.
 - `r pkg("phytools")` can do stochastic character mapping of traits on trees.
 - `r pkg("Rphylopars")` can perform ancestral state reconstruction for datasets with multiple observations per species and/or missing data.
@@ -193,7 +194,7 @@ Non-core packages are grouped into the following categories:
 
 ### Morphometrics
 
-- `r pkg("geomorph")` and `r pkg("RRPP") may be used to evaluate evolutionary trends in multivariate phenotypes. Available methods include phylogenetic linear models (phylogenetic anova/regression, etc.), phylogenetic partial least squares, comparing rates of phenotypic evolution, phylogenetic integration, and phylogenetic modularity. Additionally, ordination approaches include both phylogenetic PCA, and phylogenetically-aligned components analysis (PACA).
+- `r pkg("geomorph")` and `r pkg("RRPP")` may be used to evaluate evolutionary trends in multivariate phenotypes. Available methods include phylogenetic linear models (phylogenetic anova/regression, etc.), phylogenetic partial least squares, comparing rates of phenotypic evolution, phylogenetic integration, and phylogenetic modularity. Additionally, ordination approaches include both phylogenetic PCA, and phylogenetically-aligned components analysis (PACA).
 
 ### Time series and paleontology
 
@@ -215,7 +216,7 @@ Non-core packages are grouped into the following categories:
 
 ### Phyloclimatic modeling
 
-- `r pkg("phyloclim")` integrates several new tools in this area.
+- `r pkg("phyloclim")` integrates several tools for phyloclimatic modeling.
 
 ### Phylogeography and biogeography
 
@@ -243,7 +244,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 - `r pkg("ape")` can call [PhyML](http://www.atgc-montpellier.fr/phyml/), [Clustal](http://www.clustal.org/), [T-Coffee](https://tcoffee.crg.eu/), and [Muscle](https://www.drive5.com/muscle/) through various functions.
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
-- `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, RAxML, PartitionFinder, and MAFFT, allowing their easy use from within R.
+- `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/), [PartitionFinder](https://www.robertlanfear.com/partitionfinder/), and [MAFFT](https://mafft.cbrc.jp/alignment/software/), allowing their easy use from within R.
 - `r pkg("Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
 - `r pkg("BoSSA")` can use information from various tools to place a query sequence into a reference tree.
 - `r pkg("pastis")` can use taxonomic information to make constraints for MrBayes tree searches.
