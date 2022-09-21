@@ -107,6 +107,7 @@ Non-core packages are grouped into the following categories:
 
 - `r pkg("ape")` implements non-parametric rate smoothing (NPRS) and penalized likelihood.
 - `r pkg("geiger")` can do congruification to stretch a source tree to match a specified standard tree.
+- `r github("evolucionario/cladedate")` generates empirical calibration information from the fossil record.
 - `r pkg("treedater")` implements various clock models, ways to assess confidence, and detecting outliers.
 - `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.  
 
