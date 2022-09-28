@@ -233,6 +233,8 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 ### Gene tree - species tree
 
 - `r pkg("HyPhy")` can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also sample histories of gene trees from within family trees.
+- `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
+- `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model
 
 ## Other useful packages and miscellany
 
