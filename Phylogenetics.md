@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics packages in R
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham
 email: willgearty@gmail.com
-version: 2022-09-14
+version: 2022-10-04
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -16,10 +16,13 @@ If you have any questions, feel free to reach out to the task view maintainers o
 ## Scope
 ### Core packages
 
-- `r pkg("ape", priority = "core")` implements the S3 phylo class which is commonly used to store phylogenetic trees in R. It has numerous methods for reading, writing, and plotting trees; manipulating and building trees in R; and performing phylogenetic comparative analyses. These methods are used as a framework for many other phylogenetics R packages.
+- `r pkg("ape", priority = "core")` implements the S3 phylo class which is commonly used to store phylogenetic trees in R. It is commonly used for reading, writing, and visualizing trees in the Newick/Phylip and NEXUS formats. It also has many functions for manipulating trees (e.g., rooting trees, dropping tips, randomly resolving polytomies), inferring trees (e.g., neighbour joining, bio-nj, and fast ME methods), and performing phylogenetic comparative analyses (e.g., reconstructing discrete and continuous characters, fitting basic models of trait evolution and diversification). It can also be used to generate random trees, pull in data from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and create lineage through time and correlogram plots.
+
 - `r pkg("phylobase", priority = "core")` implements the S4 phylo4 class which combines phylogenetic trees and comparative data. While not used as commonly as the S3 phylo class, this new class is gaining traction among newer packages that implement phylogenetic comparative methods (e.g., `r pkg("adephylo")` and `r pkg("phylosignal")`).
-- `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It also has several auxiliary functions that are often used by other packages.
-- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative methods and visualizing, manipulating, reading or writing, and even inferring phylogenetic trees.
+
+- `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It is most commonly used to fit and compare various models of discrete and continuous trait evolution (e.g., Brownian motion, Ornstein-Uhlenbeck, Pagel's transforms, and models with trends). It also is commonly used to simulate phylogenies and the evolution of discrete and continuous characters. It also has several auxiliary functions that are often used by other packages.
+
+- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative methods and visualizing (e.g., projecting into a morphospace), manipulating (e.g., branch length scaling and transformations, adding tips, finding subtrees), reading or writing, and even inferring phylogenetic trees.
 
 ### Tasks
 
@@ -35,7 +38,6 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Getting trees into R
 
-- `r pkg("ape")` can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (e.g., "(human,(chimp,bonobo));").
 - `r pkg("phylobase")` and its lighter weight sibling `r pkg("rncl")` can use the [Nexus Class Library](http://ncl.sourceforge.net/) to read NEXUS, Newick, and other tree formats.
 - `r pkg("treebase")` can search for and load trees from the online tree repository [TreeBASE](https://www.treebase.org/treebase-web/home.html).
 - `r pkg("RNeXML")` can read, write, and process metadata for the [NeXML](http://www.nexml.org) format.
@@ -51,7 +53,6 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Tree manipulation
 
-- `r pkg("ape")` has functions for rooting trees, dropping tips, randomly resolving polytomies, creating branch lengths, getting information about tree size or other properties, pulling in data from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and many more.
 - `r pkg("phylobase")` has functions for traversing a tree (e.g., getting all descendants from a particular node specified by just two of its descendants).
 - `r pkg("geiger")` can prune trees and data to an overlapping set of taxa. It can be also used to perform branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only). It can also be used to prune extinct taxa.
 - `r pkg("TreeTools")` has functions to quantify and manipulate tree shape and balance, including the application of constraints; and to measure the phylogenetic information content of trees.
@@ -62,7 +63,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
 - `r pkg("apex")` can handle multiple gene DNA alignments making their use and analysis for tree inference easier in `r pkg("ape")` and `r pkg("phangorn")`.
 - `r pkg("aphid")` can weight sequences based on a phylogeny and can use hidden Markov models (HMMs) for a variety of purposes including multiple sequence alignment.
-- `r pkg("phytools")` also allows branch length scaling, as well as several tree transformations (adding tips, finding subtrees).
 - `r pkg("phangorn")` and `r pkg("TreeSearch")` can perform tree rearrangements (NNI, SPR, and TBR).
 - `r pkg("paleotree")` has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
@@ -70,9 +70,8 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Tree visualization
 
-- `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). Trees can be examined (zoomed) and viewed as correlograms using `r pkg("ape")`.
+- `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.).
 - `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
-- `r pkg("phytools")` can project a tree into a morphospace.
 - `r github("heibl/viper")` can be used to annotate phylogenies with branch support, HPD intervals, and more.
 - The popular R visualization package `r pkg("ggplot2")` can be extended by `r bioc("ggtree")` and `r bioc("ggtreeExtra")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`.
 - `r pkg("strap")` can be used to add a geological timescale to a phylogeny, along with stratigraphic ranges.
@@ -94,7 +93,6 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Phylogenetic inference
 
-- `r pkg("ape")` can be used to perform neighbour joining, bio-nj and fast ME methods of phylogenetic reconstruction.
 - `r pkg("phangorn")` can estimate trees using distance (e.g. UPGMA), parsimony, and likelihood.
 - `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, including with inapplicable data, and includes a graphical user interface for detailed analysis of results.
 - `r pkg("phyclust")` can cluster sequences.
@@ -114,24 +112,20 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
 
-
 ### Tree simulations
 
 - `r pkg("TreeSim")` can be used to simulate trees using constant-rate birth-death with various constraints.
 - `r pkg("geiger")` can be used to simulate trees under a birth-death process.
-- `r pkg("ape")` can be used to generate random trees by random splitting of edges (for non-parametric trees) or random clustering of tips (for coalescent trees).
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
 - `r pkg("paleobuddy")` presents a flexible interface to simulate a wide array of user-defined diversification dynamics, including environmental-dependence.
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
 
-
 ## Comparative phylogenetic methods
 
 ### Ancestral state reconstruction
 
-- `r pkg("ape")` can reconstructe continuous characters using maximum likelihood, generalised least squares, or independent contrasts; and can reconstruct discrete characters using a variety of Markovian models that parameterize the transition rates among states.
 - `r pkg("ouch")` can be used to reconstruct root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models, though ancestral states at the internal nodes are not.
 - `r pkg("markophylo")` can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities.
 - `r pkg("phytools")` can do stochastic character mapping of traits on trees.
@@ -143,12 +137,11 @@ Packages within the task view fall within one or more of the following task cate
 
 - `r pkg("ape")`, `r pkg("picante")`, or `r pkg("caper")` can be used to calculate independent contrasts for continuous characters. `r pkg("caper")` also implements the brunch and crunch algorithms.
 - `r pkg("geiger")` can be used to perform analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations.
-- `r pkg("geiger")`, `r pkg("ape")`, `r pkg("paleotree")`, and `r pkg("motmot")` can be used to fit Brownian motion models.
+- `r pkg("geiger")`, `r pkg("paleotree")`, and `r pkg("motmot")` can be used to fit Brownian motion models.
 - `r github("cran/RBrownie")` can fit multiple-rate Brownian motion models.
 - `r pkg("geiger")` and `r pkg("OUwie")` can be used to investigate deviations from Brownian motion.
-- `r pkg("geiger")` can be used to fit other continuous models, including Pagel's transforms and models with trends.
 - `r pkg("mvMORPH")` can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data.
-- `r pkg("geiger")`, `r pkg("ape")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
+- `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
 - `r pkg("motmot")` can be used to fit continuous models that change rate or mode at specific time(s).
 - `r pkg("Rphylopars")` can be used to fit continuous models such as those described above to datasets with multiple observations per species and/or missing data.
 - `r pkg("geiger")` implements ANOVA's and MANOVA's in a phylogenetic context.
@@ -158,7 +151,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("MCMCglmm")` can be used to assess correlation between traits using a GLMM.
 - `r pkg("phylolm")` can fit phylogenetic linear regression and phylogenetic logistic regression models using a fast algorithm, making it suitable for large trees.
 - `r pkg("brms")` can examine correlations between continuous and discrete traits, and can incorporate multiple measurements per species.
-- `r pkg("phytools")` can also investigate rates of trait evolution and do stochastic character mapping.
+- `r pkg("phytools")` can also investigate rates of trait evolution.
 - `r pkg("metafor")` can perform meta-analyses accounting for phylogenetic structure.
 - `r pkg("pmc")` evaluates the model adequacy of several trait models (from `r pkg("geiger")` and `r pkg("ouch")`) using Monte Carlo approaches.
 - `r pkg("phyreg")` implements the Grafen (1989) phyglogenetic regression.
@@ -180,7 +173,6 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Diversification analysis
 
-- `r pkg("ape")` can be used to create lineage through time plots.
 - `r pkg("ape")` can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
 - `r pkg("TESS")` can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions.
 - `r pkg("geiger")` can calculate net rates of diversification (sensu Magellon and Sanderson).
