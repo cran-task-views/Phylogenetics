@@ -7,22 +7,23 @@ version: 2022-09-14
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
-# Overview
+## Overview
 
 The history of life unfolds within a phylogenetic context, and phylogenetic trees (often shortened to "trees") are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes R packages that (i) facilitate the handling, manipulation and analysis of phylogenetic trees; (ii) implement comparative phylogenetic methods; (iii) apply phylogenetic methods to specific disciplines. This is an active research area and much of the information is subject to change. Many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and are not yet available on CRAN. Such packages may be found on GitHub, R-Forge, [Bioconductor](https://bioconductor.org/packages/release/BiocViews.html#___Phylogenetics), or authors' websites. At least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase); users are encouraged to read and distinguish carefully between package names.
 
 If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
 
-# Core packages
+## Scope
+### Core packages
 
 - `r pkg("ape", priority = "core")` implements the S3 phylo class which is commonly used to store phylogenetic trees in R. It has numerous methods for reading, writing, and plotting trees; manipulating and building trees in R; and performing phylogenetic comparative analyses. These methods are used as a framework for many other phylogenetics R packages.
 - `r pkg("phylobase", priority = "core")` implements the S4 phylo4 class which combines phylogenetic trees and comparative data. While not used as commonly as the S3 phylo class, this new class is gaining traction among newer packages that implement phylogenetic comparative methods (e.g., `r pkg("adephylo")` and `r pkg("phylosignal")`).
 - `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It also has several auxiliary functions that are often used by other packages.
 - `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative methods and visualizing, manipulating, reading or writing, and even inferring phylogenetic trees.
 
-# Other packages
+### Tasks
 
-Non-core packages are grouped into the following categories:
+Packages within the task view fall within one or more of the following task categories:
 
 1.  **Working with trees in R:** packages dedicated to the handling, manipulation, and visualization of phylogenetic data
 2.  **Building trees in R:** packages for phylogenetic inference and tree simulation
@@ -37,7 +38,6 @@ Non-core packages are grouped into the following categories:
 - `r pkg("ape")` can read trees from external files in newick format (sometimes popularly known as phylip format) or NEXUS format. It can also read trees input by hand as a newick string (e.g., "(human,(chimp,bonobo));").
 - `r pkg("phylobase")` and its lighter weight sibling `r pkg("rncl")` can use the [Nexus Class Library](http://ncl.sourceforge.net/) to read NEXUS, Newick, and other tree formats.
 - `r pkg("treebase")` can search for and load trees from the online tree repository [TreeBASE](https://www.treebase.org/treebase-web/home.html).
-- `r pkg("rdryad")` can pull data from the online data repository [Dryad](https://datadryad.org/stash).
 - `r pkg("RNeXML")` can read, write, and process metadata for the [NeXML](http://www.nexml.org) format.
 - `r pkg("TreeTools")` can read trees from external files in [TNT](https://cladistics.org/tnt/) format and NEXUS format, including extensions to the Nexus format not supported by `r pkg("ape")`, and metadata from [MorphoBank](https://morphobank.org/).
 - `r pkg("ips")` can load trees from [BEAST](https://beast.community/), [MrBayes](http://nbisweden.github.io/MrBayes/), and other phylogenetics programs. This package can be used to parse the node support and other values from BEAST or MrBayes output.
@@ -45,8 +45,9 @@ Non-core packages are grouped into the following categories:
 - `r pkg("phyext2")` can read and write various tree formats, including simmap formats.
 - `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the [Open Tree of Life](https://tree.opentreeoflife.org/) project.
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
-- `r pkg("phylogram")` can convert Newick files into dendrogram objects (see `r pkg("dendrogram")` for the manipulation of such objects).
 - `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
+- `r pkg("phylogram")` can convert Newick files into dendrogram objects.
+- `r pkg("dendrogram")` can manipulation such dendrogram objects.
 
 ### Tree manipulation
 
