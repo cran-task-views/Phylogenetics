@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics packages in R
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham
 email: willgearty@gmail.com
-version: 2022-10-04
+version: 2022-10-14
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -229,12 +229,18 @@ Packages within the task view fall within one or more of the following task cate
 
 See the `r view("Epidemiology")` task view for details about packages useful for epidemiology, including phylogenetic epidemiology.
 
+### Genomics
+
+- `r pkg("aphylo")` implements a parsimonious evolutionary model to analyze and predict gene-functional annotations in phylogenetic trees.
+- `r pkg("CALANGO")` can be used to search for annotation terms (e.g., Pfam IDs, GO terms or superfamilies) associated with a quantitative/rank variable.
+
 ### Gene tree--species tree and species delimitation
 
 - `r pkg("HyPhy")` can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also sample histories of gene trees from within family trees.
 - `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
-- `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model
-- `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
+- `r pkg("treeducken")` simulates nested phylogenetic trees (gene trees in species tree, symbiont trees in host trees) using birth-death processes and transfers between lineages.
+- `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
+- `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
 
 ## Other useful packages and miscellany
 
@@ -248,6 +254,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("ape")` can call [PhyML](http://www.atgc-montpellier.fr/phyml/), [Clustal](http://www.clustal.org/), [T-Coffee](https://tcoffee.crg.eu/), and [Muscle](https://www.drive5.com/muscle/) through various functions.
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
 - `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/), [PartitionFinder](https://www.robertlanfear.com/partitionfinder/), and [MAFFT](https://mafft.cbrc.jp/alignment/software/), allowing their easy use from within R.
+- `r pkg("beastier")` can call [BEAST2](https://www.beast2.org/) to perform phylogenetic analyses, `r pkg("beautier")` can generate XML input files for BEAST2 (like [BEAUti](https://www.beast2.org/beauti/)), and `r pkg("tracerer")` can be used to parse and analyze BEAST2 output files (like [Tracer](https://github.com/beast-dev/tracer/)). `r pkg("beastier")` is a wrapper for all of these packages.
 - `r pkg("Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
 - `r pkg("BoSSA")` can use information from various tools to place a query sequence into a reference tree.
 - `r pkg("pastis")` can use taxonomic information to make constraints for MrBayes tree searches.
