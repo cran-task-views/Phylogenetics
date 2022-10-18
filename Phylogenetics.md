@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics packages in R
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham
 email: willgearty@gmail.com
-version: 2022-10-14
+version: 2022-10-18
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -265,18 +265,18 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 ## References
 
--   Beaulieu, J.M. and O’Meara, B.C., 2016. Detecting hidden diversification shifts in models of trait-dependent speciation and extinction. Systematic Biology, 65(4): 583-601.
--   Borregaard, M.K., Rahbek, C., Fjeldsaa, J., Parra, J.L., Whittaker, R.J. and Graham, C.H. 2014. Node-based analysis of species distributions. Methods in Ecology and Evolution 5(11): 1225-1235.
--   Butler MA, King AA 2004 Phylogenetic comparative analysis: A modeling approach for adaptive evolution. American Naturalist 164, 683-695.
--   Caetano, D.S., B.C. O’Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324.
--   Cheverud JM, Dow MM, Leutenegger W 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351.
--   FitzJohn RG, Maddison WP, and Otto SP 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611.
--   Garland T, Harvey PH, Ives AR 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32.
--   Hansen TF 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351.
--   Maddison WP, Midford PE, and Otto SP 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701--710.
--   Magallon S, Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780.
--   Moore, BR, Chan, KMA, Donoghue, MJ (2004) Detecting diversification rate variation in supertrees. In Bininda-Emonds ORP (ed) Phylogenetic Supertrees: Combining Information to Reveal the Tree of Life, Kluwer Academic pgs 487-533.
--   Nakov, T., Beaulieu, J.M., and Alverson, A.J. 2019. Diatoms diversify and turn over faster in freshwater than marine environments. Evolution, 73: 2497-2511.
--   Nee S, May RM, Harvey PH 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311.
--   Pagel M 1999 Inferring the historical patterns of biological evolution. Nature 401, 877-884
--   Pybus OG, Harvey PH 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272.
+-   Beaulieu, J.M. and O’Meara, B.C., 2016. Detecting hidden diversification shifts in models of trait-dependent speciation and extinction. Systematic Biology, 65(4): 583-601. `r doi("10.1093/sysbio/syw022")`.
+-   Borregaard, M.K., Rahbek, C., Fjeldsaa, J., Parra, J.L., Whittaker, R.J. and Graham, C.H. 2014. Node-based analysis of species distributions. Methods in Ecology and Evolution 5(11): 1225-1235. `r doi("10.1111/2041-210X.12283")`.
+-   Butler M.A., King A.A. 2004 Phylogenetic comparative analysis: A modeling approach for adaptive evolution. American Naturalist 164, 683-695. `r doi("10.1086/426002")`.
+-   Caetano, D.S., B.C. O’Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324. `r doi("10.1111/evo.13602")`.
+-   Cheverud J.M., Dow M.M., Leutenegger W. 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351. `r doi("10.1111/j.1558-5646.1985.tb05699.x")`.
+-   FitzJohn R.G., Maddison W.P., and Otto S.P. 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611. `r doi("10.1093/sysbio/syp067")`.
+-   Garland T., Harvey P.H., Ives A.R. 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32. `r doi("10.1093/sysbio/41.1.18")`.
+-   Hansen T.F. 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351. `r doi("10.1111/j.1558-5646.1997.tb01457.x")`.
+-   Maddison W.P., Midford P.E., and Otto S.P. 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701--710. `r doi("10.1080/10635150701607033")`.
+-   Magallon S., Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780. `r doi("10.1111/j.0014-3820.2001.tb00826.x")`.
+-   Moore, B.R., Chan, K.M.A., Donoghue, M.J. (2004) Detecting diversification rate variation in supertrees. In Bininda-Emonds ORP (ed) Phylogenetic Supertrees: Combining Information to Reveal the Tree of Life, Kluwer Academic pgs 487-533. `r doi("10.1007/978-1-4020-2330-9_23")`.
+-   Nakov, T., Beaulieu, J.M., and Alverson, A.J. 2019. Diatoms diversify and turn over faster in freshwater than marine environments. Evolution, 73: 2497-2511. `r doi("10.1111/evo.13832")`.
+-   Nee S., May R.M., Harvey P.H. 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311. `r doi("10.1098/rstb.1994.0068")`.
+-   Pagel M. 1999. Inferring the historical patterns of biological evolution. Nature 401, 877-884. `r doi("10.1038/44766")`.
+-   Pybus O.G., Harvey P.H. 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272. `r doi("10.1098/rspb.2000.1278")`.
