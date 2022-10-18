@@ -1,6 +1,6 @@
 ---
 name: Phylogenetics
-topic: Phylogenetics packages in R
+topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham
 email: willgearty@gmail.com
 version: 2022-10-18
@@ -13,7 +13,9 @@ The history of life unfolds within a phylogenetic context, and phylogenetic tree
 
 If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
 
+
 ## Scope
+
 ### Core packages
 
 - `r pkg("ape", priority = "core")` implements the S3 phylo class which is commonly used to store phylogenetic trees in R. It is commonly used for reading, writing, and visualizing trees in the Newick/Phylip and NEXUS formats. It also has many functions for manipulating trees (e.g., rooting trees, dropping tips, randomly resolving polytomies), inferring trees (e.g., neighbour joining, bio-nj, and fast ME methods), and performing phylogenetic comparative analyses (e.g., reconstructing discrete and continuous characters, fitting basic models of trait evolution and diversification). It can also be used to generate random trees, pull in data from [GenBank](https://www.ncbi.nlm.nih.gov/genbank/), and create lineage through time and correlogram plots.
@@ -33,6 +35,7 @@ Packages within the task view fall within one or more of the following task cate
 3.  **Comparative phylogenetic methods:** packages for performing various comparative phylogenetic methods, including those dealing with trait evolution and diversification
 4.  **Phylogenetics in other fields:** packages designed to perform field-specific phylogenetic analyses, including paleontology, community ecology, biogeography, and genetics
 4.  **Other useful packages and miscellany:** packages that are useful for performing phylogenetic analyses, such as taxonomic matching
+
 
 ## Working with trees in R
 
@@ -89,6 +92,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("kdetrees")` implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
 
+
 ## Tree building in R
 
 ### Phylogenetic inference
@@ -121,6 +125,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
 - `r pkg("paleobuddy")` presents a flexible interface to simulate a wide array of user-defined diversification dynamics, including environmental-dependence.
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
+
 
 ## Comparative phylogenetic methods
 
@@ -186,8 +191,9 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("PBD")` can calculate the likelihood of a tree under a protracted speciation model.
 - `r pkg("phyloTop")` has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
 - `r pkg("RPANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
-- `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the “equal splits” (ES) measure.
+- `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the "equal splits" (ES) measure.
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
+
 
 ## Phylogenetics in specific fields
 
@@ -242,6 +248,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
 
+
 ## Other useful packages and miscellany
 
 ### Taxonomy
@@ -263,12 +270,13 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` can prepare the control files for carrying out divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also generates morphological alignments in phylip format for using continuous trait models in divergence time estimation in MCMCtree.
 
+
 ## References
 
--   Beaulieu, J.M. and O’Meara, B.C., 2016. Detecting hidden diversification shifts in models of trait-dependent speciation and extinction. Systematic Biology, 65(4): 583-601. `r doi("10.1093/sysbio/syw022")`.
+-   Beaulieu, J.M. and O'Meara, B.C., 2016. Detecting hidden diversification shifts in models of trait-dependent speciation and extinction. Systematic Biology, 65(4): 583-601. `r doi("10.1093/sysbio/syw022")`.
 -   Borregaard, M.K., Rahbek, C., Fjeldsaa, J., Parra, J.L., Whittaker, R.J. and Graham, C.H. 2014. Node-based analysis of species distributions. Methods in Ecology and Evolution 5(11): 1225-1235. `r doi("10.1111/2041-210X.12283")`.
 -   Butler M.A., King A.A. 2004 Phylogenetic comparative analysis: A modeling approach for adaptive evolution. American Naturalist 164, 683-695. `r doi("10.1086/426002")`.
--   Caetano, D.S., B.C. O’Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324. `r doi("10.1111/evo.13602")`.
+-   Caetano, D.S., B.C. O'Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324. `r doi("10.1111/evo.13602")`.
 -   Cheverud J.M., Dow M.M., Leutenegger W. 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351. `r doi("10.1111/j.1558-5646.1985.tb05699.x")`.
 -   FitzJohn R.G., Maddison W.P., and Otto S.P. 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611. `r doi("10.1093/sysbio/syp067")`.
 -   Garland T., Harvey P.H., Ives A.R. 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32. `r doi("10.1093/sysbio/41.1.18")`.

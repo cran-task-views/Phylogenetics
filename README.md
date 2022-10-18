@@ -1,4 +1,4 @@
-## CRAN Task View: Phylogenetics, Especially Comparative Methods
+## CRAN Task View: Phylogenetics
 
 **URL:** <https://CRAN.R-project.org/view=Phylogenetics>
 
