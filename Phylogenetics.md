@@ -52,7 +52,7 @@ Packages within the task view fall within one or more of the following task cate
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
 - `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
 - `r pkg("phylogram")` can convert Newick files into dendrogram objects.
-- `r pkg("dendrogram")` can manipulation such dendrogram objects.
+- `r pkg("dendrogram")` can manipulate such dendrogram objects.
 
 ### Tree manipulation
 
