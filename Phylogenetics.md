@@ -193,6 +193,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("RPANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
 - `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the "equal splits" (ES) measure.
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
+- `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
 
 
 ## Phylogenetics in specific fields
