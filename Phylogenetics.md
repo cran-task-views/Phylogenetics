@@ -98,7 +98,7 @@ Packages within the task view fall within one or more of the following task cate
 ### Phylogenetic inference
 
 - `r pkg("phangorn")` can estimate trees using distance (e.g. UPGMA), parsimony, and likelihood.
-- `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, including with inapplicable data, and includes a graphical user interface for detailed analysis of results.
+- `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, using the Brazeau et al. (2019) correction for inapplicable data, and includes a graphical user interface for detailed analysis of results.
 - `r pkg("phyclust")` can cluster sequences.
 - `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
 - `r pkg("phylotools")` can build supermatrices for analyses in other software.
@@ -276,6 +276,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 -   Beaulieu, J.M. and O'Meara, B.C., 2016. Detecting hidden diversification shifts in models of trait-dependent speciation and extinction. Systematic Biology, 65(4): 583-601. `r doi("10.1093/sysbio/syw022")`.
 -   Borregaard, M.K., Rahbek, C., Fjeldsaa, J., Parra, J.L., Whittaker, R.J. and Graham, C.H. 2014. Node-based analysis of species distributions. Methods in Ecology and Evolution 5(11): 1225-1235. `r doi("10.1111/2041-210X.12283")`.
+-   Brazeau, M.D., Guillerme, T. and Smith, M.R. 2019. An algorithm for morphological phylogenetic analysis with inapplicable data. Systematic Biology, 68:619--631. `r doi("10.1093/sysbio/syy083")`.
 -   Butler M.A., King A.A. 2004 Phylogenetic comparative analysis: A modeling approach for adaptive evolution. American Naturalist 164, 683-695. `r doi("10.1086/426002")`.
 -   Caetano, D.S., B.C. O'Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324. `r doi("10.1111/evo.13602")`.
 -   Cheverud J.M., Dow M.M., Leutenegger W. 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351. `r doi("10.1111/j.1558-5646.1985.tb05699.x")`.
