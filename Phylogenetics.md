@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2022-10-18
+version: 2022-10-25
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -52,7 +52,7 @@ Packages within the task view fall within one or more of the following task cate
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
 - `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
 - `r pkg("phylogram")` can convert Newick files into dendrogram objects.
-- `r pkg("dendrogram")` can manipulate such dendrogram objects.
+- `r pkg("dendextend")` can manipulate such dendrogram objects.
 
 ### Tree manipulation
 
@@ -89,7 +89,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")` and `r pkg("TBRDist")` can compute distances between trees.
 - `r pkg("TreeDist")` and `r pkg("treespace")` can plot and evaluate low-dimensional mappings of tree sets ("tree spaces").
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
-- `r pkg("kdetrees")` implements a non-parametric method for identifying potential outlying observations in a collection of phylogenetic trees, which could represent inference problems or processes such as horizontal gene transfer.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
 
 
@@ -102,7 +101,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phyclust")` can cluster sequences.
 - `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
 - `r pkg("phylotools")` can build supermatrices for analyses in other software.
-- `r pkg("pastis")` can use taxonomic information to make constraints for Bayesian tree searches.
 - `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
 
@@ -183,10 +181,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("geiger")` can calculate net rates of diversification (sensu Magellon and Sanderson).
 - `r pkg("diversitree")` implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
 - `r pkg("hisse")` implements various hidden state diversification models, including HiSSE (Beaulieu and O'Meara 2016), GeoHiSSE (Caetano et al. 2018), MuHiSSE (Nakov et al. 2019), and MiSSE (trait-independent).
-- `r pkg("TreePar")` estimates speciation and extinction rates with models where rates can change as a function of time (i.e., at mass extinction events) or as a function of the number of species.
 - `r pkg("caper")` can do the macrocaic test to evaluate the effect of a a trait on diversity.
 - `r pkg("apTreeshape")` also has tests for differential diversification (see [description](https://doi.org/10.1093/bioinformatics/bti798) ).
-- `r pkg("iteRates")` can identify and visualize areas on a tree undergoing differential diversification.
 - `r pkg("DDD")` implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process.
 - `r pkg("PBD")` can calculate the likelihood of a tree under a protracted speciation model.
 - `r pkg("phyloTop")` has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
@@ -227,10 +223,10 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Phylogeography and biogeography
 
-- `r pkg("phyloland")` implements a model of space colonization mapped on a phylogeny, it aims at estimating limited dispersal and competitive exclusion in a statistical phylogeographic framework.
 - `r pkg("diversitree")` implements the GeoSSE method for diversification analyses based on two areas.
 - `r github("GabrielNakamura/Herodotools")` can be used to perform a wide variety of biogeographical macroevolutionary analyses, including exploring spatial biodiversity patterns, conducting ancestral area reconstruction, and performing evoregion classification.
 - `r pkg("epm")` (EcoPhyloMapper) can be used to calculate various morphological and phylogenetic community metrics across geography.
+- `r github("nmatzke/BioGeoBEARS")` allows probabilistic inference of both historical biogeography (ancestral geographic ranges on a phylogeny) as well as comparison of different models of range evolution.
 
 ### Epidemiology
 
@@ -243,7 +239,6 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 ### Gene tree--species tree and species delimitation
 
-- `r pkg("HyPhy")` can count the duplication and loss cost to reconcile a gene tree to a species tree. It can also sample histories of gene trees from within family trees.
 - `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
 - `r pkg("treeducken")` simulates nested phylogenetic trees (gene trees in species tree, symbiont trees in host trees) using birth-death processes and transfers between lineages.
 - `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
@@ -263,7 +258,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
 - `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/), [PartitionFinder](https://www.robertlanfear.com/partitionfinder/), and [MAFFT](https://mafft.cbrc.jp/alignment/software/), allowing their easy use from within R.
 - `r pkg("beastier")` can call [BEAST2](https://www.beast2.org/) to perform phylogenetic analyses, `r pkg("beautier")` can generate XML input files for BEAST2 (like [BEAUti](https://www.beast2.org/beauti/)), and `r pkg("tracerer")` can be used to parse and analyze BEAST2 output files (like [Tracer](https://github.com/beast-dev/tracer/)). `r pkg("beastier")` is a wrapper for all of these packages.
-- `r pkg("Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
+- `r github("liamrevell/Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
 - `r pkg("BoSSA")` can use information from various tools to place a query sequence into a reference tree.
 - `r pkg("pastis")` can use taxonomic information to make constraints for MrBayes tree searches.
 - `r pkg("BAMMtools")` is an interface to the BAMM program to allow visualization of rate shifts, comparison of diversification models, and other functions.
