@@ -24,7 +24,7 @@ If you have any questions, feel free to reach out to the task view maintainers o
 
 - `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It is most commonly used to fit and compare various models of discrete and continuous trait evolution (e.g., Brownian motion, Ornstein-Uhlenbeck, Pagel's transforms, and models with trends). It also is commonly used to simulate phylogenies and the evolution of discrete and continuous characters. It also has several auxiliary functions that are often used by other packages.
 
-- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative methods and visualizing (e.g., projecting into a morphospace), manipulating (e.g., branch length scaling and transformations, adding tips, finding subtrees), reading or writing, and even inferring phylogenetic trees.
+- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative analyses and visualizing (e.g., projecting into a morphospace), manipulating (e.g., branch length scaling and transformations, adding tips, finding subtrees), reading or writing, and even inferring phylogenetic trees and comparative data.
 
 ### Tasks
 
@@ -53,6 +53,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
 - `r pkg("phylogram")` can convert Newick files into dendrogram objects.
 - `r pkg("dendextend")` can manipulate such dendrogram objects.
+- `r pkg("phytools")` can read and write trees in simple Newick and Nexus format, as well as `"simmap"` trees with an encoded discrete character.
 
 ### Tree manipulation
 
@@ -70,10 +71,11 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("paleotree")` has functions for manipulating trees based on sampling issues that arise with fossil taxa as well as more universal transformations.
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
 - `r pkg("castor")` can be used to manipulate extremely large trees (up to millions of tips).
+- `r pkg("phytools")` can slice a tree at a pre-specified point, add taxa randomly to a tree, add species to genera, bind a single tip to a tree or two trees together, collapse clades on a tree using a clickable interface, perform midpoint rooting, paint a user-specified discrete character regime onto a tree to create a `"simmap"` object by various methods, convert a tree with a mapped character into a simple `"phylo"` object with unbranching nodes or a root edge into a single unbranching node, and other things.
 
 ### Tree visualization
 
-- `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.).
+- `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). In addition, `r pkg("phytools")` has substantial functionality to plot comparative data at the tips of the tree, graph the results of comparative analyses, and plot co-phylogenies.
 - `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
 - `r github("heibl/viper")` can be used to annotate phylogenies with branch support, HPD intervals, and more.
 - The popular R visualization package `r pkg("ggplot2")` can be extended by `r bioc("ggtree")` and `r bioc("ggtreeExtra")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`.
@@ -86,7 +88,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Tree comparison
 
-- `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")` and `r pkg("TBRDist")` can compute distances between trees.
+- `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")`, `r pkg("TBRDist")`, `r pkg("phangorn"), and `r pkg("phytools")` can compute distances between trees.
 - `r pkg("TreeDist")` and `r pkg("treespace")` can plot and evaluate low-dimensional mappings of tree sets ("tree spaces").
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
@@ -117,6 +119,7 @@ Packages within the task view fall within one or more of the following task cate
 ### Tree simulations
 
 - `r pkg("TreeSim")` can be used to simulate trees using constant-rate birth-death with various constraints.
+- `r pkg("phytools")` can simulate birth-death trees with various constraints, in both continuous and discrete time.
 - `r pkg("geiger")` can be used to simulate trees under a birth-death process.
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
@@ -125,13 +128,13 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
 
 
-## Comparative phylogenetic methods
+## Phylogenetic comparative methods
 
 ### Ancestral state reconstruction
 
 - `r pkg("ouch")` can be used to reconstruct root ancestral character states under Brownian motion or Ornstein-Uhlenbeck models, though ancestral states at the internal nodes are not.
 - `r pkg("markophylo")` can fit a broad set of discrete character types with models that can incorporate constrained substitution rates, rate partitioning across sites, branch-specific rates, sampling bias, and non-stationary root probabilities.
-- `r pkg("phytools")` can do stochastic character mapping of traits on trees.
+- `r pkg("phytools")` can do ancestral character estimation for continuous and discrete characters under multiple models, including the threshold model from evolutionary quantitative genetics, as well as stochastic character mapping.
 - `r pkg("Rphylopars")` can perform ancestral state reconstruction for datasets with multiple observations per species and/or missing data.
 - `r pkg("TreeSearch")` can perform mapping of characters under parsimony, with an allowance for inapplicable data.
 - `r pkg("castor")` can be used reconstruct continuous or discrete characters on extremely large trees.
@@ -140,6 +143,7 @@ Packages within the task view fall within one or more of the following task cate
 
 - `r pkg("ape")`, `r pkg("picante")`, or `r pkg("caper")` can be used to calculate independent contrasts for continuous characters. `r pkg("caper")` also implements the brunch and crunch algorithms.
 - `r pkg("geiger")` can be used to perform analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations.
+- `r pkg("phytools")` can be used to fit multiple models for both discrete and continuous character evolution. For instance, `r pkg("phytools")` fits a Brownian model with and without rate heterogeneity specified as regimes fixed by the user or estimated from the data itself. `r pkg("phytools")` can also be used to fit a range of discrete character evolution models, such as the the extended M*k* model, a heterogenous M*k* model with regime shifts, a polymorphic trait evolution model, a hidden-rates model, the threshold model, and others.
 - `r pkg("geiger")`, `r pkg("paleotree")`, and `r pkg("motmot")` can be used to fit Brownian motion models.
 - `r github("cran/RBrownie")` can fit multiple-rate Brownian motion models.
 - `r pkg("geiger")` and `r pkg("OUwie")` can be used to investigate deviations from Brownian motion.
@@ -154,7 +158,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("MCMCglmm")` can be used to assess correlation between traits using a GLMM.
 - `r pkg("phylolm")` can fit phylogenetic linear regression and phylogenetic logistic regression models using a fast algorithm, making it suitable for large trees.
 - `r pkg("brms")` can examine correlations between continuous and discrete traits, and can incorporate multiple measurements per species.
-- `r pkg("phytools")` can also investigate rates of trait evolution.
 - `r pkg("metafor")` can perform meta-analyses accounting for phylogenetic structure.
 - `r pkg("pmc")` evaluates the model adequacy of several trait models (from `r pkg("geiger")` and `r pkg("ouch")`) using Monte Carlo approaches.
 - `r pkg("phyreg")` implements the Grafen (1989) phyglogenetic regression.
@@ -166,17 +169,17 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Trait simulations
 
-- `r pkg("ouch")`, `r pkg("geiger")`, `r pkg("ape")`, `r pkg("picante")`, `r pkg("OUwie")`, and `r pkg("caper")` can be used to simulate continuous traits using Brownian motion.
+- `r pkg("ouch")`, `r pkg("geiger")`, `r pkg("ape")`, `r pkg("picante")`, `r pkg("OUwie")`, `r pkg("caper")`, and `r pkg("phytools") can be used to simulate continuous traits using Brownian motion.
 - `r pkg("ouch")` and `r pkg("OUwie")` can be used to simulate continuous traits using the Hansen model (a form of the OU).
 - `r pkg("geiger")` can be used to simulate continuous traits using a speciational model and discrete traits can be simulated using a continuous time Markov model (including models where rates change through time).
 - `r pkg("phangorn")` can simulate DNA or amino acids.
-- `r pkg("phytools")` can simulate discrete characters using stochastic character mapping.
+- `r pkg("phytools")` can simulate discrete character evolution under multiple models.
 - `r pkg("phylolm")` can simulate continuous or binary traits along a tree.
 - `r pkg("Rphylopars")` can simulate data with missing observations.
 
 ### Diversification analysis
 
-- `r pkg("ape")` can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
+- `r pkg("ape")` and `r pkg("phytools") can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
 - `r pkg("TESS")` can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions.
 - `r pkg("geiger")` can calculate net rates of diversification (sensu Magellon and Sanderson).
 - `r pkg("diversitree")` implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
@@ -190,6 +193,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the "equal splits" (ES) measure.
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
 - `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
+- `r pkg("phytools")` can compute and visualize a lineages-through-time (LTT) plot, and calculate Pybus and Harvey's (2000) gamma statistic.
 
 
 ## Phylogenetics in specific fields
@@ -284,3 +288,4 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Nee S., May R.M., Harvey P.H. 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311. `r doi("10.1098/rstb.1994.0068")`.
 -   Pagel M. 1999. Inferring the historical patterns of biological evolution. Nature 401, 877-884. `r doi("10.1038/44766")`.
 -   Pybus O.G., Harvey P.H. 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272. `r doi("10.1098/rspb.2000.1278")`.
+-
