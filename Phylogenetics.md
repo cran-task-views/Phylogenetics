@@ -112,7 +112,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("geiger")` can do congruification to stretch a source tree to match a specified standard tree.
 - `r github("evolucionario/cladedate")` generates empirical calibration information from the fossil record.
 - `r pkg("treedater")` implements various clock models, ways to assess confidence, and detecting outliers.
-- `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.  
+- `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.
 - `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
 
