@@ -88,7 +88,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Tree comparison
 
-- `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")`, `r pkg("TBRDist")`, `r pkg("phangorn"), and `r pkg("phytools")` can compute distances between trees.
+- `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")`, `r pkg("TBRDist")`, `r pkg("phangorn")`, and `r pkg("phytools")` can compute distances between trees.
 - `r pkg("TreeDist")` and `r pkg("treespace")` can plot and evaluate low-dimensional mappings of tree sets ("tree spaces").
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
@@ -169,7 +169,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Trait simulations
 
-- `r pkg("ouch")`, `r pkg("geiger")`, `r pkg("ape")`, `r pkg("picante")`, `r pkg("OUwie")`, `r pkg("caper")`, and `r pkg("phytools") can be used to simulate continuous traits using Brownian motion.
+- `r pkg("ouch")`, `r pkg("geiger")`, `r pkg("ape")`, `r pkg("picante")`, `r pkg("OUwie")`, `r pkg("caper")`, and `r pkg("phytools")` can be used to simulate continuous traits using Brownian motion.
 - `r pkg("ouch")` and `r pkg("OUwie")` can be used to simulate continuous traits using the Hansen model (a form of the OU).
 - `r pkg("geiger")` can be used to simulate continuous traits using a speciational model and discrete traits can be simulated using a continuous time Markov model (including models where rates change through time).
 - `r pkg("phangorn")` can simulate DNA or amino acids.
@@ -179,7 +179,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Diversification analysis
 
-- `r pkg("ape")` and `r pkg("phytools") can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
+- `r pkg("ape")` and `r pkg("phytools")` can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
 - `r pkg("TESS")` can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions.
 - `r pkg("geiger")` can calculate net rates of diversification (sensu Magellon and Sanderson).
 - `r pkg("diversitree")` implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
