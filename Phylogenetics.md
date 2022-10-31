@@ -288,4 +288,3 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Nee S., May R.M., Harvey P.H. 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311. `r doi("10.1098/rstb.1994.0068")`.
 -   Pagel M. 1999. Inferring the historical patterns of biological evolution. Nature 401, 877-884. `r doi("10.1038/44766")`.
 -   Pybus O.G., Harvey P.H. 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272. `r doi("10.1098/rspb.2000.1278")`.
--
