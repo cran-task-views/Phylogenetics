@@ -1,0 +1,49 @@
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '.github/workflows/ctv2html.yml'
+      - 'Phylogenetics.md'
+  pull_request:
+    branches:
+      - main
+      - master
+    paths:
+      - '.github/workflows/ctv2html.yml'
+      - 'Phylogenetics.md'
+
+name: validate-ctv
+
+jobs:
+  validate-ctv:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_COMPILE_AND_INSTALL_PACKAGES: 'never'
+      
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-r@master
+
+      - name: Query dependencies
+        run: |
+          install.packages("ctv")
+          saveRDS("ctv", ".github/depends.Rds", version = 2)
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+        shell: Rscript {0}
+
+      - name: Cache R packages
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: ctv2html
+        run: |
+          ctv::ctv2html("Phylogenetics.md")
+          ctv::check_ctv_packages("Phylogenetics.md")
+        shell: Rscript {0}
