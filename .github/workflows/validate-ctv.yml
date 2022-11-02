@@ -44,10 +44,10 @@ jobs:
 
       - name: Install R packages
         run: |
-          install.packages("RCurl")
           install.packages("ctv")
           install.packages("knitr")
           install.packages("rmarkdown")
+          install.packages("RCurl")
         shell: Rscript {0}
 
       - name: ctv2html
