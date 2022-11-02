@@ -69,6 +69,7 @@ jobs:
           urls <- sub(".*href=\"(.*)\".*", "\\1", links)
           ok <- RCurl::url.exists(urls)
           if (any(!ok)) {
+            message("::warning file=Phylogenetics.md::Inoperational links")
             warning("URLs did not return OK status:\n - ",
                 paste0(names(ok)[!ok], collapse = "\n - ")
             )
