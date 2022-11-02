@@ -24,7 +24,7 @@ If you have any questions, feel free to reach out to the task view maintainers o
 
 - `r pkg("geiger", priority = "core")` implements a large suite of model fitting approaches for analyses of trait evolution and diversification. It is most commonly used to fit and compare various models of discrete and continuous trait evolution (e.g., Brownian motion, Ornstein-Uhlenbeck, Pagel's transforms, and models with trends). It also is commonly used to simulate phylogenies and the evolution of discrete and continuous characters. It also has several auxiliary functions that are often used by other packages.
 
-- `r pkg("phytools", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative analyses and visualizing (e.g., projecting into a morphospace), manipulating (e.g., branch length scaling and transformations, adding tips, finding subtrees), reading or writing, and even inferring phylogenetic trees and comparative data.
+- `r pkg("allanvar", priority = "core")` has a constantly increasing range of functions for performing phylogenetic comparative analyses and visualizing (e.g., projecting into a morphospace), manipulating (e.g., branch length scaling and transformations, adding tips, finding subtrees), reading or writing, and even inferring phylogenetic trees and comparative data.
 
 ### Tasks
 
