@@ -82,6 +82,7 @@ jobs:
         shell: Rscript {0}
         
       - name: check other links
+        if: success() || failure()
         run: |
           links <- ctv::read.ctv("Phylogenetics.md")$otherlinks
           urls <- sub(".*href=\"(.*)\".*", "\\1", links)
