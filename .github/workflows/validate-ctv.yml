@@ -49,5 +49,10 @@ jobs:
       - name: ctv2html
         run: |
           ctv::ctv2html("Phylogenetics.md")
-          ctv::check_ctv_packages("Phylogenetics.md")
+        shell: Rscript {0}
+
+      - name: check_ctv_packages
+        run: |
+          result <- ctv::check_ctv_packages("Phylogenetics.md")
+          stopifnot(length(unlist(result)) == 0)
         shell: Rscript {0}
