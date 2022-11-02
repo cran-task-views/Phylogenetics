@@ -56,7 +56,11 @@ jobs:
       - name: check_ctv_packages
         run: |
           result <- ctv::check_ctv_packages("Phylogenetics.md")
-          stopifnot(length(unlist(result)) == 0)
+          failures <- lengths(result) > 0
+          if (any(failures)) {
+            print(result[failures])
+            stop("See errors identified above")
+          }
         shell: Rscript {0}
         
       - name: check other links
