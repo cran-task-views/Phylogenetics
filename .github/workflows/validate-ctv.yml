@@ -3,6 +3,7 @@ on:
     branches:
       - main
       - master
+      - gha-syntax-error
     paths:
       - '.github/workflows/validate-ctv.yml'
       - 'Phylogenetics.md'
