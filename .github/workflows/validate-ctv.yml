@@ -4,12 +4,15 @@ on:
       - main
       - master
     paths:
-      - '.github/workflows/ctv2html.yml'
+      - '.github/workflows/validate-ctv.yml'
       - 'Phylogenetics.md'
   pull_request:
     branches:
       - main
       - master
+    paths:
+      - '.github/workflows/validate-ctv.yml'
+      - 'Phylogenetics.md'
 
 name: validate-ctv
 
