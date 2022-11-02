@@ -74,7 +74,7 @@ jobs:
             newArchives <- setdiff(archived, previousArchive)
             if (length(newArchives)) {
                 stop(
-                  "Newly introduced packaged are archived:\n -",
+                  "Adding archived packages:\n - ",
                   paste0(newArchives, collapse = "\n - ")
                 )
             }
