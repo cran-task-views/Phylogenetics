@@ -49,5 +49,9 @@ jobs:
       - name: ctv2html
         run: |
           ctv::ctv2html("Phylogenetics.md")
+        shell: Rscript {0}
+
+      - name: check_ctv_packages
+        run: |
           ctv::check_ctv_packages("Phylogenetics.md")
         shell: Rscript {0}
