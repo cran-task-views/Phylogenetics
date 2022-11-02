@@ -35,22 +35,20 @@ jobs:
      
       - uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Query dependencies
-        run: |
-          install.packages("ctv")
-          install.packages("knitr")
-          install.packages("rmarkdown")
-          install.packages("RCurl")
-          saveRDS(c("ctv", "knitr"), ".github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
-        shell: Rscript {0}
-
       - name: Cache R packages
         uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: Install R packages
+        run: |
+          install.packages("ctv")
+          install.packages("knitr")
+          install.packages("rmarkdown")
+          install.packages("RCurl")
+        shell: Rscript{0}
 
       - name: ctv2html
         run: |
