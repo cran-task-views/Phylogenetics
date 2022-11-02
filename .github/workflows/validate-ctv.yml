@@ -59,11 +59,26 @@ jobs:
       - name: check_ctv_packages
         run: |
           result <- ctv::check_ctv_packages("Phylogenetics.md")
-          failures <- lengths(result) > 0
+          exceptArchive <- result[-4]
+          failures <- lengths(exceptArchive) > 0
           if (any(failures)) {
             print(result[failures])
             message("\n\n\n\n") # "Stop" command sometimes appears early
             stop("See errors identified above")
+          }
+          
+          archived <- result[[4]]
+          if (length(archived)) {
+            previousArchive <- ctv::check_ctv_packages(
+             "https://raw.githubusercontent.com/cran-task-views/Phylogenetics/main/Phylogenetics.md"
+            )[["Packages in packagelist but archived on CRAN"]]
+            newArchives <- setdiff(archived, previousArchive)
+            if (length(newArchives)) {
+                stop(
+                  "Adding archived packages:\n - ",
+                  paste0(newArchives, collapse = "\n - ")
+                )
+            }
           }
         shell: Rscript {0}
 
