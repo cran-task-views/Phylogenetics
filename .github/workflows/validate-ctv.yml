@@ -36,22 +36,20 @@ jobs:
      
       - uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Query dependencies
-        run: |
-          install.packages("ctv")
-          install.packages("knitr")
-          install.packages("rmarkdown")
-          install.packages("RCurl")
-          saveRDS(c("ctv", "knitr"), ".github/depends.Rds", version = 2)
-          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
-        shell: Rscript {0}
-
       - name: Cache R packages
         uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: Install R packages
+        run: |
+          install.packages("ctv")
+          install.packages("knitr")
+          install.packages("rmarkdown")
+          install.packages("RCurl")
+        shell: Rscript {0}
 
       - name: ctv2html
         run: |
@@ -61,15 +59,31 @@ jobs:
       - name: check_ctv_packages
         run: |
           result <- ctv::check_ctv_packages("Phylogenetics.md")
-          failures <- lengths(result) > 0
+          exceptArchive <- result[-4]
+          failures <- lengths(exceptArchive) > 0
           if (any(failures)) {
             print(result[failures])
             message("\n\n\n\n") # "Stop" command sometimes appears early
             stop("See errors identified above")
           }
+          
+          archived <- result[[4]]
+          if (length(archived)) {
+            previousArchive <- ctv::check_ctv_packages(
+             "https://raw.githubusercontent.com/cran-task-views/Phylogenetics/main/Phylogenetics.md"
+            )[["Packages in packagelist but archived on CRAN"]]
+            newArchives <- setdiff(archived, previousArchive)
+            if (length(newArchives)) {
+                stop(
+                  "Adding archived packages:\n - ",
+                  paste0(newArchives, collapse = "\n - ")
+                )
+            }
+          }
         shell: Rscript {0}
         
       - name: check other links
+        if: success() || failure()
         run: |
           links <- ctv::read.ctv("Phylogenetics.md")$otherlinks
           urls <- sub(".*href=\"(.*)\".*", "\\1", links)
