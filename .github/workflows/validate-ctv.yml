@@ -58,7 +58,9 @@ jobs:
       - name: check_ctv_packages
         run: |
           result <- ctv::check_ctv_packages("Phylogenetics.md")
-          failures <- lengths(result) > 0
+          archived <- result[[4]]
+          exceptArchive <- result[-4]
+          failures <- lengths(exceptArchive) > 0
           if (any(failures)) {
             print(result[failures])
             message("\n\n\n\n") # "Stop" command sometimes appears early
