@@ -53,5 +53,6 @@ jobs:
 
       - name: check_ctv_packages
         run: |
-          ctv::check_ctv_packages("Phylogenetics.md")
+          result <- ctv::check_ctv_packages("Phylogenetics.md")
+          stopifnot(length(unlist(result)) == 0)
         shell: Rscript {0}
