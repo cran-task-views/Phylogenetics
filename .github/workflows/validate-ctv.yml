@@ -63,6 +63,7 @@ jobs:
           failures <- lengths(result) > 0
           if (any(failures)) {
             print(result[failures])
+            print("\n\n\n\n") # "Stop" command sometimes appears early
             stop("See errors identified above")
           }
         shell: Rscript {0}
