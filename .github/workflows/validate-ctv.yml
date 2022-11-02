@@ -56,7 +56,11 @@ jobs:
       - name: check_ctv_packages
         run: |
           result <- ctv::check_ctv_packages("Phylogenetics.md")
-          stopifnot(length(unlist(result)) == 0)
+          failures <- lengths(result) > 0
+          if (any(failures)) {
+            print(result[failures])
+            stop("See errors identified above")
+          }
         shell: Rscript {0}
         
       - name: check other links
@@ -65,6 +69,7 @@ jobs:
           urls <- sub(".*href=\"(.*)\".*", "\\1", links)
           ok <- RCurl::url.exists(urls)
           if (any(!ok)) {
+            message("::warning file=Phylogenetics.md::Inoperational links")
             warning("URLs did not return OK status:\n - ",
                 paste0(names(ok)[!ok], collapse = "\n - ")
             )
