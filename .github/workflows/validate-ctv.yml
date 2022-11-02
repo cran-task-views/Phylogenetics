@@ -18,7 +18,7 @@ name: validate-ctv
 
 jobs:
   validate-ctv:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_COMPILE_AND_INSTALL_PACKAGES: 'never'
