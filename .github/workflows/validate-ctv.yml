@@ -58,7 +58,7 @@ jobs:
           stopifnot(length(unlist(result)) == 0)
         shell: Rscript {0}
         
-      - name: check_other_links
+      - name: check other links
         run: |
           links <- ctv::read.ctv("Phylogenetics.md")$otherlinks
           urls <- sub(".*href=\"(.*)\".*", "\\1", links)
@@ -68,3 +68,4 @@ jobs:
                 paste0(names(ok)[!ok], collapse = "\n - ")
             )
           }
+        shell: Rscript {0}
