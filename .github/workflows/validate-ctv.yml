@@ -35,6 +35,7 @@ jobs:
           install.packages("ctv")
           install.packages("knitr")
           install.packages("rmarkdown")
+          install.packages("RCurl")
           saveRDS(c("ctv", "knitr"), ".github/depends.Rds", version = 2)
           writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
         shell: Rscript {0}
@@ -56,3 +57,14 @@ jobs:
           result <- ctv::check_ctv_packages("Phylogenetics.md")
           stopifnot(length(unlist(result)) == 0)
         shell: Rscript {0}
+        
+      - name: check_other_links
+        run: |
+          links <- ctv::read.ctv("Phylogenetics.md")$otherlinks
+          urls <- sub(".*href=\"(.*)\".*", "\\1", links)
+          ok <- RCurl::url.exists(urls)
+          if (any(!ok)) {
+            warning("URLs did not return OK status:\n - ",
+                paste0(names(ok)[!ok], collapse = "\n - ")
+            )
+          }
