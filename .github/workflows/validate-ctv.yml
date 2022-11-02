@@ -3,6 +3,7 @@ on:
     branches:
       - main
       - master
+      - gha*
     paths:
       - '.github/workflows/validate-ctv.yml'
       - 'Phylogenetics.md'
