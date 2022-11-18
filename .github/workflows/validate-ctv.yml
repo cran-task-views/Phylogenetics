@@ -20,6 +20,4 @@ jobs:
   validate-ctv:
     runs-on: ubuntu-latest
     steps:
-      - uses: ms609/actions/validate-ctv@main
-        with:
-          task-view: Phylogenetics
+      - uses: ctv/action/validate-ctv@main
