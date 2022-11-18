@@ -20,4 +20,4 @@ jobs:
   validate-ctv:
     runs-on: ubuntu-latest
     steps:
-      - uses: ctv/action/validate-ctv@main
+      - uses: cran-task-views/ctv/action@main
