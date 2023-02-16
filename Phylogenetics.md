@@ -105,6 +105,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phylotools")` can build supermatrices for analyses in other software.
 - `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
+- `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
 
 ### Divergence times
 
@@ -290,3 +291,4 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Nee S., May R.M., Harvey P.H. 1994. The reconstructed evolutionary process. Philosophical Transactions of the Royal Society of London Series B Biological Sciences 344: 305-311. `r doi("10.1098/rstb.1994.0068")`.
 -   Pagel M. 1999. Inferring the historical patterns of biological evolution. Nature 401, 877-884. `r doi("10.1038/44766")`.
 -   Pybus O.G., Harvey P.H. 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272. `r doi("10.1098/rspb.2000.1278")`.
+-   Tarasov, S. 2023. New phylogenetic Markov models for inapplicable morphological characters. Systematic Biology, syad005. `r doi("10.1093/sysbio/syad005")`.
