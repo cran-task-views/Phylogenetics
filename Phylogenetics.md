@@ -105,7 +105,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phylotools")` can build supermatrices for analyses in other software.
 - `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
-- `r github("uyedaj/rphenoscate")` constructs hierarchies for dependent characters and constructs corresponding rate matrices (Tarasov 2023).
+- `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
 
 ### Divergence times
 
