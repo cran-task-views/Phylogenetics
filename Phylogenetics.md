@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2022-12-20
+version: 2023-4-3
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -195,6 +195,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
 - `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
 - `r pkg("phytools")` can compute and visualize a lineages-through-time (LTT) plot, and calculate Pybus and Harvey's (2000) gamma statistic.
+- `r pkg("CRABS")` features tools for exploring congruent phylogenetic birth-death models (see Louca and Pennell 2020).
 
 
 ## Phylogenetics in specific fields
@@ -243,6 +244,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("CALANGO")` can be used to search for annotation terms (e.g., Pfam IDs, GO terms or superfamilies) associated with a quantitative/rank variable.
 - `r github("hr1912/TreeExp")` can be used to perform comparative analyses of gene expression in a phylogenetic context.
 - `r pkg("perfectphyloR")` can construct perfect phylogenies (a rooted binary tree that recursively partitions sequences) to provide insight into the pattern of ancestry of sequence data.
+- See the `r view("Omics")` task view for details about other useful packages.
 
 ### Gene tree--species tree and species delimitation
 
@@ -284,6 +286,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   FitzJohn R.G., Maddison W.P., and Otto S.P. 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611. `r doi("10.1093/sysbio/syp067")`.
 -   Garland T., Harvey P.H., Ives A.R. 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32. `r doi("10.1093/sysbio/41.1.18")`.
 -   Hansen T.F. 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351. `r doi("10.1111/j.1558-5646.1997.tb01457.x")`.
+-   Louca, S. and Pennell, M. W. 2020. Extant timetrees are consistent with a myriad of diversification histories. Nature, 580(7804), 502-505. `r doi("10.1038/s41586-020-2176-1")`.
 -   Maddison W.P., Midford P.E., and Otto S.P. 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701--710. `r doi("10.1080/10635150701607033")`.
 -   Magallon S., Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780. `r doi("10.1111/j.0014-3820.2001.tb00826.x")`.
 -   Moore, B.R., Chan, K.M.A., Donoghue, M.J. (2004) Detecting diversification rate variation in supertrees. In Bininda-Emonds ORP (ed) Phylogenetic Supertrees: Combining Information to Reveal the Tree of Life, Kluwer Academic pgs 487-533. `r doi("10.1007/978-1-4020-2330-9_23")`.
