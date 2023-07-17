@@ -50,7 +50,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phyext2")` can read and write various tree formats, including simmap formats.
 - `r pkg("rotl")` can pull in a synthetic tree and individual study trees from the [Open Tree of Life](https://tree.opentreeoflife.org/) project.
 - The `r bioc("treeio")` package can read trees in Newick, Nexus, New Hampshire eXtended format (NHX), jplace and Phylip formats and data output from BEAST, EPA, HyPhy, MrBayes, PAML, PHYLDOG, pplacer, r8s, RAxML and RevBayes.
-- `r pkg("brranching")` can fetch phylogenies from online repositories, including [phylomatic](http://phylodiversity.net/phylomatic/).
 - `r pkg("phylogram")` can convert Newick files into dendrogram objects.
 - `r pkg("dendextend")` can manipulate such dendrogram objects.
 - `r pkg("phytools")` can read and write trees in simple Newick and Nexus format, as well as `"simmap"` trees with an encoded discrete character.
