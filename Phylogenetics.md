@@ -148,6 +148,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("cran/RBrownie")` can fit multiple-rate Brownian motion models.
 - `r pkg("geiger")` and `r pkg("OUwie")` can be used to investigate deviations from Brownian motion.
 - `r pkg("mvMORPH")` can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data.
+- `r github("gilles-didier/cauphy")` models trait distribution using the Cauchy Process.
 - `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
 - `r pkg("motmot")` can be used to fit continuous models that change rate or mode at specific time(s).
 - `r pkg("Rphylopars")` can be used to fit continuous models such as those described above to datasets with multiple observations per species and/or missing data.
