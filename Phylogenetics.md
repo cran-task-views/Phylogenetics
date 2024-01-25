@@ -161,7 +161,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("brms")` can examine correlations between continuous and discrete traits, and can incorporate multiple measurements per species.
 - `r pkg("metafor")` can perform meta-analyses accounting for phylogenetic structure.
 - `r pkg("pmc")` evaluates the model adequacy of several trait models (from `r pkg("geiger")` and `r pkg("ouch")`) using Monte Carlo approaches.
-- `r pkg("phyreg")` implements the Grafen (1989) phyglogenetic regression.
+- `r pkg("phyreg")` implements the Grafen (1989) phylogenetic regression.
 - `r pkg("geomorph")` can do geometric morphometric analysis in a phylogenetic context.
 - `r pkg("dispRity")` can be used to calculate disparity through time and perform other disparity-related analyses.
 - `r pkg("MPSEM")` can predict features of one species based on information from related species using phylogenetic eigenvector maps.
