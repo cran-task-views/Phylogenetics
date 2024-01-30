@@ -94,7 +94,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Phylogenetic summary statistics
 
-- `r pkg("treestats")` is a wide collection of tree statistics, optimized for fast calculation.
+- `r pkg("treestats")` can be used to calculate a wide collection of tree statistics, optimized for fast calculation.
 - `r pkg("nLTT")` is specialized in calculating and visualising the nLTT statistic.
 - `r pkg("castor")` contains fast calculation of the Gamma, Colless and Sackin statistic.
 - `r pkg("phyloTop")` is a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
