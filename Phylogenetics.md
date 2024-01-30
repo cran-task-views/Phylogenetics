@@ -133,7 +133,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("TreeSim")` can be used to simulate trees using constant-rate birth-death with various constraints.
 - `r pkg("phytools")` can simulate birth-death trees with various constraints, in both continuous and discrete time.
 - `r pkg("geiger")` can be used to simulate trees under a birth-death process.
-- `r pkg("DDD")` can used to simulate trees under a diversity-dependent diversification process.
+- `r pkg("DDD")` can be used to simulate trees under a diversity-dependent diversification process.
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
