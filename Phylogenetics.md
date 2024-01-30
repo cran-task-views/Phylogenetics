@@ -97,7 +97,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("treestats")` can be used to calculate a wide collection of tree statistics, optimized for fast calculation.
 - `r pkg("nLTT")` is specialized in calculating and visualising the nLTT statistic.
 - `r pkg("castor")` contains fast calculation of the Gamma, Colless and Sackin statistic.
-- `r pkg("phyloTop")` is a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
+- `r pkg("phyloTop")` can be used to calculate a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
 - `r pkg("treebalance")` is a collection of summary statistics focusing on measuring (im)balance.
 - `r pkg("RPANDA")` can compute Laplacian spectrum associated statistics.
 - `r pkg("picante")` can compute community level summary statistics, such as mpd, mntd and psv.
