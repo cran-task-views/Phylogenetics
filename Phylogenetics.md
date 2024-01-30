@@ -102,7 +102,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("RPANDA")` can compute Laplacian spectrum associated statistics.
 - `r pkg("picante")` can compute community level summary statistics, such as mpd, mntd and psv.
 - `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
-- `r pkg("apTreeshape")` can compute Aldous' Beta, Colless and Sackin.
 
 
 ## Tree building in R
