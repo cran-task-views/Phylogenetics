@@ -92,6 +92,17 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
 
+### Phylogenetic summary statistics
+
+- `r pkg("treestats")` can be used to calculate a wide collection of tree statistics, optimized for fast calculation.
+- `r pkg("nLTT")` is specialized in calculating and visualising the nLTT statistic.
+- `r pkg("castor")` contains fast calculation of the Gamma, Colless and Sackin statistic.
+- `r pkg("phyloTop")` can be used to calculate a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
+- `r pkg("treebalance")` can be used to calculate a collection of summary statistics focusing on measuring (im)balance.
+- `r pkg("RPANDA")` can compute Laplacian spectrum associated statistics.
+- `r pkg("picante")` can compute community level summary statistics, such as mpd, mntd and psv.
+- `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
+
 
 ## Tree building in R
 
@@ -121,6 +132,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("TreeSim")` can be used to simulate trees using constant-rate birth-death with various constraints.
 - `r pkg("phytools")` can simulate birth-death trees with various constraints, in both continuous and discrete time.
 - `r pkg("geiger")` can be used to simulate trees under a birth-death process.
+- `r pkg("DDD")` can be used to simulate trees under a diversity-dependent diversification process.
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
@@ -177,6 +189,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phytools")` can simulate discrete character evolution under multiple models.
 - `r pkg("phylolm")` can simulate continuous or binary traits along a tree.
 - `r pkg("Rphylopars")` can simulate data with missing observations.
+- `r pkg("secsse")` can be used to simulate diversification models with a multistate observed trait and a hidden trait.
+
 
 ### Diversification analysis
 
