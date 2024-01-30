@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2023-04-03
+version: 2024-01-30
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -186,7 +186,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("diversitree")` implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
 - `r pkg("hisse")` implements various hidden state diversification models, including HiSSE (Beaulieu and O'Meara 2016), GeoHiSSE (Caetano et al. 2018), MuHiSSE (Nakov et al. 2019), and MiSSE (trait-independent).
 - `r pkg("caper")` can do the macrocaic test to evaluate the effect of a a trait on diversity.
-- `r pkg("apTreeshape")` also has tests for differential diversification (see [description](https://doi.org/10.1093/bioinformatics/bti798) ).
 - `r pkg("DDD")` implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process.
 - `r pkg("PBD")` can calculate the likelihood of a tree under a protracted speciation model.
 - `r pkg("phyloTop")` has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
@@ -249,7 +248,6 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 ### Gene tree--species tree and species delimitation
 
 - `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
-- `r pkg("treeducken")` simulates nested phylogenetic trees (gene trees in species tree, symbiont trees in host trees) using birth-death processes and transfers between lineages.
 - `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
 
