@@ -67,7 +67,7 @@ jobs:
 
           archived <- result[[4]]
           if (length(archived)) {
-            if ("${{ github.event_name }}" == "schedule") {
+            if ("${{ github.event_name }}" != "pull_request") {
                stop(
                   "Archived packages in packagelist:\n - ",
                   paste0(archived, collapse = "\n - ")
