@@ -99,6 +99,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("castor")` contains fast calculation of the Gamma, Colless and Sackin statistic.
 - `r pkg("phyloTop")` can be used to calculate a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
 - `r pkg("treebalance")` can be used to calculate a collection of summary statistics focusing on measuring (im)balance.
+- `r pkg("poweRbal")` provides an easy evaluation and comparison of tree shape statistics by estimating their power to differentiate between different tree models.
 - `r pkg("RPANDA")` can compute Laplacian spectrum associated statistics.
 - `r pkg("picante")` can compute community level summary statistics, such as mpd, mntd and psv.
 - `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
@@ -139,6 +140,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("treats")` can be used to simulate birth-death phylogenetic trees and species traits jointly.
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
 - `r pkg("paleobuddy")` presents a flexible interface to simulate a wide array of user-defined diversification dynamics, including environmental-dependence.
+- `r pkg("poweRbal")` provides a multitude of tree models to generate rooted binary trees with a given number of leaves.
+- `r pkg("TreeSimGM")` can be used to simulate phylogenetic trees under general Bellman–Harris models with lineage-specific shifts of speciation and extinction, including simulating clade-dependent diversification processes.
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
 
 
@@ -267,6 +270,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 - `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
 - `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
+- `r pkg("MSCquartets")` provides methods for analyzing and using quartets displayed on a collection of gene trees, primarily to make inferences about the species tree or network under the multi-species coalescent model.
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
 
 
