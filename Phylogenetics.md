@@ -136,6 +136,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("DDD")` can be used to simulate trees under a diversity-dependent diversification process.
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
+- `r pkg("treats")` can be used to simulate birth-death phylogenetic trees and species traits jointly.
 - `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
 - `r pkg("paleobuddy")` presents a flexible interface to simulate a wide array of user-defined diversification dynamics, including environmental-dependence.
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
@@ -180,6 +181,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("MPSEM")` can predict features of one species based on information from related species using phylogenetic eigenvector maps.
 - `r pkg("convevol")` and `r pkg("windex")` can both test for convergent evolution on a phylogeny.
 - `r pkg("Claddis")` can be used to measure morphological diversity from discrete character data and evolutionary tempo on phylogenetic trees.
+- `r pkg("do3PCA")` can be used to estimate probabilistic phylogenetic Principal Component Analysis (PCA), including methods to implement alternative models of trait evolution including Brownian motion (BM), Ornstein-Uhlenbeck (OU), Early Burst (EB), and Pagel's lambda.
 
 ### Trait simulations
 
@@ -191,6 +193,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phylolm")` can simulate continuous or binary traits along a tree.
 - `r pkg("Rphylopars")` can simulate data with missing observations.
 - `r pkg("secsse")` can be used to simulate diversification models with a multistate observed trait and a hidden trait.
+- `r pkg("treats")` can be used to simulate species traits and birth-death phylogenetic trees jointly.
 
 
 ### Diversification analysis
@@ -279,7 +282,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("ape")` can call [PhyML](http://www.atgc-montpellier.fr/phyml/), [Clustal](http://www.clustal.org/), [T-Coffee](https://tcoffee.crg.eu/), and [Muscle](https://www.drive5.com/muscle/) through various functions.
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
 - `r pkg("ips")` wraps several phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states, including MrBayes, Beast, [RAxML](https://cme.h-its.org/exelixis/web/software/raxml/), [PartitionFinder](https://www.robertlanfear.com/partitionfinder/), and [MAFFT](https://mafft.cbrc.jp/alignment/software/), allowing their easy use from within R.
-- `r pkg("beastier")` can call [BEAST2](https://www.beast2.org/) to perform phylogenetic analyses, `r pkg("beautier")` can generate XML input files for BEAST2 (like [BEAUti](https://www.beast2.org/beauti/)), and `r pkg("tracerer")` can be used to parse and analyze BEAST2 output files (like [Tracer](https://github.com/beast-dev/tracer/)). `r pkg("babette")` is a wrapper for all of these packages.
+- `r pkg("beastier")` can call [BEAST2](https://www.beast2.org/) to perform phylogenetic analyses, `r pkg("beautier")` can generate XML input files for BEAST2 (like [BEAUti](https://www.beast2.org/beauti/)), and `r pkg("tracerer")` can be used to parse and analyze BEAST2 output files (like [Tracer](https://github.com/beast-dev/tracer/)). `r pkg("babette")` is a wrapper for all of these packages. `r pkg("mcbette")` allows to do Bayesian model comparison over some site and clock models using `r pkg("babette")`.
 - `r github("liamrevell/Rphylip")` wraps [PHYLIP](http://evolution.genetics.washington.edu/phylip.html) , a broad variety of programs for tree inference under parsimony, likelihood, and distance, bootstrapping, character evolution, and more.
 - `r pkg("BoSSA")` can use information from various tools to place a query sequence into a reference tree.
 - `r pkg("BAMMtools")` is an interface to the BAMM program to allow visualization of rate shifts, comparison of diversification models, and other functions.
