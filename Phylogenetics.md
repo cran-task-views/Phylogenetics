@@ -160,13 +160,14 @@ Packages within the task view fall within one or more of the following task cate
 
 - `r pkg("ape")`, `r pkg("picante")`, or `r pkg("caper")` can be used to calculate independent contrasts for continuous characters. `r pkg("caper")` also implements the brunch and crunch algorithms.
 - `r pkg("geiger")` can be used to perform analyses of discrete trait evolution, including models of unequal rates or rates changing at a given instant of time, as well as Pagel's transformations.
+- `r pkg("corHMM")` can be used to fit hidden Markov models of discrete character evolution which allow different transition rate classes on different portions of a phylogeny.
 - `r pkg("phytools")` can be used to fit multiple models for both discrete and continuous character evolution. For instance, `r pkg("phytools")` fits a Brownian model with and without rate heterogeneity specified as regimes fixed by the user or estimated from the data itself. `r pkg("phytools")` can also be used to fit a range of discrete character evolution models, such as the the extended M*k* model, a heterogenous M*k* model with regime shifts, a polymorphic trait evolution model, a hidden-rates model, the threshold model, and others.
 - `r pkg("geiger")`, `r pkg("paleotree")`, and `r pkg("motmot")` can be used to fit Brownian motion models.
 - `r github("cran/RBrownie")` can fit multiple-rate Brownian motion models.
 - `r pkg("geiger")` and `r pkg("OUwie")` can be used to investigate deviations from Brownian motion.
 - `r pkg("mvMORPH")` can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data.
 - `r github("gilles-didier/cauphy")` models trait distribution using the Cauchy Process.
-- `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
+- `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("slouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` and `r pkg("slouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, `r pkg("slouch")` can implement models with continuous covariates, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
 - `r pkg("motmot")` can be used to fit continuous models that change rate or mode at specific time(s).
 - `r pkg("Rphylopars")` can be used to fit continuous models such as those described above to datasets with multiple observations per species and/or missing data.
 - `r pkg("geiger")` implements ANOVA's and MANOVA's in a phylogenetic context.
