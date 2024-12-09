@@ -21,42 +21,27 @@ name: Validate task view
 jobs:
   validate-ctv:
     runs-on: ubuntu-latest
-    inputs:
-      user:
-        description: GitHub repository containing task view
-        required: false
-        default: 'cran-task-views'
-      run-only:
-        description: Skip the setup step and run the test directly assuming that setup was run.
-        required: false
-        default: false
-    using: 'composite'
     steps:
-      - if: inputs.run-only != 'true'
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - if: inputs.run-only != 'true'
-        uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r@v2
 
       - name: Install apt packages (Linux)
-        if: runner.os == 'Linux' && inputs.run-only != 'true'
+        if: runner.os == 'Linux'
         run: |
           sudo apt-get install libcurl4-openssl-dev
         shell: bash
 
-      - if: inputs.run-only != 'true'
-        uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-pandoc@v2
 
-      - if: inputs.run-only != 'true'
-        name: Cache R packages
+      - name: Cache R packages
         uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
 
-      - if: inputs.run-only != 'true'
-        name: Install R packages
+      - name: Install R packages
         run: |
           install.packages("ctv")
           install.packages("knitr")
@@ -82,14 +67,14 @@ jobs:
 
           archived <- result[[4]]
           if (length(archived)) {
-            if ("${{ github.event.action }}" == "schedule") {
+            if ("${{ github.event_name }}" == "schedule") {
                stop(
                   "Archived packages in packagelist:\n - ",
                   paste0(archived, collapse = "\n - ")
                 )
             } else {
                 previousArchive <- ctv::check_ctv_packages(
-                 paste0("https://raw.githubusercontent.com/${{ inputs.user }}/",
+                 paste0("https://raw.githubusercontent.com/cran-task-views/",
                  basename(getwd()), "/main/", basename(getwd()), ".md"
                 ))[["Packages in packagelist but archived on CRAN"]]
                 newArchives <- setdiff(archived, previousArchive)
