@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2024-12-09
+version: 2025-02-17
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -247,7 +247,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Phyloclimatic modeling
 
-- `r pkg("phyloclim")` integrates several tools for phyloclimatic modeling.
+- `r github("heibl/phyloclim")` integrates several tools for phyloclimatic modeling.
 
 ### Phylogeography and biogeography
 
