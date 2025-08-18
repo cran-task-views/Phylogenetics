@@ -113,7 +113,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, using the Brazeau et al. (2019) correction for inapplicable data, and includes a graphical user interface for detailed analysis of results.
 - `r pkg("phyclust")` can cluster sequences.
 - `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
-- `r pkg("phylotools")` can build supermatrices for analyses in other software.
+- `r github("helixcn/phylotools")` can build supermatrices for analyses in other software.
 - `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
 - `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
