@@ -236,7 +236,7 @@ Packages within the task view fall within one or more of the following task cate
 
 ### Community and microbial ecology
 
-- `r pkg("picante")`, `r pkg("vegan")`, `r pkg("SYNCSA")`, `r pkg("phylotools")`, `r pkg("PCPS")`, `r pkg("caper")`, `r pkg("DAMOCLES")`, and `r pkg("phyloregion")` integrate several tools for using phylogenetics with community ecology.
+- `r pkg("picante")`, `r pkg("vegan")`, `r pkg("SYNCSA")`, `r pkg("phylotools")`, `r pkg("caper")`, `r pkg("DAMOCLES")`, and `r pkg("phyloregion")` integrate several tools for using phylogenetics with community ecology.
 - `r pkg("HMPTrees")` and `r pkg("GUniFrac")` provide tools for comparing microbial communities.
 - `r pkg("betapart")` allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity.
 - `r pkg("phyloregion")` extends  `r pkg("betapart")` to allow sparse community matrices allowing larger datasets.
