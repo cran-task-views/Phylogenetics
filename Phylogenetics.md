@@ -62,7 +62,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("Rogue")` identifies wildcard taxa, generating more informative summary trees.
 - `r pkg("tidytree")` can convert a tree object to a tidy data frame and has other tidy approaches to manipulate tree data.
 - `r pkg("evobiR")` can do fuzzy matching of names (to allow some differences).
-- `r pkg("SigTree")` finds branches that are responsive to some treatment, while allowing correction for multiple comparisons.
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
 - `r pkg("apex")` can handle multiple gene DNA alignments making their use and analysis for tree inference easier in `r pkg("ape")` and `r pkg("phangorn")`.
 - `r pkg("aphid")` can weight sequences based on a phylogeny and can use hidden Markov models (HMMs) for a variety of purposes including multiple sequence alignment.
