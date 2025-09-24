@@ -297,7 +297,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` can prepare the control files for carrying out divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also generates morphological alignments in phylip format for using continuous trait models in divergence time estimation in MCMCtree.
 - `r pkg("tbea")` has code for post-analysis summarization and plotting of trace files from Bayesian phylogenetic programs such as Beast2, MrBayes, RevBayes, and MCMCTree. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
-
+- `r github("lfabreti/convenience")` is a package for assessing Bayesian convergence both in continuous and discrete (topology) parameters from analyses using Bayesian phylogenetic programs.
 
 ## References
 
