@@ -301,6 +301,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("tbea")` has code for post-analysis summarization and plotting of trace files from Bayesian phylogenetic programs such as Beast2, MrBayes, RevBayes, and MCMCTree. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 - `r github("lfabreti/convenience")` is a package for assessing Bayesian convergence both in continuous and discrete (topology) parameters from analyses using Bayesian phylogenetic programs.
 - `r pkg("EvoPhylo")` allows easy post-processing of macroevolutionary parameters from the outputs of Mr.Bayes and BEAST2.
+- `r github("ropensci/phruta")` has tools for retrieving data from GenBank and then concatenate them for phylogenetic analysis. It also does basic phylogenetic analysis using RAxML under the hood.
 
 ## References
 
