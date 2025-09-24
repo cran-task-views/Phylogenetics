@@ -129,6 +129,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
 - `r pkg("tbea")` allows to carry out multiple pre- (e.g. fitting densities to calibration quantiles, matrix and tree format conversion and matrix concatenation) and post-processing (e.g., summary of posterior tree samples, plotting prior vs. posterior estimates, measuring distribution similarity) tasks in Bayesian divergence time estimation. It has tools for summarizing collections of distributions (e.g. multiple estimates for the time of a biogeographic event, the origination time of a group where multiple estimates are available) which can be useful on their own or as a way to specify secondary calibrations. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
+- `r github("mongiardino/chronospace")` allows exploration of time-tree parameter distributions and measures of sensitivity when carrying out multiple analyses, as well as graphical tools for examining these measures.
 
 ### Tree simulations
 
