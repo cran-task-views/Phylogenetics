@@ -104,6 +104,15 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
 
 
+## Working with phylogenetic data in R
+
+- `r pkg("phangorn")`,  `r pkg("TreeTools")` and `r pkg("TreeSearch")` contain functions for reading phylogenetic datasets into R and manipulating the resulting objects.
+- `r github("uyedaj/rphenoscate")` allows character matrices to be synthesized from semantic phenotype data, and facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
+- `r pkg("phenex")` facilitates the annotation of character matrices files with ontology terminology.
+- `r pkg("Claddis")` and `r pkg("EvoPhylo")` generate distance matrices from phylogenetic data, with functions to identify clusters and plot the corresponding morphospaces from these matrices.
+- `r pkg("geiger")` and `r pkg("phangorn")` contain functions to simulate phylogenetic data from phylogenetic trees.
+
+
 ## Tree building in R
 
 ### Phylogenetic inference
@@ -115,7 +124,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("helixcn/phylotools")` can build supermatrices for analyses in other software.
 - `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
-- `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
 
 ### Divergence times
 
