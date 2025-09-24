@@ -261,7 +261,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 ### Omics
 
-- `r pkg("aphylo")` implements a parsimonious evolutionary model to analyze and predict gene-functional annotations in phylogenetic trees.
+- `r github("uscbiostats/aphylo")` implements a parsimonious evolutionary model to analyze and predict gene-functional annotations in phylogenetic trees.
 - `r pkg("CALANGO")` can be used to search for annotation terms (e.g., Pfam IDs, GO terms or superfamilies) associated with a quantitative/rank variable.
 - `r github("hr1912/TreeExp")` can be used to perform comparative analyses of gene expression in a phylogenetic context.
 - See the `r view("Omics")` task view for details about other useful packages.
