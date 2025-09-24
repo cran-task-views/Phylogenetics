@@ -115,7 +115,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phyclust")` can cluster sequences.
 - `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
 - `r github("helixcn/phylotools")` can build supermatrices for analyses in other software.
-- `r pkg("EvoPhylo")` can be used to perform automated morphological character partitioning for bayesian phylogenetic analyses that are performed with [MrBayes](http://nbisweden.github.io/MrBayes/) and [BEAST2](https://www.beast2.org/). It can also be used to analyze the macroevolutionary parameter outputs from such analyses.
 - `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
 - `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
 
@@ -188,6 +187,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("convevol")` and `r pkg("windex")` can both test for convergent evolution on a phylogeny.
 - `r pkg("Claddis")` can be used to measure morphological diversity from discrete character data and evolutionary tempo on phylogenetic trees.
 - `r pkg("do3PCA")` can be used to estimate probabilistic phylogenetic Principal Component Analysis (PCA), including methods to implement alternative models of trait evolution including Brownian motion (BM), Ornstein-Uhlenbeck (OU), Early Burst (EB), and Pagel's lambda.
+- `r pkg("EvoPhylo")` calculates the mode of selection upon morphological characters based on their rates of evolution, besides other statistics and plots for phenotypic rates.
 
 ### Trait simulations
 
@@ -220,6 +220,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phytools")` can compute and visualize a lineages-through-time (LTT) plot, and calculate Pybus and Harvey's (2000) gamma statistic.
 - `r pkg("CRABS")` features tools for exploring congruent phylogenetic birth-death models (see Louca and Pennell 2020).
 - `r pkg("treesliceR")` has functions to calculate rates of accumulation of phylogenetic indexes.
+- `r pkg("EvoPhylo")` processes the output and summary statistics with visualization plots for rates of diversification and fossilization derived from analyses using the FBD model.
+
 
 ## Phylogenetics in specific fields
 
@@ -298,6 +300,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("dosreislab/mcmc3r")` can prepare the control files for carrying out divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also generates morphological alignments in phylip format for using continuous trait models in divergence time estimation in MCMCtree.
 - `r pkg("tbea")` has code for post-analysis summarization and plotting of trace files from Bayesian phylogenetic programs such as Beast2, MrBayes, RevBayes, and MCMCTree. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 - `r github("lfabreti/convenience")` is a package for assessing Bayesian convergence both in continuous and discrete (topology) parameters from analyses using Bayesian phylogenetic programs.
+- `r pkg("EvoPhylo")` allows easy post-processing of macroevolutionary parameters from the outputs of Mr.Bayes and BEAST2.
 
 ## References
 
