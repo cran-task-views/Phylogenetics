@@ -75,7 +75,7 @@ Packages within the task view fall within one or more of the following task cate
 ### Tree visualization
 
 - `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). In addition, `r pkg("phytools")` has substantial functionality to plot comparative data at the tips of the tree, graph the results of comparative analyses, and plot co-phylogenies.
-- `r rforge("paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
+- `r github("tomezard/paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
 - `r github("heibl/viper")` can be used to annotate phylogenies with branch support, HPD intervals, and more.
 - The popular R visualization package `r pkg("ggplot2")` can be extended by `r bioc("ggtree")` and `r bioc("ggtreeExtra")` to visualize phylogenies, and a geological timescale can be added using `r pkg("deeptime")`.
 - `r pkg("strap")` can be used to add a geological timescale to a phylogeny, along with stratigraphic ranges.
@@ -273,7 +273,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 
 ### Gene tree--species tree and species delimitation
 
-- `r rforge("splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
+- `r github("tomezard/splits")` uses a gene tree to infer species limits based on GMYC (Generalized Mixed Yule Coalescent).
 - `r github("emanuelmfonseca/P2C2M.GMYC")` can identify model violations under a GMYC model.
 - `r pkg("MSCquartets")` provides methods for analyzing and using quartets displayed on a collection of gene trees, primarily to make inferences about the species tree or network under the multi-species coalescent model.
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
