@@ -70,6 +70,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("dendextend")` can manipulate dendrograms, including subdividing trees, adding leaves, and more.
 - `r pkg("castor")` can be used to manipulate extremely large trees (up to millions of tips).
 - `r pkg("phytools")` can slice a tree at a pre-specified point, add taxa randomly to a tree, add species to genera, bind a single tip to a tree or two trees together, collapse clades on a tree using a clickable interface, perform midpoint rooting, paint a user-specified discrete character regime onto a tree to create a `"simmap"` object by various methods, convert a tree with a mapped character into a simple `"phylo"` object with unbranching nodes or a root edge into a single unbranching node, and other things.
+- `r pkg("treesliceR")` has funcitons for slicing phylogenies to be used in time-stratified analyses.
 
 ### Tree visualization
 
@@ -83,6 +84,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("ggmuller")` allows plotting a phylogeny along with frequency dynamics.
 - `r pkg("RPANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
 - `r pkg("diversitree")` has an unexported function called "plot2.phylo()" which allows for the production of very lightweight PDF outputs of speciose trees (can be called via `diversitree:::plot2.phylo()`).
+- `r pkg("treesliceR")` has functions to plot rates of accumulation of phylogenetic indexes.
 
 ### Tree comparison
 
@@ -126,7 +128,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.
 - `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
-- `r pkg("tbea")` allows to carry out multiple pre- (e.g. fitting densities to calibration quantiles, matrix and tree format conversion and matrix concatenation) and post-processing (e.g., summary of posterior tree samples, plotting prior vs. posterior estimates, measuring distribution similarity) tasks in Bayesian divergence time estimation. It has tools for summarizing collections of distributions (e.g. multiple estimates for the time of a biogeographic event, the origination time of a group where multiple estimates are available) which can be useful on their own or as a way to specify secondary caliibrations.
+- `r pkg("tbea")` allows to carry out multiple pre- (e.g. fitting densities to calibration quantiles, matrix and tree format conversion and matrix concatenation) and post-processing (e.g., summary of posterior tree samples, plotting prior vs. posterior estimates, measuring distribution similarity) tasks in Bayesian divergence time estimation. It has tools for summarizing collections of distributions (e.g. multiple estimates for the time of a biogeographic event, the origination time of a group where multiple estimates are available) which can be useful on their own or as a way to specify secondary calibrations. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 
 ### Tree simulations
 
@@ -216,7 +218,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
 - `r pkg("phytools")` can compute and visualize a lineages-through-time (LTT) plot, and calculate Pybus and Harvey's (2000) gamma statistic.
 - `r pkg("CRABS")` features tools for exploring congruent phylogenetic birth-death models (see Louca and Pennell 2020).
-
+- `r pkg("treesliceR")` has functions to calculate rates of accumulation of phylogenetic indexes.
 
 ## Phylogenetics in specific fields
 
@@ -230,7 +232,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("paleoTS")` can be used to analyze paleontological time series data using a likelihood-based framework for fitting and comparing models (using a model testing approach) of phyletic evolution (based on the random walk or stasis model).
 - `r pkg("strap")` can do stratigraphic analysis of phylogenetic trees.
 - `r github("rachelwarnock/fbdR")` can be used to estimate diversification rates from phylogenetic trees and fossil occurrence data.
-- `r pkg("tbea")` has tools for estimating confidence intervals on stratigraphic end points and code for summarizing multiple distributions describing the same parameter.
+- `r pkg("tbea")` has tools for estimating confidence intervals on stratigraphic end points and code for summarizing multiple distributions describing the same parameter. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 - R offers a wealth of other options for general-purpose time series modeling, many of which are listed in the `r view("TimeSeries")` task view.
 
 ### Community and microbial ecology
@@ -293,7 +295,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("Revticulate")` can be used to interact with [RevBayes](https://revbayes.github.io/) from within R, while `r pkg("RevGadgets")` can be used to process the output generated by RevBayes.
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
 - `r github("dosreislab/mcmc3r")` can prepare the control files for carrying out divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also generates morphological alignments in phylip format for using continuous trait models in divergence time estimation in MCMCtree.
-- `r pkg("tbea")` has code for post-analysis summarization and plotting of trace files from Bayesian phylogenetic programs such as Beast2, MrBayes, RevBayes, and MCMCTree.
+- `r pkg("tbea")` has code for post-analysis summarization and plotting of trace files from Bayesian phylogenetic programs such as Beast2, MrBayes, RevBayes, and MCMCTree. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 
 
 ## References
