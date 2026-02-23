@@ -246,7 +246,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phyloregion")` extends  `r pkg("betapart")` to allow sparse community matrices allowing larger datasets.
 - `r pkg("adiv")` can calculate various indices of biodiversity including species, functional and phylogenetic diversity, as well as alpha, beta, and gamma diversities.
 - `r pkg("entropart")` can measure and partition diversity based on Tsallis entropy as well as calculate alpha, beta, and gamma diversities.
-- `r pkg("metacoder")` provides functions for handling large taxonomic data sets, like those generated from modern high-throughput sequencing, like metabarcoding.
+- `r github("grunwaldlab/metacoder")` provides functions for handling large taxonomic data sets, like those generated from modern high-throughput sequencing, like metabarcoding.
 - `r bioc("phyloseq")` provides a set of classes and tools to facilitate the import, storage, analysis, and graphical display of microbiome census data.
 
 ### Phyloclimatic modeling
