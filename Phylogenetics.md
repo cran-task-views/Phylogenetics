@@ -82,7 +82,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("idendr0")` can be used to interactively explore trees (as dendrograms).
 - `r pkg("phylocanvas")` is a widget for "htmlwidgets" that enables embedding of phylogenetic trees using the phylocanvas javascript library.
 - `r pkg("ggmuller")` allows plotting a phylogeny along with frequency dynamics.
-- `r pkg("RPANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
+- `r github("hmorlon/PANDA")` can be used to plot the spectral density and eigenvalues of a phylogeny.
 - `r pkg("diversitree")` has an unexported function called "plot2.phylo()" which allows for the production of very lightweight PDF outputs of speciose trees (can be called via `diversitree:::plot2.phylo()`).
 - `r pkg("treesliceR")` has functions to plot rates of accumulation of phylogenetic indexes.
 
@@ -101,7 +101,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phyloTop")` can be used to calculate a collection of pattern based summary statistics (e.g. ladders, stairs, cherries, pitchforks).
 - `r pkg("treebalance")` can be used to calculate a collection of summary statistics focusing on measuring (im)balance.
 - `r pkg("poweRbal")` provides an easy evaluation and comparison of tree shape statistics by estimating their power to differentiate between different tree models.
-- `r pkg("RPANDA")` can compute Laplacian spectrum associated statistics.
+- `r github("hmorlon/PANDA")` can compute Laplacian spectrum associated statistics.
 - `r pkg("picante")` can compute community level summary statistics, such as mpd, mntd and psv.
 - `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
 
@@ -139,7 +139,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("paleotree")` can simulate fossil deposition, sampling, and the tree arising from this as well as trees conditioned on observed fossil taxa.
 - `r pkg("FossilSim")` can be used to simulate fossil data on existing phylogenetic trees under mechanistic models of preservation and sampling.
 - `r pkg("treats")` can be used to simulate birth-death phylogenetic trees and species traits jointly.
-- `r pkg("TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
+- `r github("hoehna/TESS")` can simulate trees with time-dependent speciation and/or extinction rates, including mass extinctions.
 - `r pkg("paleobuddy")` presents a flexible interface to simulate a wide array of user-defined diversification dynamics, including environmental-dependence.
 - `r pkg("poweRbal")` provides a multitude of tree models to generate rooted binary trees with a given number of leaves.
 - `r pkg("TreeSimGM")` can be used to simulate phylogenetic trees under general Bellman–Harris models with lineage-specific shifts of speciation and extinction, including simulating clade-dependent diversification processes.
@@ -213,7 +213,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("DDD")` implements maximum likelihood methods based on the diversity-dependent birth-death process to test whether speciation or extinction are diversity-dependent, as well as identifies key innovations and simulate a density-dependent process.
 - `r pkg("PBD")` can calculate the likelihood of a tree under a protracted speciation model.
 - `r pkg("phyloTop")` has functions for investigating tree shape, with special functions and datasets relating to trees of infectious diseases.
-- `r pkg("RPANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
+- `r github("hmorlon/PANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
 - `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the "equal splits" (ES) measure.
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
 - `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
@@ -241,7 +241,7 @@ Packages within the task view fall within one or more of the following task cate
 ### Community and microbial ecology
 
 - `r pkg("picante")`, `r pkg("vegan")`, `r github("helixcn/phylotools")`, `r pkg("caper")`, `r pkg("DAMOCLES")`, and `r pkg("phyloregion")` integrate several tools for using phylogenetics with community ecology.
-- `r pkg("HMPTrees")` and `r pkg("GUniFrac")` provide tools for comparing microbial communities.
+- `r pkg("GUniFrac")` provides tools for comparing microbial communities.
 - `r pkg("betapart")` allows computing pair-wise dissimilarities (distance matrices) and multiple-site dissimilarities, separating the turnover and nestedness-resultant components of taxonomic (incidence and abundance based), functional and phylogenetic beta diversity.
 - `r pkg("phyloregion")` extends  `r pkg("betapart")` to allow sparse community matrices allowing larger datasets.
 - `r pkg("adiv")` can calculate various indices of biodiversity including species, functional and phylogenetic diversity, as well as alpha, beta, and gamma diversities.
@@ -284,7 +284,6 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 ### Taxonomy
 
 - `r pkg("taxize")` can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling.
-- `r pkg("evobiR")` contains functions for making a tree at higher taxonomic levels, downloading a taxonomy tree from NCBI or ITIS, and various other miscellaneous functions (simulations of character evolution, calculating D-statistics, etc.).
 
 ### Interactions with other programs
 
