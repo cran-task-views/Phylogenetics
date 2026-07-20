@@ -284,6 +284,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 ### Taxonomy
 
 - `r pkg("taxize")` can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling.
+- `r pkg("taxodist")` retrieves taxonomic lineages from the Taxonomicon and computes tree metric distances.
 
 ### Interactions with other programs
 
