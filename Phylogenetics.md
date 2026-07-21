@@ -9,7 +9,7 @@ source: https://github.com/cran-task-views/Phylogenetics/
 
 ## Overview
 
-The history of life unfolds within a phylogenetic context, and phylogenetic trees (often shortened to "trees") are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes R packages that (i) facilitate the handling, manipulation and analysis of phylogenetic trees; (ii) implement comparative phylogenetic methods; (iii) apply phylogenetic methods to specific disciplines. This is an active research area and much of the information is subject to change. Many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and are not yet available on CRAN. Such packages may be found on GitHub, R-Forge, [Bioconductor](https://bioconductor.org/packages/release/BiocViews.html#___Phylogenetics), or authors' websites. At least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase); users are encouraged to read and distinguish carefully between package names.
+The history of life unfolds within a phylogenetic context, and phylogenetic trees (often shortened to "trees") are developed to represent this evolutionary history. Comparative phylogenetic methods are statistical approaches for analyzing historical patterns along such phylogenetic trees. This task view describes R packages that (i) facilitate the generation, handling, manipulation and analysis of phylogenetic trees; (ii) implement comparative phylogenetic methods; (iii) apply phylogenetic methods to specific disciplines.  Many important packages are not on CRAN: either they were formerly on CRAN and were later archived (for example, if they failed to incorporate necessary changes as R is updated) or they are developed elsewhere and are not yet available on CRAN. Such packages may be found on GitHub, R-Forge, [Bioconductor](https://bioconductor.org/packages/release/BiocViews.html#Phylogenetics), or authors' websites. At least ten packages start as phy\* in this domain, including two pairs of similarly named packages (phytools and phylotools, phylobase and phybase); users are encouraged to read and distinguish carefully between package names.
 
 If you have any questions, feel free to reach out to the task view maintainers or the maintainers of specific packages. Questions may also be directed to the [R-SIG-Phylo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Phylo/) mailing-list after subscription.
 
@@ -37,9 +37,20 @@ Packages within the task view fall within one or more of the following task cate
 4.  **Other useful packages and miscellany:** packages that are useful for performing phylogenetic analyses, such as taxonomic matching
 
 
-## Working with trees in R
 
-### Getting trees into R
+## Working with phylogenetic data in R
+
+
+### Reading alignments and matrices
+
+- `r pkg("phangorn")`,  `r pkg("TreeTools")` and `r pkg("TreeSearch")` contain functions for reading phylogenetic datasets into R and manipulating the resulting objects.
+- `r github("uyedaj/rphenoscate")` allows character matrices to be synthesized from semantic phenotype data, and facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
+- `r pkg("phenex")` facilitates the annotation of character matrices files with ontology terminology.
+- `r pkg("Claddis")` and `r pkg("EvoPhylo")` generate distance matrices from phylogenetic data, with functions to identify clusters and plot the corresponding morphospaces from these matrices.
+- `r pkg("geiger")` and `r pkg("phangorn")` contain functions to simulate phylogenetic data from phylogenetic trees.
+
+
+### Reading trees
 
 - `r pkg("phylobase")` and its lighter weight sibling `r pkg("rncl")` can use the [Nexus Class Library](http://ncl.sourceforge.net/) to read NEXUS, Newick, and other tree formats.
 - `r pkg("treebase")` can search for and load trees from the online tree repository [TreeBASE](https://www.treebase.org/treebase-web/home.html).
@@ -54,7 +65,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("dendextend")` can manipulate such dendrogram objects.
 - `r pkg("phytools")` can read and write trees in simple Newick and Nexus format, as well as `"simmap"` trees with an encoded discrete character.
 
-### Tree manipulation
+
+### Manipulating trees
 
 - `r pkg("phylobase")` has functions for traversing a tree (e.g., getting all descendants from a particular node specified by just two of its descendants).
 - `r pkg("geiger")` can prune trees and data to an overlapping set of taxa. It can be also used to perform branch length scaling using ACDC; Pagel's (1999) lambda, delta and kappa parameters; and the Ornstein-Uhlenbeck alpha parameter (for ultrametric trees only). It can also be used to prune extinct taxa.
@@ -72,7 +84,8 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("phytools")` can slice a tree at a pre-specified point, add taxa randomly to a tree, add species to genera, bind a single tip to a tree or two trees together, collapse clades on a tree using a clickable interface, perform midpoint rooting, paint a user-specified discrete character regime onto a tree to create a `"simmap"` object by various methods, convert a tree with a mapped character into a simple `"phylo"` object with unbranching nodes or a root edge into a single unbranching node, and other things.
 - `r pkg("treesliceR")` has funcitons for slicing phylogenies to be used in time-stratified analyses.
 
-### Tree visualization
+
+### Visualizing trees
 
 - `r pkg("ape")`, `r pkg("adephylo")`, `r pkg("phylobase")`, `r pkg("phytools")`, `r pkg("ouch")`, and `r pkg("dendextend")` have functions for plotting trees; several of these have options for branch or taxon coloring based on some criterion (ancestral state, tree structure, etc.). In addition, `r pkg("phytools")` has substantial functionality to plot comparative data at the tips of the tree, graph the results of comparative analyses, and plot co-phylogenies.
 - `r github("tomezard/paleoPhylo")` and `r pkg("paleotree")` are specialized for drawing paleobiological phylogenies.
@@ -86,14 +99,16 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("diversitree")` has an unexported function called "plot2.phylo()" which allows for the production of very lightweight PDF outputs of speciose trees (can be called via `diversitree:::plot2.phylo()`).
 - `r pkg("treesliceR")` has functions to plot rates of accumulation of phylogenetic indexes.
 
-### Tree comparison
+
+### Comparing trees
 
 - `r pkg("distory")`, `r pkg("TreeDist")`, `r pkg("Quartet")`, `r pkg("TBRDist")`, `r pkg("phangorn")`, and `r pkg("phytools")` can compute distances between trees.
 - `r pkg("TreeDist")` and `r pkg("treespace")` can plot and evaluate low-dimensional mappings of tree sets ("tree spaces").
 - `r pkg("ape")` can compute tree-tree distances and also create a plot showing two trees with links between associated tips.
 - `r pkg("dendextend")` can evaluate multiple measures comparing dendrograms.
 
-### Phylogenetic summary statistics
+
+### Summary statistics
 
 - `r pkg("treestats")` can be used to calculate a wide collection of tree statistics, optimized for fast calculation.
 - `r pkg("nLTT")` is specialized in calculating and visualising the nLTT statistic.
@@ -106,31 +121,11 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("Leonardini/treeCentrality")` can compute several statistics inspired from network science.
 
 
+
 ## Tree building in R
 
-### Phylogenetic inference
 
-- `r pkg("phangorn")` can estimate trees using distance (e.g. UPGMA), parsimony, and likelihood.
-- `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, using the Brazeau et al. (2019) correction for inapplicable data, and includes a graphical user interface for detailed analysis of results.
-- `r pkg("phyclust")` can cluster sequences.
-- `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
-- `r github("helixcn/phylotools")` can build supermatrices for analyses in other software.
-- `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
-- `r github("uyedaj/rphenoscate")` facilitates analysis of "inapplicable" characters – such as morphological characters that are dependent on a parent trait – by constructing formal character hierarchies and the corresponding rate matrices (Tarasov 2023).
-
-### Divergence times
-
-- `r pkg("ape")` implements non-parametric rate smoothing (NPRS) and penalized likelihood.
-- `r pkg("geiger")` can do congruification to stretch a source tree to match a specified standard tree.
-- `r github("evolucionario/cladedate")` generates empirical calibration information from the fossil record.
-- `r pkg("treedater")` implements various clock models, ways to assess confidence, and detecting outliers.
-- `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.
-- `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
-- `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
-- `r pkg("tbea")` allows to carry out multiple pre- (e.g. fitting densities to calibration quantiles, matrix and tree format conversion and matrix concatenation) and post-processing (e.g., summary of posterior tree samples, plotting prior vs. posterior estimates, measuring distribution similarity) tasks in Bayesian divergence time estimation. It has tools for summarizing collections of distributions (e.g. multiple estimates for the time of a biogeographic event, the origination time of a group where multiple estimates are available) which can be useful on their own or as a way to specify secondary calibrations. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
-- `r github("mongiardino/chronospace")` allows exploration of time-tree parameter distributions and measures of sensitivity when carrying out multiple analyses, as well as graphical tools for examining these measures.
-
-### Tree simulations
+### Simulating trees
 
 - `r pkg("TreeSim")` can be used to simulate trees using constant-rate birth-death with various constraints.
 - `r pkg("phytools")` can simulate birth-death trees with various constraints, in both continuous and discrete time.
@@ -146,7 +141,32 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("dosreislab/simclock")` simulates trees with branch lengths in number of substitutions per site under the relaxed clock models geometric Brownian motion (correlated rates) as well as independent lognormal rates.
 
 
+### Inferring trees
+
+- `r pkg("phangorn")` can estimate trees using distance (e.g. UPGMA), parsimony, and likelihood.
+- `r pkg("TreeSearch")` can identify most-parsimonious trees under parsimony, using the Brazeau et al. (2019) correction for inapplicable data, and includes a graphical user interface for detailed analysis of results.
+- `r pkg("phyclust")` can cluster sequences.
+- `r pkg("phytools")` can build trees using MRP supertree estimation and least squares.
+- `r github("helixcn/phylotools")` can build supermatrices for analyses in other software.
+- `r bioc("fastreeR")` can be used to calculate distances, build phylogenetic trees, or perform hierarchical clustering between the samples of a VCF or FASTA file.
+
+
+### Adding a time dimension
+
+- `r pkg("ape")` implements non-parametric rate smoothing (NPRS) and penalized likelihood.
+- `r pkg("geiger")` can do congruification to stretch a source tree to match a specified standard tree.
+- `r github("evolucionario/cladedate")` generates empirical calibration information from the fossil record.
+- `r pkg("treedater")` implements various clock models, ways to assess confidence, and detecting outliers.
+- `r pkg("phangorn")` can infer ultrametric and tipdated phylogenies with a strict clock model direct from sequences.
+- `r github("dosreislab/bppr")` calibrates phylogenies from the program [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html)
+- `r github("dosreislab/mcmc3r")` calculates the marginal likelihood in divergence time estimation using MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). It also calculates the block bootstrap for error estimation in marginal likelihood calculation.
+- `r pkg("tbea")` allows to carry out multiple pre- (e.g. fitting densities to calibration quantiles, matrix and tree format conversion and matrix concatenation) and post-processing (e.g., summary of posterior tree samples, plotting prior vs. posterior estimates, measuring distribution similarity) tasks in Bayesian divergence time estimation. It has tools for summarizing collections of distributions (e.g. multiple estimates for the time of a biogeographic event, the origination time of a group where multiple estimates are available) which can be useful on their own or as a way to specify secondary calibrations. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
+- `r github("mongiardino/chronospace")` allows exploration of time-tree parameter distributions and measures of sensitivity when carrying out multiple analyses, as well as graphical tools for examining these measures.
+
+
+
 ## Phylogenetic comparative methods
+
 
 ### Ancestral state reconstruction
 
@@ -156,6 +176,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("Rphylopars")` can perform ancestral state reconstruction for datasets with multiple observations per species and/or missing data.
 - `r pkg("TreeSearch")` can perform mapping of characters under parsimony, with an allowance for inapplicable data.
 - `r pkg("castor")` can be used reconstruct continuous or discrete characters on extremely large trees.
+
 
 ### Trait evolution
 
@@ -188,6 +209,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("Claddis")` can be used to measure morphological diversity from discrete character data and evolutionary tempo on phylogenetic trees.
 - `r pkg("do3PCA")` can be used to estimate probabilistic phylogenetic Principal Component Analysis (PCA), including methods to implement alternative models of trait evolution including Brownian motion (BM), Ornstein-Uhlenbeck (OU), Early Burst (EB), and Pagel's lambda.
 - `r pkg("EvoPhylo")` calculates the mode of selection upon morphological characters based on their rates of evolution, besides other statistics and plots for phenotypic rates.
+
 
 ### Trait simulations
 
@@ -223,12 +245,15 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("EvoPhylo")` processes the output and summary statistics with visualization plots for rates of diversification and fossilization derived from analyses using the FBD model.
 
 
+
 ## Phylogenetics in specific fields
+
 
 ### Morphometrics
 
 - `r pkg("geomorph")` and `r pkg("RRPP")` may be used to evaluate evolutionary trends in multivariate phenotypes. Available methods include phylogenetic linear models (phylogenetic anova/regression, etc.), phylogenetic partial least squares, comparing rates of phenotypic evolution, phylogenetic integration, and phylogenetic modularity. Additionally, ordination approaches include both phylogenetic PCA, and phylogenetically-aligned components analysis (PACA).
 - `r github("dosreislab/mcmc3r")` removes among-trait correlation using matrix shrinkage for estimation of branch lengths under Bronwnian motion and finally divergence time estimation in MCMCtree from the suite [PAML](https://github.com/abacus-gene/paml). A detailed tutorial can be found at [https://github.com/sabifo4/morpho](https://github.com/sabifo4/morpho).
+
 
 ### Time series and paleontology
 
@@ -237,6 +262,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("rachelwarnock/fbdR")` can be used to estimate diversification rates from phylogenetic trees and fossil occurrence data.
 - `r pkg("tbea")` has tools for estimating confidence intervals on stratigraphic end points and code for summarizing multiple distributions describing the same parameter. It offers a dedicated [website](https://gaballench.github.io/tbea/) with HTML-rendered vignettes.
 - R offers a wealth of other options for general-purpose time series modeling, many of which are listed in the `r view("TimeSeries")` task view.
+
 
 ### Community and microbial ecology
 
@@ -249,9 +275,11 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("metacoder")` provides functions for handling large taxonomic data sets, like those generated from modern high-throughput sequencing, like metabarcoding.
 - `r bioc("phyloseq")` provides a set of classes and tools to facilitate the import, storage, analysis, and graphical display of microbiome census data.
 
+
 ### Phyloclimatic modeling
 
 - `r github("heibl/phyloclim")` integrates several tools for phyloclimatic modeling.
+
 
 ### Phylogeography and biogeography
 
@@ -260,9 +288,6 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("epm")` (EcoPhyloMapper) can be used to calculate various morphological and phylogenetic community metrics across geography.
 - `r github("nmatzke/BioGeoBEARS")` allows probabilistic inference of both historical biogeography (ancestral geographic ranges on a phylogeny) as well as comparison of different models of range evolution.
 
-### Epidemiology
-
-See the `r view("Epidemiology")` task view for details about packages useful for epidemiology, including phylogenetic epidemiology.
 
 ### Omics
 
@@ -270,6 +295,7 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r pkg("CALANGO")` can be used to search for annotation terms (e.g., Pfam IDs, GO terms or superfamilies) associated with a quantitative/rank variable.
 - `r github("hr1912/TreeExp")` can be used to perform comparative analyses of gene expression in a phylogenetic context.
 - See the `r view("Omics")` task view for details about other useful packages.
+
 
 ### Gene tree--species tree and species delimitation
 
@@ -279,14 +305,13 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("dosreislab/bppr")` can prepare the control files for doing model selection for comparing competing species trees using [BPP](https://github.com/bpp/bpp). A tutorial is available at [https://dosreislab.github.io/2018/08/31/bppr.html](https://dosreislab.github.io/2018/08/31/bppr.html).
 
 
-## Other useful packages and miscellany
+### Epidemiology
 
-### Taxonomy
+See the `r view("Epidemiology")` task view for details about packages useful for epidemiology, including phylogenetic epidemiology.
 
-- `r pkg("taxize")` can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling.
-- `r pkg("taxodist")` retrieves taxonomic lineages from the Taxonomicon and computes tree metric distances.
 
-### Interactions with other programs
+
+## Interactions with external software and databases
 
 - `r pkg("ape")` can call [PhyML](http://www.atgc-montpellier.fr/phyml/), [Clustal](http://www.clustal.org/), [T-Coffee](https://tcoffee.crg.eu/), and [Muscle](https://www.drive5.com/muscle/) through various functions.
 - `r pkg("geiger")` can call PATHd8 through its congruify function.
@@ -302,6 +327,10 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 - `r github("lfabreti/convenience")` is a package for assessing Bayesian convergence both in continuous and discrete (topology) parameters from analyses using Bayesian phylogenetic programs.
 - `r pkg("EvoPhylo")` allows easy post-processing of macroevolutionary parameters from the outputs of Mr.Bayes and BEAST2.
 - `r github("ropensci/phruta")` has tools for retrieving data from GenBank and then concatenating them for phylogenetic analysis. It also does basic phylogenetic analysis using RAxML under the hood.
+- `r pkg("taxize")` can interact with a suite of web APIs for taxonomic tasks, such as verifying species names, getting taxonomic hierarchies, and verifying name spelling.
+- `r pkg("taxodist")` retrieves taxonomic lineages from the Taxonomicon and computes tree metric distances.
+
+
 
 ## References
 
