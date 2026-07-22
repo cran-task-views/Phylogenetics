@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2025-02-17
+version: 2025-07-21
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
@@ -189,7 +189,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r pkg("geiger")` and `r pkg("OUwie")` can be used to investigate deviations from Brownian motion.
 - `r pkg("mvMORPH")` can fit Brownian motion, early burst, ACDC, OU, and shift models to univariate or multivariate data.
 - `r github("gilles-didier/cauphy")` models trait distribution using the Cauchy Process.
-- `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("slouch")`, `r pkg("surface")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` and `r pkg("slouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, `r pkg("slouch")` can implement models with continuous covariates, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
+- `r pkg("geiger")`, `r pkg("motmot")`, `r pkg("ouch")`, `r pkg("slouch")`, `r pkg("surface")`, `r pkg("bayou")`, and `r pkg("OUwie")` can be used to fit Ornstein-Uhlenbeck (OU) models. `r pkg("ouch")` and `r pkg("slouch")` can implement models with multiple means, `r pkg("surface")` can implement models with multiple means using stepwise AIC, `r pkg("bayou")` can implement models with multiple means using Bayesian reversible-jump methods (see Uyeda and Harmon 2014), `r pkg("slouch")` can implement models with continuous covariates, and `r pkg("OUwie")` can implement models with multiple means, rates, and attraction values. Also see `r github("mongiardino/extendedSurface")` which combines the functionality of `r pkg("surface")` and `r pkg("OUwie")`.
 - `r pkg("motmot")` can be used to fit continuous models that change rate or mode at specific time(s).
 - `r pkg("Rphylopars")` can be used to fit continuous models such as those described above to datasets with multiple observations per species and/or missing data.
 - `r pkg("geiger")` implements ANOVA's and MANOVA's in a phylogenetic context.
@@ -215,9 +215,10 @@ Packages within the task view fall within one or more of the following task cate
 
 - `r pkg("ouch")`, `r pkg("geiger")`, `r pkg("ape")`, `r pkg("picante")`, `r pkg("OUwie")`, `r pkg("caper")`, and `r pkg("phytools")` can be used to simulate continuous traits using Brownian motion.
 - `r pkg("ouch")` and `r pkg("OUwie")` can be used to simulate continuous traits using the Hansen model (a form of the OU).
+- `r pkg("bayou")` can be used to simulate multi-optima Ornstein-Uhlenbeck models (see Uyeda and Harmon 2014).
 - `r pkg("geiger")` can be used to simulate continuous traits using a speciational model and discrete traits can be simulated using a continuous time Markov model (including models where rates change through time).
 - `r pkg("phangorn")` can simulate DNA or amino acids.
-- `r pkg("phytools")` can simulate discrete character evolution under multiple models.
+- `r pkg("phytools")` and `r pkg("MorphSim")` can simulate discrete character evolution under multiple models.
 - `r pkg("phylolm")` can simulate continuous or binary traits along a tree.
 - `r pkg("Rphylopars")` can simulate data with missing observations.
 - `r pkg("secsse")` can be used to simulate diversification models with a multistate observed trait and a hidden trait.
@@ -238,6 +239,7 @@ Packages within the task view fall within one or more of the following task cate
 - `r github("hmorlon/PANDA")` can be used to fit various diversification models to phylogenies, including time-dependent and environmental-dependent models.
 - `r pkg("picante")` can be used to calculate various evolutionary distinctiveness measures, including the "equal splits" (ES) measure.
 - `r pkg("castor")` can be used to estimate identifiable diversification rate parameters from trees (e.g., pulled rates of speciation).
+- `r pkg("RPesto")` implements diversification analyses using the phylogenetic birth-death-shift model (see Kopperud and Hoehna 2025).
 - `r pkg("secsse")` can be used to fit diversification models with a multistate observed trait and a hidden trait.
 - `r pkg("phytools")` can compute and visualize a lineages-through-time (LTT) plot, and calculate Pybus and Harvey's (2000) gamma statistic.
 - `r pkg("CRABS")` features tools for exploring congruent phylogenetic birth-death models (see Louca and Pennell 2020).
@@ -341,8 +343,9 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Caetano, D.S., B.C. O'Meara, and J.M. Beaulieu. 2018. Hidden state models improve state-dependent diversification approaches, including biogeographic models. Evolution, 72:2308-2324. `r doi("10.1111/evo.13602")`.
 -   Cheverud J.M., Dow M.M., Leutenegger W. 1985 The quantitative assessment of phylogenetic constraints in comparative analyses: Sexual dimorphism in body weight among primates. Evolution 39, 1335-1351. `r doi("10.1111/j.1558-5646.1985.tb05699.x")`.
 -   FitzJohn R.G., Maddison W.P., and Otto S.P. 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Systematic Biology 58: 595-611. `r doi("10.1093/sysbio/syp067")`.
--   Garland T., Harvey P.H., Ives A.R. 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41, 18-32. `r doi("10.1093/sysbio/41.1.18")`.
+-   Garland T., Harvey P.H., Ives A.R. 1992 Procedures for the analysis of comparative data using phylogenetically independent contrasts. Systematic Biology 41: 18-32. `r doi("10.1093/sysbio/41.1.18")`.
 -   Hansen T.F. 1997. Stabilizing selection and the comparative analysis of adaptation. Evolution 51: 1341-1351. `r doi("10.1111/j.1558-5646.1997.tb01457.x")`.
+-   Kopperud B.T. and Höhna S. 2025. Phylogenetic Estimation of Branch-Specific Shifts in the Tempo of Origination. Systematic Biology 74: 985–1006. `r doi("10.1093/sysbio/syaf041")`.
 -   Louca, S. and Pennell, M. W. 2020. Extant timetrees are consistent with a myriad of diversification histories. Nature, 580(7804), 502-505. `r doi("10.1038/s41586-020-2176-1")`.
 -   Maddison W.P., Midford P.E., and Otto S.P. 2007. Estimating a binary character's effect on speciation and extinction. Systematic Biology 56: 701--710. `r doi("10.1080/10635150701607033")`.
 -   Magallon S., Sanderson, M.J. 2001. Absolute Diversification Rates in Angiosperm Clades. Evolution 55(9):1762-1780. `r doi("10.1111/j.0014-3820.2001.tb00826.x")`.
@@ -352,3 +355,4 @@ See the `r view("Epidemiology")` task view for details about packages useful for
 -   Pagel M. 1999. Inferring the historical patterns of biological evolution. Nature 401, 877-884. `r doi("10.1038/44766")`.
 -   Pybus O.G., Harvey P.H. 2000. Testing macro-evolutionary models using incomplete molecular phylogenies. Proceedings of the Royal Society of London Series B Biological Sciences 267, 2267-2272. `r doi("10.1098/rspb.2000.1278")`.
 -   Tarasov, S. 2023. New phylogenetic Markov models for inapplicable morphological characters. Systematic Biology, syad005. `r doi("10.1093/sysbio/syad005")`.
+-   Uyeda J.C. and Harmon L.J. 2014. A Novel Bayesian Method for Inferring and Interpreting the Dynamics of Adaptive Landscapes from Phylogenetic Comparative Data. Systematic Biology 63: 902–918, `r doi("10.1093/sysbio/syu057")`.
