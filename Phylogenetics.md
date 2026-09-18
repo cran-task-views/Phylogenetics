@@ -227,7 +227,7 @@ Packages within the task view fall within one or more of the following task cate
 ### Diversification analysis
 
 - `r pkg("ape")` and `r pkg("phytools")` can fit a simple birth-death model for when you have extant species only (sensu Nee et al. 1994), survival models, and goodness-of-fit tests (as applied to testing of models of diversification).
-- `r pkg("TESS")` can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions.
+- `r github("hoehna/TESS")` can calculate the likelihood of a tree under a model with time-dependent diversification, including mass extinctions.
 - `r pkg("geiger")` can calculate net rates of diversification (sensu Magellon and Sanderson).
 - `r pkg("diversitree")` implements the BiSSE method (Maddison et al. 1997) and later improvements (FitzJohn et al. 2009).
 - `r pkg("hisse")` implements various hidden state diversification models, including HiSSE (Beaulieu and O'Meara 2016), GeoHiSSE (Caetano et al. 2018), MuHiSSE (Nakov et al. 2019), and MiSSE (trait-independent).
