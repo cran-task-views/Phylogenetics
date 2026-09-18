@@ -3,7 +3,7 @@ name: Phylogenetics
 topic: Phylogenetics
 maintainer: William Gearty, Brian O'Meara, Jacob Berv, Gustavo A. Ballen, Diniz Ferreira, Hilmar Lapp, Lars Schmitz, Martin R. Smith, Nathan S. Upham, Jonathan A. Nations
 email: willgearty@gmail.com
-version: 2025-07-21
+version: 2026-09-18
 source: https://github.com/cran-task-views/Phylogenetics/
 ---
 
